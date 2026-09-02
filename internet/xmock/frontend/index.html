@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>XMock</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <header class="topbar">
+
+        <div class="logo">
+            XMock
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- CREATE USER -->
+
+        <section class="card">
+
+            <h2>Create Account</h2>
+
+            <div class="form-row">
+
+                <input
+                    id="username"
+                    type="text"
+                    placeholder="Username"
+                >
+
+                <button onclick="createUser()">
+                    Create
+                </button>
+
+            </div>
+
+            <p id="userResult"></p>
+
+        </section>
+
+
+        <!-- CREATE POST -->
+
+        <section class="card">
+
+            <h2>Create Post</h2>
+
+            <input
+                id="userId"
+                type="number"
+                placeholder="User ID"
+            >
+
+            <textarea
+                id="postText"
+                placeholder="What's happening?"
+                rows="4"
+            ></textarea>
+
+            <input
+                id="media"
+                type="file"
+                accept="image/*,video/*"
+            >
+
+            <button
+                class="post-button"
+                onclick="createPost()"
+            >
+                Post
+            </button>
+
+            <p id="postResult"></p>
+
+        </section>
+
+
+        <!-- FEED -->
+
+        <section>
+
+            <h2 class="feed-title">
+                Feed
+            </h2>
+
+            <div id="feed">
+
+                <p class="loading">
+                    Loading posts...
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

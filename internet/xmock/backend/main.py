@@ -1,47 +1,57 @@
-from fastapi import FastAPI, UploadFile, File, Form, HTTPException
+from fastapi import (
+    FastAPI,
+    UploadFile,
+    File,
+    Form,
+    HTTPException
+)
+
+
 from fastapi.staticfiles import StaticFiles
 
 from pathlib import Path
 import shutil
 import uuid
 
-from database import get_connection, initialize_database
-from schemas import UserCreate, PostResponse
+from database import (
+    get_connection,
+    initialize_database
+)
+
+from schemas import (
+    UserCreate,
+    PostResponse
+)
 
 
 # --------------------------------------------------
-# Paths
+# PATHS
 # --------------------------------------------------
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 MEDIA_DIR = BASE_DIR / "media"
+
 FRONTEND_DIR = BASE_DIR / "frontend"
 
 MEDIA_DIR.mkdir(parents=True, exist_ok=True)
 
 
 # --------------------------------------------------
-# FastAPI application
+# APPLICATION
 # --------------------------------------------------
 
 app = FastAPI(
-    title="InstaMock API",
-    description="Independent mock social-media platform",
+    title="XMock API",
+    description="Independent mock X/Twitter platform",
     version="1.0.0"
 )
+
 from fastapi.middleware.cors import CORSMiddleware
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://127.0.0.1:5500",
-        "http://localhost:5500",
-        "http://127.0.0.1:8000",
-        "http://localhost:8000",
-        "http://127.0.0.1:8002",
-        "http://localhost:8002",
-    ],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -49,14 +59,14 @@ app.add_middleware(
 
 
 # --------------------------------------------------
-# Initialize database
+# DATABASE
 # --------------------------------------------------
 
 initialize_database()
 
 
 # --------------------------------------------------
-# Static media
+# MEDIA
 # --------------------------------------------------
 
 app.mount(
@@ -67,19 +77,20 @@ app.mount(
 
 
 # --------------------------------------------------
-# Root endpoint
+# ROOT
 # --------------------------------------------------
 
 @app.get("/")
 def root():
+
     return {
-        "platform": "InstaMock",
+        "platform": "XMock",
         "status": "online"
     }
 
 
 # --------------------------------------------------
-# Create user
+# CREATE USER
 # --------------------------------------------------
 
 @app.post("/api/users")
@@ -103,6 +114,7 @@ def create_user(user: UserCreate):
         user_id = cursor.lastrowid
 
     except Exception:
+
         connection.close()
 
         raise HTTPException(
@@ -119,7 +131,7 @@ def create_user(user: UserCreate):
 
 
 # --------------------------------------------------
-# Get users
+# GET USERS
 # --------------------------------------------------
 
 @app.get("/api/users")
@@ -134,7 +146,10 @@ def get_users():
         ORDER BY id DESC
     """)
 
-    users = [dict(row) for row in cursor.fetchall()]
+    users = [
+        dict(row)
+        for row in cursor.fetchall()
+    ]
 
     connection.close()
 
@@ -142,29 +157,34 @@ def get_users():
 
 
 # --------------------------------------------------
-# Create post
+# CREATE POST
 # --------------------------------------------------
 
 @app.post("/api/posts")
 def create_post(
     user_id: int = Form(...),
-    caption: str = Form(""),
-    media: UploadFile = File(...)
+    text: str = Form(""),
+    media: UploadFile | None = File(None)
 ):
 
     connection = get_connection()
     cursor = connection.cursor()
 
-    # Check whether user exists
+    # Check user
 
     cursor.execute(
-        "SELECT id FROM users WHERE id = ?",
+        """
+        SELECT id
+        FROM users
+        WHERE id = ?
+        """,
         (user_id,)
     )
 
     user = cursor.fetchone()
 
     if user is None:
+
         connection.close()
 
         raise HTTPException(
@@ -172,32 +192,57 @@ def create_post(
             detail="User not found"
         )
 
-    # Generate unique filename
+    media_filename = None
+    media_type = None
 
-    extension = Path(media.filename).suffix
+    # --------------------------------------------------
+    # SAVE MEDIA
+    # --------------------------------------------------
 
-    filename = f"{uuid.uuid4()}{extension}"
+    if media:
 
-    file_path = MEDIA_DIR / filename
+        extension = Path(
+            media.filename
+        ).suffix
 
-    # Save uploaded media
+        media_filename = (
+            f"{uuid.uuid4()}{extension}"
+        )
 
-    with open(file_path, "wb") as buffer:
-        shutil.copyfileobj(media.file, buffer)
+        media_type = media.content_type
 
-    # Store post metadata
+        file_path = (
+            MEDIA_DIR /
+            media_filename
+        )
+
+        with open(file_path, "wb") as buffer:
+
+            shutil.copyfileobj(
+                media.file,
+                buffer
+            )
+
+    # --------------------------------------------------
+    # SAVE POST
+    # --------------------------------------------------
 
     cursor.execute(
         """
         INSERT INTO posts
-        (user_id, caption, media_filename, media_type)
+        (
+            user_id,
+            text,
+            media_filename,
+            media_type
+        )
         VALUES (?, ?, ?, ?)
         """,
         (
             user_id,
-            caption,
-            filename,
-            media.content_type
+            text,
+            media_filename,
+            media_type
         )
     )
 
@@ -210,15 +255,18 @@ def create_post(
     return {
         "id": post_id,
         "message": "Post created successfully",
-        "media_filename": filename
+        "media_filename": media_filename
     }
 
 
 # --------------------------------------------------
-# Get feed
+# GET FEED
 # --------------------------------------------------
 
-@app.get("/api/posts", response_model=list[PostResponse])
+@app.get(
+    "/api/posts",
+    response_model=list[PostResponse]
+)
 def get_posts():
 
     connection = get_connection()
@@ -228,7 +276,7 @@ def get_posts():
         SELECT
             posts.id,
             users.username,
-            posts.caption,
+            posts.text,
             posts.media_filename,
             posts.media_type,
             posts.created_at
@@ -249,12 +297,21 @@ def get_posts():
 
     for row in rows:
 
+        media_url = None
+
+        if row["media_filename"]:
+
+            media_url = (
+                f"/media/"
+                f"{row['media_filename']}"
+            )
+
         posts.append(
             PostResponse(
                 id=row["id"],
                 username=row["username"],
-                caption=row["caption"],
-                media_url=f"/media/{row['media_filename']}",
+                text=row["text"],
+                media_url=media_url,
                 media_type=row["media_type"],
                 created_at=row["created_at"]
             )
