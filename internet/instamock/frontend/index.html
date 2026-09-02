@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>InstaMock</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>InstaMock</h1>
+    </header>
+
+
+    <main>
+
+        <section class="create-user">
+
+            <h2>Create User</h2>
+
+            <input
+                id="username"
+                type="text"
+                placeholder="Username"
+            >
+
+            <button onclick="createUser()">
+                Create
+            </button>
+
+        </section>
+
+
+        <section class="create-post">
+
+            <h2>Create Post</h2>
+
+            <input
+                id="userId"
+                type="number"
+                placeholder="User ID"
+            >
+
+            <input
+                id="caption"
+                type="text"
+                placeholder="Caption"
+            >
+
+            <input
+                id="media"
+                type="file"
+                accept="image/*,video/*"
+            >
+
+            <button onclick="createPost()">
+                Upload
+            </button>
+
+        </section>
+
+
+        <section>
+
+            <h2>Feed</h2>
+
+            <div id="feed"></div>
+
+        </section>
+
+    </main>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>

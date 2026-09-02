@@ -1,0 +1,13 @@
+{
+    "name": "heavy_modification",
+    "operations": [
+        {
+            "type": "resize",
+            "width": 720
+        },
+        {
+            "type": "compress",
+            "quality": 50
+        }
+    ]
+}

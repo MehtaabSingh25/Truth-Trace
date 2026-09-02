@@ -1,0 +1,17 @@
+{
+    "name": "social_media_processing",
+    "operations": [
+        {
+            "type": "resize",
+            "width": 1080
+        },
+        {
+            "type": "compress",
+            "quality": 75
+        },
+        {
+            "type": "convert",
+            "format": "JPEG"
+        }
+    ]
+}

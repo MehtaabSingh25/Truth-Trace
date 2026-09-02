@@ -1,0 +1,65 @@
+{
+    "media_id": "cdf610e1-09e0-4a8b-8277-d57143c7785e",
+    "original": {
+        "file": "C:\\chd_police hackathon\\internet\\mediaModifier\\input\\636281ee-c9f1-470f-9eea-76135e96df29.jpg",
+        "sha256": "51d0180a246d3db30e32ddff7b1f202147d6868c6fb23ca936b2b1426d8688ec"
+    },
+    "final": {
+        "file": "C:\\chd_police hackathon\\internet\\mediaModifier\\output\\cdf610e1-09e0-4a8b-8277-d57143c7785e_step3.jpeg",
+        "sha256": "b6650cdec86bbd917ad2bd2f6154e16cc33a8e49878715e6a66b8d109e9fecff"
+    },
+    "operations": [
+        {
+            "step": 1,
+            "operation_id": "94cf84c3-3289-4dbd-8d32-4ac6ffa92a5d",
+            "type": "resize",
+            "parameters": {
+                "type": "resize",
+                "width": 1080
+            },
+            "output_file": "C:\\chd_police hackathon\\internet\\mediaModifier\\output\\cdf610e1-09e0-4a8b-8277-d57143c7785e_step1.jpg",
+            "sha256": "3713c4c067cd2503ba58afd9a651ccf9038eb00d6829a1158384d66cb3bed3e4",
+            "details": {
+                "operation": "resize",
+                "original_size": [
+                    1920,
+                    1080
+                ],
+                "new_size": [
+                    1080,
+                    607
+                ]
+            }
+        },
+        {
+            "step": 2,
+            "operation_id": "312352fb-faa7-477b-b6ef-17d5212ad31c",
+            "type": "compress",
+            "parameters": {
+                "type": "compress",
+                "quality": 75
+            },
+            "output_file": "C:\\chd_police hackathon\\internet\\mediaModifier\\output\\cdf610e1-09e0-4a8b-8277-d57143c7785e_step2.jpg",
+            "sha256": "bb5686b6764987d7de9cdef4ffead4a1e205ba7e581e5eff814e3e52abf14ade",
+            "details": {
+                "operation": "jpeg_compression",
+                "quality": 75
+            }
+        },
+        {
+            "step": 3,
+            "operation_id": "8b122047-77f6-4d12-8f01-6832d8767a0a",
+            "type": "convert",
+            "parameters": {
+                "type": "convert",
+                "format": "JPEG"
+            },
+            "output_file": "C:\\chd_police hackathon\\internet\\mediaModifier\\output\\cdf610e1-09e0-4a8b-8277-d57143c7785e_step3.jpeg",
+            "sha256": "b6650cdec86bbd917ad2bd2f6154e16cc33a8e49878715e6a66b8d109e9fecff",
+            "details": {
+                "operation": "format_conversion",
+                "format": "JPEG"
+            }
+        }
+    ]
+}

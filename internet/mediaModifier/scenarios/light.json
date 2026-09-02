@@ -1,0 +1,13 @@
+{
+    "name": "light_modification",
+    "operations": [
+        {
+            "type": "resize",
+            "width": 1080
+        },
+        {
+            "type": "compress",
+            "quality": 85
+        }
+    ]
+}
