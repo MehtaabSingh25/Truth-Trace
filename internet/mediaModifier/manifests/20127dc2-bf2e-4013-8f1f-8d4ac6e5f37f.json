@@ -1,0 +1,54 @@
+{
+    "transformation_id": "20127dc2-bf2e-4013-8f1f-8d4ac6e5f37f",
+    "input": {
+        "file": "C:\\chd_police hackathon\\internet\\mediaModifier\\input\\636281ee-c9f1-470f-9eea-76135e96df29.jpg",
+        "sha256": "51d0180a246d3db30e32ddff7b1f202147d6868c6fb23ca936b2b1426d8688ec"
+    },
+    "final": {
+        "file": "C:\\chd_police hackathon\\internet\\mediaModifier\\output\\20127dc2-bf2e-4013-8f1f-8d4ac6e5f37f_step2.jpg",
+        "sha256": "2396b7fb8f4589210ae63433349f63e7537495c4b0983d55a613f5864541afb2"
+    },
+    "operations": [
+        {
+            "step": 1,
+            "operation_id": "2b54b833-525c-4a9d-a01a-6db67aa2dc25",
+            "type": "resize",
+            "parameters": {
+                "type": "resize",
+                "width": 900
+            },
+            "input_file": "C:\\chd_police hackathon\\internet\\mediaModifier\\input\\636281ee-c9f1-470f-9eea-76135e96df29.jpg",
+            "output_file": "C:\\chd_police hackathon\\internet\\mediaModifier\\output\\20127dc2-bf2e-4013-8f1f-8d4ac6e5f37f_step1.jpg",
+            "input_sha256": "51d0180a246d3db30e32ddff7b1f202147d6868c6fb23ca936b2b1426d8688ec",
+            "output_sha256": "d2bb53bae3247ec8308135fed4199db0eaec0e10a7a3882233fd5ff9c4e3ece0",
+            "details": {
+                "operation": "resize",
+                "original_size": [
+                    1920,
+                    1080
+                ],
+                "new_size": [
+                    900,
+                    506
+                ]
+            }
+        },
+        {
+            "step": 2,
+            "operation_id": "e00d66e0-819a-4837-97d5-9a0d5e4e9db9",
+            "type": "compress",
+            "parameters": {
+                "type": "compress",
+                "quality": 87
+            },
+            "input_file": "C:\\chd_police hackathon\\internet\\mediaModifier\\output\\20127dc2-bf2e-4013-8f1f-8d4ac6e5f37f_step1.jpg",
+            "output_file": "C:\\chd_police hackathon\\internet\\mediaModifier\\output\\20127dc2-bf2e-4013-8f1f-8d4ac6e5f37f_step2.jpg",
+            "input_sha256": "d2bb53bae3247ec8308135fed4199db0eaec0e10a7a3882233fd5ff9c4e3ece0",
+            "output_sha256": "2396b7fb8f4589210ae63433349f63e7537495c4b0983d55a613f5864541afb2",
+            "details": {
+                "operation": "jpeg_compression",
+                "quality": 87
+            }
+        }
+    ]
+}

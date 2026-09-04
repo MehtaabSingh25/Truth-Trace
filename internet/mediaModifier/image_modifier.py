@@ -86,18 +86,27 @@ def convert_format(input_path, output_path, format):
     Convert image into another format.
     """
 
+    format_aliases = {
+        "JPG": "JPEG",
+    }
+    normalized_format = format.upper()
+    normalized_format = format_aliases.get(
+        normalized_format,
+        normalized_format
+    )
+
     image = Image.open(input_path)
 
-    if format.upper() == "JPEG":
+    if normalized_format == "JPEG":
         if image.mode in ("RGBA", "P"):
             image = image.convert("RGB")
 
     image.save(
         output_path,
-        format.upper()
+        normalized_format
     )
 
     return {
         "operation": "format_conversion",
-        "format": format.upper()
+        "format": normalized_format
     }

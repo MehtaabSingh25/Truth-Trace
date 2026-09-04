@@ -1,0 +1,42 @@
+[
+    {
+        "id": 5,
+        "username": "dummy_xmock_0570fd85",
+        "text": "DummyUser propagation test",
+        "media_url": "/media/395d0aa9-2399-4e7c-93f5-c9f0ceeb2efd.jpg",
+        "media_type": "image/jpeg",
+        "created_at": "2026-09-04 15:21:23"
+    },
+    {
+        "id": 4,
+        "username": "dummy_xmock_1590a163",
+        "text": "DummyUser propagation test",
+        "media_url": "/media/306bdb98-40b1-4c04-b8ca-17ecca4a02fd.jpg",
+        "media_type": "image/jpeg",
+        "created_at": "2026-09-04 15:20:43"
+    },
+    {
+        "id": 2,
+        "username": "dummy_xmock_90895e45",
+        "text": "DummyUser propagation test",
+        "media_url": "/media/43050850-4b91-4294-9be0-d22676bfd903.jpg",
+        "media_type": "image/jpeg",
+        "created_at": "2026-09-04 15:15:59"
+    },
+    {
+        "id": 3,
+        "username": "dummy_xmock_6bdd919d",
+        "text": "DummyUser duplicate propagation",
+        "media_url": "/media/3dfee8d3-2ada-4806-b653-7d031cff4830.jpg",
+        "media_type": "image/jpeg",
+        "created_at": "2026-09-04 15:15:59"
+    },
+    {
+        "id": 1,
+        "username": "dummyuser_xmock",
+        "text": "DummyUser propagation test",
+        "media_url": "/media/c7e8460d-6759-4642-8aeb-384333a5d6c1.jpg",
+        "media_type": "image/jpeg",
+        "created_at": "2026-09-04 14:10:53"
+    }
+]

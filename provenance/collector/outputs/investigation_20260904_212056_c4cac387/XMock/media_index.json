@@ -1,0 +1,37 @@
+[
+    {
+        "post_id": 5,
+        "media_url": "/media/395d0aa9-2399-4e7c-93f5-c9f0ceeb2efd.jpg",
+        "local_file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_212056_c4cac387\\XMock\\media\\post_5_395d0aa9-2399-4e7c-93f5-c9f0ceeb2efd.jpg",
+        "sha256": "a839b69156fea98f8326fc7fbdbf837cc8f2222fe8a96440524d87abfac4f1ad",
+        "size_bytes": 37360
+    },
+    {
+        "post_id": 4,
+        "media_url": "/media/306bdb98-40b1-4c04-b8ca-17ecca4a02fd.jpg",
+        "local_file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_212056_c4cac387\\XMock\\media\\post_4_306bdb98-40b1-4c04-b8ca-17ecca4a02fd.jpg",
+        "sha256": "3a3afd1789fb6ca3fd98ce9eb652ce95b9ed50b670771d8e877474124af89310",
+        "size_bytes": 44337
+    },
+    {
+        "post_id": 2,
+        "media_url": "/media/43050850-4b91-4294-9be0-d22676bfd903.jpg",
+        "local_file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_212056_c4cac387\\XMock\\media\\post_2_43050850-4b91-4294-9be0-d22676bfd903.jpg",
+        "sha256": "2396b7fb8f4589210ae63433349f63e7537495c4b0983d55a613f5864541afb2",
+        "size_bytes": 68922
+    },
+    {
+        "post_id": 3,
+        "media_url": "/media/3dfee8d3-2ada-4806-b653-7d031cff4830.jpg",
+        "local_file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_212056_c4cac387\\XMock\\media\\post_3_3dfee8d3-2ada-4806-b653-7d031cff4830.jpg",
+        "sha256": "2396b7fb8f4589210ae63433349f63e7537495c4b0983d55a613f5864541afb2",
+        "size_bytes": 68922
+    },
+    {
+        "post_id": 1,
+        "media_url": "/media/c7e8460d-6759-4642-8aeb-384333a5d6c1.jpg",
+        "local_file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_212056_c4cac387\\XMock\\media\\post_1_c7e8460d-6759-4642-8aeb-384333a5d6c1.jpg",
+        "sha256": "51d0180a246d3db30e32ddff7b1f202147d6868c6fb23ca936b2b1426d8688ec",
+        "size_bytes": 205674
+    }
+]

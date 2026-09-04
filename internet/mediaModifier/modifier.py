@@ -1,8 +1,8 @@
-
 from pathlib import Path
 import hashlib
 import uuid
 import json
+import argparse
 
 from image_modifier import (
     resize_image,
@@ -12,19 +12,12 @@ from image_modifier import (
 )
 
 
-# --------------------------------------------------
-# DIRECTORIES
-# --------------------------------------------------
-
 BASE_DIR = Path(__file__).resolve().parent
 
 INPUT_DIR = BASE_DIR / "input"
 OUTPUT_DIR = BASE_DIR / "output"
 MANIFEST_DIR = BASE_DIR / "manifests"
 SCENARIO_DIR = BASE_DIR / "scenarios"
-SUPPORTED_IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp", ".bmp", ".tiff"}
-
-# Create directories if they don't exist
 
 INPUT_DIR.mkdir(parents=True, exist_ok=True)
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
@@ -32,51 +25,7 @@ MANIFEST_DIR.mkdir(parents=True, exist_ok=True)
 SCENARIO_DIR.mkdir(parents=True, exist_ok=True)
 
 
-# --------------------------------------------------
-# DEFAULT INPUT
-# --------------------------------------------------
-
-def get_default_input_file():
-    """
-    Select the CLI input image.
-
-    Prefer the documented test.jpg filename, then fall back to an image
-    already present in the input directory.
-    """
-
-    default_file = INPUT_DIR / "test.jpg"
-
-    if default_file.is_file():
-        return default_file
-
-    image_files = sorted(
-        file for file in INPUT_DIR.iterdir()
-        if file.is_file() and file.suffix.lower() in SUPPORTED_IMAGE_EXTENSIONS
-    )
-
-    if len(image_files) == 1:
-        return image_files[0]
-
-    if not image_files:
-        raise FileNotFoundError(
-            f"No input image found in {INPUT_DIR}. "
-            "Place an image there, for example input\\test.jpg."
-        )
-
-    raise FileNotFoundError(
-        f"Multiple input images found in {INPUT_DIR}. "
-        "Use input\\test.jpg or call modify_media() with an explicit file."
-    )
-
-
-# --------------------------------------------------
-# SHA-256 HASH
-# --------------------------------------------------
-
 def calculate_hash(file_path):
-    """
-    Calculate SHA-256 hash of a file.
-    """
 
     sha256 = hashlib.sha256()
 
@@ -88,14 +37,7 @@ def calculate_hash(file_path):
     return sha256.hexdigest()
 
 
-# --------------------------------------------------
-# LOAD SCENARIO
-# --------------------------------------------------
-
 def load_scenario(scenario_file):
-    """
-    Load a modification scenario from a JSON file.
-    """
 
     scenario_path = Path(scenario_file)
 
@@ -115,14 +57,7 @@ def load_scenario(scenario_file):
     return scenario
 
 
-# --------------------------------------------------
-# SAVE MANIFEST
-# --------------------------------------------------
-
 def save_manifest(manifest, media_id):
-    """
-    Save modification history as a JSON manifest.
-    """
 
     manifest_path = (
         MANIFEST_DIR /
@@ -130,6 +65,7 @@ def save_manifest(manifest, media_id):
     )
 
     with open(manifest_path, "w") as file:
+
         json.dump(
             manifest,
             file,
@@ -139,60 +75,55 @@ def save_manifest(manifest, media_id):
     return manifest_path
 
 
-# --------------------------------------------------
-# MODIFY MEDIA
-# --------------------------------------------------
+def transform_media(input_file, operations):
 
-def modify_media(input_file, operations):
     """
-    Apply a sequence of modifications to an image.
+    Transform an input media file using the supplied
+    operation sequence.
 
-    Returns information about the complete
-    transformation chain.
+    Returns information required by the propagation simulator.
     """
 
     input_path = Path(input_file)
 
-    if not input_path.is_file():
+    if not input_path.exists():
+
         raise FileNotFoundError(
             f"File not found: {input_path}"
         )
 
-    # --------------------------------------------------
-    # Generate unique media ID
-    # --------------------------------------------------
+    transformation_id = str(
+        uuid.uuid4()
+    )
 
-    media_id = str(uuid.uuid4())
-
-    # --------------------------------------------------
-    # Original hash
-    # --------------------------------------------------
-
-    original_hash = calculate_hash(input_path)
+    input_hash = calculate_hash(
+        input_path
+    )
 
     current_file = input_path
 
     operation_history = []
 
-    # --------------------------------------------------
-    # Apply operations sequentially
-    # --------------------------------------------------
-
-    for index, operation in enumerate(operations, start=1):
+    for index, operation in enumerate(
+        operations,
+        start=1
+    ):
 
         operation_type = operation["type"]
 
-        operation_id = str(uuid.uuid4())
+        operation_id = str(
+            uuid.uuid4()
+        )
 
-        # ----------------------------------------------
+        # -----------------------------
         # RESIZE
-        # ----------------------------------------------
+        # -----------------------------
 
         if operation_type == "resize":
 
             output_file = (
                 OUTPUT_DIR /
-                f"{media_id}_step{index}.jpg"
+                f"{transformation_id}_step{index}.jpg"
             )
 
             result = resize_image(
@@ -201,32 +132,35 @@ def modify_media(input_file, operations):
                 operation["width"]
             )
 
-        # ----------------------------------------------
-        # JPEG COMPRESSION
-        # ----------------------------------------------
+        # -----------------------------
+        # COMPRESSION
+        # -----------------------------
 
         elif operation_type == "compress":
 
             output_file = (
                 OUTPUT_DIR /
-                f"{media_id}_step{index}.jpg"
+                f"{transformation_id}_step{index}.jpg"
             )
 
             result = compress_jpeg(
                 current_file,
                 output_file,
-                operation.get("quality", 70)
+                operation.get(
+                    "quality",
+                    70
+                )
             )
 
-        # ----------------------------------------------
+        # -----------------------------
         # CROP
-        # ----------------------------------------------
+        # -----------------------------
 
         elif operation_type == "crop":
 
             output_file = (
                 OUTPUT_DIR /
-                f"{media_id}_step{index}.jpg"
+                f"{transformation_id}_step{index}.jpg"
             )
 
             result = crop_image(
@@ -238,17 +172,20 @@ def modify_media(input_file, operations):
                 operation["bottom"]
             )
 
-        # ----------------------------------------------
+        # -----------------------------
         # FORMAT CONVERSION
-        # ----------------------------------------------
+        # -----------------------------
 
         elif operation_type == "convert":
 
-            extension = operation["format"].lower()
+            extension = (
+                operation["format"]
+                .lower()
+            )
 
             output_file = (
                 OUTPUT_DIR /
-                f"{media_id}_step{index}.{extension}"
+                f"{transformation_id}_step{index}.{extension}"
             )
 
             result = convert_format(
@@ -257,94 +194,139 @@ def modify_media(input_file, operations):
                 operation["format"]
             )
 
-        # ----------------------------------------------
-        # UNKNOWN OPERATION
-        # ----------------------------------------------
-
         else:
 
             raise ValueError(
                 f"Unknown operation: {operation_type}"
             )
 
-        # ----------------------------------------------
-        # Hash after operation
-        # ----------------------------------------------
-
-        step_hash = calculate_hash(output_file)
-
-        # Add operation information
+        output_hash = calculate_hash(
+            output_file
+        )
 
         operation_record = {
+
             "step": index,
-            "operation_id": operation_id,
-            "type": operation_type,
-            "parameters": operation,
-            "output_file": str(output_file),
-            "sha256": step_hash,
-            "details": result
+
+            "operation_id":
+                operation_id,
+
+            "type":
+                operation_type,
+
+            "parameters":
+                operation,
+
+            "input_file":
+                str(current_file),
+
+            "output_file":
+                str(output_file),
+
+            "input_sha256":
+                calculate_hash(current_file),
+
+            "output_sha256":
+                output_hash,
+
+            "details":
+                result
         }
 
         operation_history.append(
             operation_record
         )
 
-        # Next operation receives this file
-
         current_file = output_file
 
-    # --------------------------------------------------
-    # Final hash
-    # --------------------------------------------------
-
-    final_hash = calculate_hash(current_file)
-
-    # --------------------------------------------------
-    # Create manifest
-    # --------------------------------------------------
+    final_hash = calculate_hash(
+        current_file
+    )
 
     manifest = {
 
-        "media_id": media_id,
+        "transformation_id":
+            transformation_id,
 
-        "original": {
-            "file": str(input_path),
-            "sha256": original_hash
+        "input": {
+
+            "file":
+                str(input_path),
+
+            "sha256":
+                input_hash
         },
 
         "final": {
-            "file": str(current_file),
-            "sha256": final_hash
+
+            "file":
+                str(current_file),
+
+            "sha256":
+                final_hash
         },
 
-        "operations": operation_history
+        "operations":
+            operation_history
     }
-
-    # --------------------------------------------------
-    # Save manifest
-    # --------------------------------------------------
 
     manifest_path = save_manifest(
         manifest,
-        media_id
+        transformation_id
     )
 
-    manifest["manifest_file"] = str(
-        manifest_path
+    return {
+
+        "transformation_id":
+            transformation_id,
+
+        "input_file":
+            str(input_path),
+
+        "input_hash":
+            input_hash,
+
+        "output_file":
+            str(current_file),
+
+        "output_hash":
+            final_hash,
+
+        "operations":
+            operation_history,
+
+        "manifest_file":
+            str(manifest_path)
+    }
+
+
+def modify_media(
+    input_file,
+    operations
+):
+
+    """
+    Backwards-compatible wrapper.
+    """
+
+    return transform_media(
+        input_file,
+        operations
     )
 
-    return manifest
-
-
-# --------------------------------------------------
-# MAIN PROGRAM
-# --------------------------------------------------
 
 if __name__ == "__main__":
 
-    # ----------------------------------------------
-    # Select scenario
-    # ----------------------------------------------
+    parser = argparse.ArgumentParser(
+        description="Transform an image using the configured media scenario."
+    )
+    parser.add_argument(
+        "input_file",
+        nargs="?",
+        type=Path,
+        help="Path to the input image (defaults to the first image in input/).",
+    )
+    args = parser.parse_args()
 
     scenario_file = (
         SCENARIO_DIR /
@@ -355,105 +337,72 @@ if __name__ == "__main__":
         scenario_file
     )
 
-    print("\n===================================")
-    print("       MEDIA MODIFIER")
-    print("===================================")
+    input_file = args.input_file
 
-    print(
-        f"\nScenario: {scenario['name']}"
-    )
+    if input_file is None:
+        supported_extensions = {".jpg", ".jpeg", ".png", ".webp"}
+        input_files = sorted(
+            file_path
+            for file_path in INPUT_DIR.iterdir()
+            if file_path.is_file()
+            and file_path.suffix.lower() in supported_extensions
+        )
 
-    # ----------------------------------------------
-    # Input media
-    # ----------------------------------------------
+        if not input_files:
+            raise FileNotFoundError(
+                f"No supported image found in {INPUT_DIR}. "
+                "Pass an input image path as an argument."
+            )
 
-    input_file = get_default_input_file()
+        input_file = input_files[0]
 
-    # ----------------------------------------------
-    # Modify media
-    # ----------------------------------------------
-
-    result = modify_media(
+    result = transform_media(
         input_file,
         scenario["operations"]
     )
 
-    # ----------------------------------------------
-    # Display result
-    # ----------------------------------------------
-
-    print("\n-----------------------------------")
-    print("MEDIA ID")
-    print("-----------------------------------")
-
-    print(result["media_id"])
-
-    print("\n-----------------------------------")
-    print("ORIGINAL")
-    print("-----------------------------------")
+    print()
+    print("=" * 50)
+    print("       MEDIA MODIFIER")
+    print("=" * 50)
 
     print(
-        "File:",
-        result["original"]["file"]
+        "\nTransformation ID:",
+        result["transformation_id"]
     )
 
     print(
-        "SHA-256:",
-        result["original"]["sha256"]
+        "\nInput:",
+        result["input_file"]
     )
 
-    print("\n-----------------------------------")
-    print("OPERATIONS")
-    print("-----------------------------------")
+    print(
+        "Input SHA-256:",
+        result["input_hash"]
+    )
+
+    print("\nOperations:")
 
     for operation in result["operations"]:
 
         print(
-            f"\nStep {operation['step']}"
+            f"  Step {operation['step']}: "
+            f"{operation['type']}"
         )
-
-        print(
-            "Type:",
-            operation["type"]
-        )
-
-        print(
-            "Parameters:",
-            operation["parameters"]
-        )
-
-        print(
-            "Output:",
-            operation["output_file"]
-        )
-
-        print(
-            "SHA-256:",
-            operation["sha256"]
-        )
-
-    print("\n-----------------------------------")
-    print("FINAL")
-    print("-----------------------------------")
 
     print(
-        "File:",
-        result["final"]["file"]
+        "\nOutput:",
+        result["output_file"]
     )
 
     print(
-        "SHA-256:",
-        result["final"]["sha256"]
+        "Output SHA-256:",
+        result["output_hash"]
     )
 
-    print("\n-----------------------------------")
-    print("MANIFEST")
-    print("-----------------------------------")
-
     print(
+        "\nManifest:",
         result["manifest_file"]
     )
 
-    print("\n===================================")
-    print("       MODIFICATION COMPLETE")
-    print("===================================\n")
+    print("\n" + "=" * 50)

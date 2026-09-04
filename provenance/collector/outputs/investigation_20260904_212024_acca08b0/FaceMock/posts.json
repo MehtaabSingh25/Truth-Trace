@@ -1,0 +1,26 @@
+[
+    {
+        "id": 3,
+        "username": "dummy_facemock_94b55118",
+        "caption": "DummyUser propagation test",
+        "media_url": "/media/92ff7a40-e78a-47cf-afef-cd5f94c914b4.jpg",
+        "media_type": "image/jpeg",
+        "created_at": "2026-09-04 15:21:20"
+    },
+    {
+        "id": 2,
+        "username": "dummy_facemock_d8a3d87b",
+        "caption": "DummyUser propagation test",
+        "media_url": "/media/2e4fe8fa-3614-401f-894c-21450ecca6ed.jpg",
+        "media_type": "image/jpeg",
+        "created_at": "2026-09-04 15:20:51"
+    },
+    {
+        "id": 1,
+        "username": "dummyuser_facemock",
+        "caption": "DummyUser propagation test",
+        "media_url": "/media/2afa8fb1-d278-4223-ba31-cc3c19fb6ae0.jpg",
+        "media_type": "image/jpeg",
+        "created_at": "2026-09-04 14:10:53"
+    }
+]

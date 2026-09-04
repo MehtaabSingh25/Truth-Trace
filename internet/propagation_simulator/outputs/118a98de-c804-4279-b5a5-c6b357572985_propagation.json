@@ -1,0 +1,67 @@
+{
+    "media_id": "118a98de-c804-4279-b5a5-c6b357572985",
+    "original": {
+        "file": "C:\\chd_police hackathon\\internet\\mediaModifier\\input\\636281ee-c9f1-470f-9eea-76135e96df29.jpg",
+        "sha256": "51d0180a246d3db30e32ddff7b1f202147d6868c6fb23ca936b2b1426d8688ec"
+    },
+    "propagation": [
+        {
+            "platform": "InstaMock",
+            "user_id": 3,
+            "post_id": 3,
+            "input_file": "C:\\chd_police hackathon\\internet\\mediaModifier\\input\\636281ee-c9f1-470f-9eea-76135e96df29.jpg",
+            "output_file": "C:\\chd_police hackathon\\internet\\mediaModifier\\input\\636281ee-c9f1-470f-9eea-76135e96df29.jpg",
+            "operations": [
+                {
+                    "type": "resize",
+                    "width": 1080
+                },
+                {
+                    "type": "compress",
+                    "quality": 75
+                }
+            ],
+            "timestamp": "2026-09-02T20:44:07.829723"
+        },
+        {
+            "platform": "XMock",
+            "user_id": 3,
+            "post_id": 5,
+            "input_file": "C:\\chd_police hackathon\\internet\\mediaModifier\\input\\636281ee-c9f1-470f-9eea-76135e96df29.jpg",
+            "output_file": "C:\\chd_police hackathon\\internet\\mediaModifier\\input\\636281ee-c9f1-470f-9eea-76135e96df29.jpg",
+            "operations": [
+                {
+                    "type": "crop",
+                    "left": 0,
+                    "top": 0,
+                    "right": 900,
+                    "bottom": 900
+                },
+                {
+                    "type": "compress",
+                    "quality": 65
+                }
+            ],
+            "timestamp": "2026-09-02T20:44:07.858169"
+        },
+        {
+            "platform": "FaceMock",
+            "user_id": 3,
+            "post_id": 4,
+            "input_file": "C:\\chd_police hackathon\\internet\\mediaModifier\\input\\636281ee-c9f1-470f-9eea-76135e96df29.jpg",
+            "output_file": "C:\\chd_police hackathon\\internet\\mediaModifier\\input\\636281ee-c9f1-470f-9eea-76135e96df29.jpg",
+            "operations": [
+                {
+                    "type": "resize",
+                    "width": 1200
+                },
+                {
+                    "type": "compress",
+                    "quality": 80
+                }
+            ],
+            "timestamp": "2026-09-02T20:44:07.888615"
+        }
+    ],
+    "created_at": "2026-09-02T20:44:07.721124"
+}

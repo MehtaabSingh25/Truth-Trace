@@ -1,0 +1,31 @@
+{
+    "investigation_id": "investigation_20260904_212124_ce4bb77d",
+    "created_at": "2026-09-04T21:21:25.181089",
+    "collector": {
+        "name": "Truth Trace Collector",
+        "version": "1.0"
+    },
+    "platforms": [
+        {
+            "platform": "InstaMock",
+            "posts_count": 5,
+            "media_count": 5,
+            "posts_file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_212124_ce4bb77d\\InstaMock\\posts.json",
+            "media_index": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_212124_ce4bb77d\\InstaMock\\media_index.json"
+        },
+        {
+            "platform": "XMock",
+            "posts_count": 5,
+            "media_count": 5,
+            "posts_file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_212124_ce4bb77d\\XMock\\posts.json",
+            "media_index": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_212124_ce4bb77d\\XMock\\media_index.json"
+        },
+        {
+            "platform": "FaceMock",
+            "posts_count": 3,
+            "media_count": 3,
+            "posts_file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_212124_ce4bb77d\\FaceMock\\posts.json",
+            "media_index": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_212124_ce4bb77d\\FaceMock\\media_index.json"
+        }
+    ]
+}

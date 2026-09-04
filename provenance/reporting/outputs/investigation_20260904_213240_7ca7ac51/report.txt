@@ -1,0 +1,194 @@
+======================================================================
+                 TRUTH TRACE
+             MEDIA PROVENANCE REPORT
+======================================================================
+
+Investigation ID: investigation_20260904_213240_7ca7ac51
+Generated: 2026-09-04T22:41:25.886326
+
+------------------------------------------------------------
+EVIDENCE SUMMARY
+------------------------------------------------------------
+Artifacts analyzed: 13
+Similarity comparisons: 78
+Inferred lineage nodes: 13
+Inferred lineage edges: 20
+
+------------------------------------------------------------
+PLATFORM DISTRIBUTION
+------------------------------------------------------------
+XMock: 5 artifacts
+InstaMock: 5 artifacts
+FaceMock: 3 artifacts
+
+------------------------------------------------------------
+LIKELY ROOT ARTIFACTS
+------------------------------------------------------------
+artifact_23259097ed45
+  Platform: InstaMock
+  Post ID: 5
+  User: dummy_instamock_46cd197e
+  Created: 2026-09-04 15:21:15
+
+artifact_23ea3a2bf844
+  Platform: XMock
+  Post ID: 5
+  User: dummy_xmock_0570fd85
+  Created: 2026-09-04 15:21:23
+
+artifact_3983673b6feb
+  Platform: XMock
+  Post ID: 4
+  User: dummy_xmock_1590a163
+  Created: 2026-09-04 15:20:43
+
+artifact_453e8cb68727
+  Platform: InstaMock
+  Post ID: 1
+  User: dummyuser_instamock
+  Created: 2026-09-04 14:10:53
+
+artifact_a1834a35be22
+  Platform: XMock
+  Post ID: 1
+  User: dummyuser_xmock
+  Created: 2026-09-04 14:10:53
+
+artifact_b591f0dcafb5
+  Platform: FaceMock
+  Post ID: 1
+  User: dummyuser_facemock
+  Created: 2026-09-04 14:10:53
+
+------------------------------------------------------------
+PLATFORM TRANSITIONS
+------------------------------------------------------------
+XMock -> InstaMock: 7 inferred edge(s)
+InstaMock -> XMock: 2 inferred edge(s)
+FaceMock -> XMock: 2 inferred edge(s)
+XMock -> FaceMock: 1 inferred edge(s)
+FaceMock -> InstaMock: 2 inferred edge(s)
+InstaMock -> FaceMock: 2 inferred edge(s)
+
+------------------------------------------------------------
+LINEAGE CONFIDENCE
+------------------------------------------------------------
+VERY_HIGH: 19
+HIGH: 1
+MEDIUM: 0
+LOW: 0
+
+------------------------------------------------------------
+INFERRED LINEAGE EDGES
+------------------------------------------------------------
+artifact_a1834a35be22 --> artifact_f67c6210a823
+  Similarity: 0.965793
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:XMock->InstaMock, child_dimensions_not_larger
+
+artifact_a1834a35be22 --> artifact_3a9f1eb017d6
+  Similarity: 0.965793
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:XMock->InstaMock, child_dimensions_not_larger
+
+artifact_453e8cb68727 --> artifact_2f7c66ca9ba3
+  Similarity: 0.966337
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->XMock, child_dimensions_not_larger
+
+artifact_2f7c66ca9ba3 --> artifact_f67c6210a823
+  Similarity: 0.996553
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:XMock->InstaMock, child_dimensions_not_larger
+
+artifact_2f7c66ca9ba3 --> artifact_3a9f1eb017d6
+  Similarity: 0.996553
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:XMock->InstaMock, child_dimensions_not_larger
+
+artifact_b591f0dcafb5 --> artifact_2f7c66ca9ba3
+  Similarity: 0.966337
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:FaceMock->XMock, child_dimensions_not_larger
+
+artifact_453e8cb68727 --> artifact_7c5c67e34144
+  Similarity: 0.966337
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->XMock, child_dimensions_not_larger
+
+artifact_7c5c67e34144 --> artifact_f67c6210a823
+  Similarity: 0.996553
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:XMock->InstaMock, child_dimensions_not_larger
+
+artifact_7c5c67e34144 --> artifact_3a9f1eb017d6
+  Similarity: 0.996553
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:XMock->InstaMock, child_dimensions_not_larger
+
+artifact_b591f0dcafb5 --> artifact_7c5c67e34144
+  Similarity: 0.966337
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:FaceMock->XMock, child_dimensions_not_larger
+
+artifact_3983673b6feb --> artifact_6a2dafad0a62
+  Similarity: 1.0
+  Confidence: VERY_HIGH (1.0)
+  Evidence: exact_sha256_match, cross_platform:XMock->InstaMock, child_dimensions_not_larger
+
+artifact_3983673b6feb --> artifact_9ba3d4ef8cb2
+  Similarity: 0.996018
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:XMock->FaceMock, child_dimensions_not_larger
+
+artifact_b591f0dcafb5 --> artifact_f67c6210a823
+  Similarity: 0.965793
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:FaceMock->InstaMock, child_dimensions_not_larger
+
+artifact_b591f0dcafb5 --> artifact_3a9f1eb017d6
+  Similarity: 0.965793
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:FaceMock->InstaMock, child_dimensions_not_larger
+
+artifact_6a2dafad0a62 --> artifact_9ba3d4ef8cb2
+  Similarity: 0.996018
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->FaceMock, child_dimensions_not_larger
+
+artifact_a1834a35be22 --> artifact_2f7c66ca9ba3
+  Similarity: 0.966337
+  Confidence: VERY_HIGH (0.986337)
+  Evidence: very_high_media_similarity, same_platform, child_dimensions_not_larger
+
+artifact_a1834a35be22 --> artifact_7c5c67e34144
+  Similarity: 0.966337
+  Confidence: VERY_HIGH (0.986337)
+  Evidence: very_high_media_similarity, same_platform, child_dimensions_not_larger
+
+artifact_453e8cb68727 --> artifact_f67c6210a823
+  Similarity: 0.965793
+  Confidence: VERY_HIGH (0.985793)
+  Evidence: very_high_media_similarity, same_platform, child_dimensions_not_larger
+
+artifact_453e8cb68727 --> artifact_3a9f1eb017d6
+  Similarity: 0.965793
+  Confidence: VERY_HIGH (0.985793)
+  Evidence: very_high_media_similarity, same_platform, child_dimensions_not_larger
+
+artifact_23259097ed45 --> artifact_913e3a0f4975
+  Similarity: 0.917378
+  Confidence: HIGH (0.937378)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->FaceMock, format_changed
+
+------------------------------------------------------------
+INVESTIGATOR INTERPRETATION
+------------------------------------------------------------
+The lineage graph above represents relationships independently inferred from collected media evidence.
+It is not generated from the propagation simulator's ground-truth manifest.
+
+IMPORTANT: A lineage edge represents evidence of a likely relationship, not absolute proof of causation.
+
+======================================================================
+                 END OF REPORT
+======================================================================

@@ -1,0 +1,64 @@
+{
+    "name": "random_adversarial_propagation",
+
+    "platforms": [
+        "InstaMock",
+        "XMock",
+        "FaceMock"
+    ],
+
+    "random_platform_order": true,
+
+    "users_per_platform": 3,
+
+    "random_operations": {
+
+        "resize": true,
+
+        "resize_widths": [
+            720,
+            900,
+            1080,
+            1200
+        ],
+
+        "crop": true,
+
+        "crop_sizes": [
+            600,
+            720,
+            800,
+            900
+        ],
+
+        "compression": true,
+
+        "min_quality": 50,
+
+        "max_quality": 90,
+
+        "format_conversion": true,
+
+        "formats": [
+            "jpg",
+            "png",
+            "webp"
+        ]
+    },
+
+    "delays": {
+
+        "enabled": true,
+
+        "min_seconds": 2,
+
+        "max_seconds": 5
+    },
+
+    "duplicates": {
+
+        "enabled": true,
+
+        "probability": 0.30
+    }
+}

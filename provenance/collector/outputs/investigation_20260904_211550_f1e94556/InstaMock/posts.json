@@ -1,0 +1,42 @@
+[
+    {
+        "id": 5,
+        "username": "dummy_instamock_46cd197e",
+        "caption": "",
+        "media_url": "/media/1e675f4f-93af-4f71-8d7d-bb8f9a061175.webp",
+        "media_type": "image/webp",
+        "created_at": "2026-09-04 15:21:15"
+    },
+    {
+        "id": 4,
+        "username": "dummy_instamock_d34bc544",
+        "caption": "",
+        "media_url": "/media/3ef81079-3e00-45c9-acbc-210ffa0fca15.jpg",
+        "media_type": "image/jpeg",
+        "created_at": "2026-09-04 15:20:47"
+    },
+    {
+        "id": 2,
+        "username": "dummy_instamock_4dd03793",
+        "caption": "",
+        "media_url": "/media/d8cdf83d-b7e5-4b01-8c08-7ee8219cf45c.jpg",
+        "media_type": "image/jpeg",
+        "created_at": "2026-09-04 15:16:03"
+    },
+    {
+        "id": 3,
+        "username": "dummy_instamock_fcc411cb",
+        "caption": "",
+        "media_url": "/media/f883c428-88d2-4a51-be1f-3288bab9b064.jpg",
+        "media_type": "image/jpeg",
+        "created_at": "2026-09-04 15:16:03"
+    },
+    {
+        "id": 1,
+        "username": "dummyuser_instamock",
+        "caption": "",
+        "media_url": "/media/e0c4db95-2110-4bfb-8ae3-dfcff56541f8.jpg",
+        "media_type": "image/jpeg",
+        "created_at": "2026-09-04 14:10:53"
+    }
+]

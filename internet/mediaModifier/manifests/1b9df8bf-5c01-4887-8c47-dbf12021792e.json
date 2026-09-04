@@ -1,0 +1,55 @@
+{
+    "transformation_id": "1b9df8bf-5c01-4887-8c47-dbf12021792e",
+    "input": {
+        "file": "C:\\chd_police hackathon\\internet\\mediaModifier\\input\\636281ee-c9f1-470f-9eea-76135e96df29.jpg",
+        "sha256": "51d0180a246d3db30e32ddff7b1f202147d6868c6fb23ca936b2b1426d8688ec"
+    },
+    "final": {
+        "file": "C:\\chd_police hackathon\\internet\\mediaModifier\\output\\1b9df8bf-5c01-4887-8c47-dbf12021792e_step2.jpg",
+        "sha256": "3a3afd1789fb6ca3fd98ce9eb652ce95b9ed50b670771d8e877474124af89310"
+    },
+    "operations": [
+        {
+            "step": 1,
+            "operation_id": "3264e6a6-df1d-4c42-94fa-cafc42edc6fe",
+            "type": "crop",
+            "parameters": {
+                "type": "crop",
+                "left": 0,
+                "top": 0,
+                "right": 720,
+                "bottom": 720
+            },
+            "input_file": "C:\\chd_police hackathon\\internet\\mediaModifier\\input\\636281ee-c9f1-470f-9eea-76135e96df29.jpg",
+            "output_file": "C:\\chd_police hackathon\\internet\\mediaModifier\\output\\1b9df8bf-5c01-4887-8c47-dbf12021792e_step1.jpg",
+            "input_sha256": "51d0180a246d3db30e32ddff7b1f202147d6868c6fb23ca936b2b1426d8688ec",
+            "output_sha256": "0c5ecdac010922384e855a5763749635394aee75828f11634a0acb26365562e9",
+            "details": {
+                "operation": "crop",
+                "crop_box": [
+                    0,
+                    0,
+                    720,
+                    720
+                ]
+            }
+        },
+        {
+            "step": 2,
+            "operation_id": "236f088e-27d7-4fb6-bd9a-6bd4bfc6d47a",
+            "type": "compress",
+            "parameters": {
+                "type": "compress",
+                "quality": 72
+            },
+            "input_file": "C:\\chd_police hackathon\\internet\\mediaModifier\\output\\1b9df8bf-5c01-4887-8c47-dbf12021792e_step1.jpg",
+            "output_file": "C:\\chd_police hackathon\\internet\\mediaModifier\\output\\1b9df8bf-5c01-4887-8c47-dbf12021792e_step2.jpg",
+            "input_sha256": "0c5ecdac010922384e855a5763749635394aee75828f11634a0acb26365562e9",
+            "output_sha256": "3a3afd1789fb6ca3fd98ce9eb652ce95b9ed50b670771d8e877474124af89310",
+            "details": {
+                "operation": "jpeg_compression",
+                "quality": 72
+            }
+        }
+    ]
+}

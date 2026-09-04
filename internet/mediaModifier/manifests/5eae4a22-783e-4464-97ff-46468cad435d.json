@@ -1,0 +1,54 @@
+{
+    "transformation_id": "5eae4a22-783e-4464-97ff-46468cad435d",
+    "input": {
+        "file": "C:\\chd_police hackathon\\internet\\mediaModifier\\output\\1b9df8bf-5c01-4887-8c47-dbf12021792e_step2.jpg",
+        "sha256": "3a3afd1789fb6ca3fd98ce9eb652ce95b9ed50b670771d8e877474124af89310"
+    },
+    "final": {
+        "file": "C:\\chd_police hackathon\\internet\\mediaModifier\\output\\5eae4a22-783e-4464-97ff-46468cad435d_step2.jpg",
+        "sha256": "43c920de149787603c9144631c53a3375306df677215782e966a47c3bae00a9a"
+    },
+    "operations": [
+        {
+            "step": 1,
+            "operation_id": "ffa9173f-deee-4eb0-b52c-195b16e6114b",
+            "type": "resize",
+            "parameters": {
+                "type": "resize",
+                "width": 720
+            },
+            "input_file": "C:\\chd_police hackathon\\internet\\mediaModifier\\output\\1b9df8bf-5c01-4887-8c47-dbf12021792e_step2.jpg",
+            "output_file": "C:\\chd_police hackathon\\internet\\mediaModifier\\output\\5eae4a22-783e-4464-97ff-46468cad435d_step1.jpg",
+            "input_sha256": "3a3afd1789fb6ca3fd98ce9eb652ce95b9ed50b670771d8e877474124af89310",
+            "output_sha256": "4141307b2f3d3be476b97b6708e5b3143ec8de3368ce734654aace24b5101c25",
+            "details": {
+                "operation": "resize",
+                "original_size": [
+                    720,
+                    720
+                ],
+                "new_size": [
+                    720,
+                    720
+                ]
+            }
+        },
+        {
+            "step": 2,
+            "operation_id": "1a6453e5-ff57-4d10-bc00-f0e8fe5eedb2",
+            "type": "convert",
+            "parameters": {
+                "type": "convert",
+                "format": "jpg"
+            },
+            "input_file": "C:\\chd_police hackathon\\internet\\mediaModifier\\output\\5eae4a22-783e-4464-97ff-46468cad435d_step1.jpg",
+            "output_file": "C:\\chd_police hackathon\\internet\\mediaModifier\\output\\5eae4a22-783e-4464-97ff-46468cad435d_step2.jpg",
+            "input_sha256": "4141307b2f3d3be476b97b6708e5b3143ec8de3368ce734654aace24b5101c25",
+            "output_sha256": "43c920de149787603c9144631c53a3375306df677215782e966a47c3bae00a9a",
+            "details": {
+                "operation": "format_conversion",
+                "format": "JPEG"
+            }
+        }
+    ]
+}

@@ -1,0 +1,1182 @@
+{
+    "investigation_id": "investigation_20260904_213240_7ca7ac51",
+    "engine": {
+        "name": "Truth Trace Similarity Engine",
+        "version": "1.0"
+    },
+    "generated_at": "2026-09-04T22:05:11.998967",
+    "artifact_count": 13,
+    "comparison_count": 78,
+    "comparisons": [
+        {
+            "artifact_a": "artifact_a1834a35be22",
+            "artifact_b": "artifact_453e8cb68727",
+            "exact_sha256_match": true,
+            "signals": {
+                "phash_similarity": 1.0,
+                "dhash_similarity": 1.0,
+                "ahash_similarity": 1.0,
+                "histogram_similarity": 1.0,
+                "aspect_ratio_similarity": 1.0,
+                "dimension_similarity": 1.0
+            },
+            "overall_similarity": 1.0,
+            "confidence": "EXACT"
+        },
+        {
+            "artifact_a": "artifact_a1834a35be22",
+            "artifact_b": "artifact_b591f0dcafb5",
+            "exact_sha256_match": true,
+            "signals": {
+                "phash_similarity": 1.0,
+                "dhash_similarity": 1.0,
+                "ahash_similarity": 1.0,
+                "histogram_similarity": 1.0,
+                "aspect_ratio_similarity": 1.0,
+                "dimension_similarity": 1.0
+            },
+            "overall_similarity": 1.0,
+            "confidence": "EXACT"
+        },
+        {
+            "artifact_a": "artifact_2f7c66ca9ba3",
+            "artifact_b": "artifact_7c5c67e34144",
+            "exact_sha256_match": true,
+            "signals": {
+                "phash_similarity": 1.0,
+                "dhash_similarity": 1.0,
+                "ahash_similarity": 1.0,
+                "histogram_similarity": 1.0,
+                "aspect_ratio_similarity": 1.0,
+                "dimension_similarity": 1.0
+            },
+            "overall_similarity": 1.0,
+            "confidence": "EXACT"
+        },
+        {
+            "artifact_a": "artifact_3983673b6feb",
+            "artifact_b": "artifact_6a2dafad0a62",
+            "exact_sha256_match": true,
+            "signals": {
+                "phash_similarity": 1.0,
+                "dhash_similarity": 1.0,
+                "ahash_similarity": 1.0,
+                "histogram_similarity": 1.0,
+                "aspect_ratio_similarity": 1.0,
+                "dimension_similarity": 1.0
+            },
+            "overall_similarity": 1.0,
+            "confidence": "EXACT"
+        },
+        {
+            "artifact_a": "artifact_453e8cb68727",
+            "artifact_b": "artifact_b591f0dcafb5",
+            "exact_sha256_match": true,
+            "signals": {
+                "phash_similarity": 1.0,
+                "dhash_similarity": 1.0,
+                "ahash_similarity": 1.0,
+                "histogram_similarity": 1.0,
+                "aspect_ratio_similarity": 1.0,
+                "dimension_similarity": 1.0
+            },
+            "overall_similarity": 1.0,
+            "confidence": "EXACT"
+        },
+        {
+            "artifact_a": "artifact_f67c6210a823",
+            "artifact_b": "artifact_3a9f1eb017d6",
+            "exact_sha256_match": true,
+            "signals": {
+                "phash_similarity": 1.0,
+                "dhash_similarity": 1.0,
+                "ahash_similarity": 1.0,
+                "histogram_similarity": 1.0,
+                "aspect_ratio_similarity": 1.0,
+                "dimension_similarity": 1.0
+            },
+            "overall_similarity": 1.0,
+            "confidence": "EXACT"
+        },
+        {
+            "artifact_a": "artifact_2f7c66ca9ba3",
+            "artifact_b": "artifact_f67c6210a823",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 1.0,
+                "dhash_similarity": 1.0,
+                "ahash_similarity": 1.0,
+                "histogram_similarity": 0.982765,
+                "aspect_ratio_similarity": 1.0,
+                "dimension_similarity": 1.0
+            },
+            "overall_similarity": 0.996553,
+            "confidence": "HIGH"
+        },
+        {
+            "artifact_a": "artifact_2f7c66ca9ba3",
+            "artifact_b": "artifact_3a9f1eb017d6",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 1.0,
+                "dhash_similarity": 1.0,
+                "ahash_similarity": 1.0,
+                "histogram_similarity": 0.982765,
+                "aspect_ratio_similarity": 1.0,
+                "dimension_similarity": 1.0
+            },
+            "overall_similarity": 0.996553,
+            "confidence": "HIGH"
+        },
+        {
+            "artifact_a": "artifact_7c5c67e34144",
+            "artifact_b": "artifact_f67c6210a823",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 1.0,
+                "dhash_similarity": 1.0,
+                "ahash_similarity": 1.0,
+                "histogram_similarity": 0.982765,
+                "aspect_ratio_similarity": 1.0,
+                "dimension_similarity": 1.0
+            },
+            "overall_similarity": 0.996553,
+            "confidence": "HIGH"
+        },
+        {
+            "artifact_a": "artifact_7c5c67e34144",
+            "artifact_b": "artifact_3a9f1eb017d6",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 1.0,
+                "dhash_similarity": 1.0,
+                "ahash_similarity": 1.0,
+                "histogram_similarity": 0.982765,
+                "aspect_ratio_similarity": 1.0,
+                "dimension_similarity": 1.0
+            },
+            "overall_similarity": 0.996553,
+            "confidence": "HIGH"
+        },
+        {
+            "artifact_a": "artifact_3983673b6feb",
+            "artifact_b": "artifact_9ba3d4ef8cb2",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 1.0,
+                "dhash_similarity": 1.0,
+                "ahash_similarity": 1.0,
+                "histogram_similarity": 0.98009,
+                "aspect_ratio_similarity": 1.0,
+                "dimension_similarity": 1.0
+            },
+            "overall_similarity": 0.996018,
+            "confidence": "HIGH"
+        },
+        {
+            "artifact_a": "artifact_6a2dafad0a62",
+            "artifact_b": "artifact_9ba3d4ef8cb2",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 1.0,
+                "dhash_similarity": 1.0,
+                "ahash_similarity": 1.0,
+                "histogram_similarity": 0.98009,
+                "aspect_ratio_similarity": 1.0,
+                "dimension_similarity": 1.0
+            },
+            "overall_similarity": 0.996018,
+            "confidence": "HIGH"
+        },
+        {
+            "artifact_a": "artifact_a1834a35be22",
+            "artifact_b": "artifact_2f7c66ca9ba3",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 1.0,
+                "dhash_similarity": 1.0,
+                "ahash_similarity": 1.0,
+                "histogram_similarity": 0.964747,
+                "aspect_ratio_similarity": 0.999122,
+                "dimension_similarity": 0.468634
+            },
+            "overall_similarity": 0.966337,
+            "confidence": "HIGH"
+        },
+        {
+            "artifact_a": "artifact_a1834a35be22",
+            "artifact_b": "artifact_7c5c67e34144",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 1.0,
+                "dhash_similarity": 1.0,
+                "ahash_similarity": 1.0,
+                "histogram_similarity": 0.964747,
+                "aspect_ratio_similarity": 0.999122,
+                "dimension_similarity": 0.468634
+            },
+            "overall_similarity": 0.966337,
+            "confidence": "HIGH"
+        },
+        {
+            "artifact_a": "artifact_2f7c66ca9ba3",
+            "artifact_b": "artifact_453e8cb68727",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 1.0,
+                "dhash_similarity": 1.0,
+                "ahash_similarity": 1.0,
+                "histogram_similarity": 0.964747,
+                "aspect_ratio_similarity": 0.999122,
+                "dimension_similarity": 0.468634
+            },
+            "overall_similarity": 0.966337,
+            "confidence": "HIGH"
+        },
+        {
+            "artifact_a": "artifact_2f7c66ca9ba3",
+            "artifact_b": "artifact_b591f0dcafb5",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 1.0,
+                "dhash_similarity": 1.0,
+                "ahash_similarity": 1.0,
+                "histogram_similarity": 0.964747,
+                "aspect_ratio_similarity": 0.999122,
+                "dimension_similarity": 0.468634
+            },
+            "overall_similarity": 0.966337,
+            "confidence": "HIGH"
+        },
+        {
+            "artifact_a": "artifact_7c5c67e34144",
+            "artifact_b": "artifact_453e8cb68727",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 1.0,
+                "dhash_similarity": 1.0,
+                "ahash_similarity": 1.0,
+                "histogram_similarity": 0.964747,
+                "aspect_ratio_similarity": 0.999122,
+                "dimension_similarity": 0.468634
+            },
+            "overall_similarity": 0.966337,
+            "confidence": "HIGH"
+        },
+        {
+            "artifact_a": "artifact_7c5c67e34144",
+            "artifact_b": "artifact_b591f0dcafb5",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 1.0,
+                "dhash_similarity": 1.0,
+                "ahash_similarity": 1.0,
+                "histogram_similarity": 0.964747,
+                "aspect_ratio_similarity": 0.999122,
+                "dimension_similarity": 0.468634
+            },
+            "overall_similarity": 0.966337,
+            "confidence": "HIGH"
+        },
+        {
+            "artifact_a": "artifact_a1834a35be22",
+            "artifact_b": "artifact_f67c6210a823",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 1.0,
+                "dhash_similarity": 1.0,
+                "ahash_similarity": 1.0,
+                "histogram_similarity": 0.962024,
+                "aspect_ratio_similarity": 0.999122,
+                "dimension_similarity": 0.468634
+            },
+            "overall_similarity": 0.965793,
+            "confidence": "HIGH"
+        },
+        {
+            "artifact_a": "artifact_a1834a35be22",
+            "artifact_b": "artifact_3a9f1eb017d6",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 1.0,
+                "dhash_similarity": 1.0,
+                "ahash_similarity": 1.0,
+                "histogram_similarity": 0.962024,
+                "aspect_ratio_similarity": 0.999122,
+                "dimension_similarity": 0.468634
+            },
+            "overall_similarity": 0.965793,
+            "confidence": "HIGH"
+        },
+        {
+            "artifact_a": "artifact_453e8cb68727",
+            "artifact_b": "artifact_f67c6210a823",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 1.0,
+                "dhash_similarity": 1.0,
+                "ahash_similarity": 1.0,
+                "histogram_similarity": 0.962024,
+                "aspect_ratio_similarity": 0.999122,
+                "dimension_similarity": 0.468634
+            },
+            "overall_similarity": 0.965793,
+            "confidence": "HIGH"
+        },
+        {
+            "artifact_a": "artifact_453e8cb68727",
+            "artifact_b": "artifact_3a9f1eb017d6",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 1.0,
+                "dhash_similarity": 1.0,
+                "ahash_similarity": 1.0,
+                "histogram_similarity": 0.962024,
+                "aspect_ratio_similarity": 0.999122,
+                "dimension_similarity": 0.468634
+            },
+            "overall_similarity": 0.965793,
+            "confidence": "HIGH"
+        },
+        {
+            "artifact_a": "artifact_f67c6210a823",
+            "artifact_b": "artifact_b591f0dcafb5",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 1.0,
+                "dhash_similarity": 1.0,
+                "ahash_similarity": 1.0,
+                "histogram_similarity": 0.962024,
+                "aspect_ratio_similarity": 0.999122,
+                "dimension_similarity": 0.468634
+            },
+            "overall_similarity": 0.965793,
+            "confidence": "HIGH"
+        },
+        {
+            "artifact_a": "artifact_3a9f1eb017d6",
+            "artifact_b": "artifact_b591f0dcafb5",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 1.0,
+                "dhash_similarity": 1.0,
+                "ahash_similarity": 1.0,
+                "histogram_similarity": 0.962024,
+                "aspect_ratio_similarity": 0.999122,
+                "dimension_similarity": 0.468634
+            },
+            "overall_similarity": 0.965793,
+            "confidence": "HIGH"
+        },
+        {
+            "artifact_a": "artifact_23259097ed45",
+            "artifact_b": "artifact_913e3a0f4975",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 1.0,
+                "dhash_similarity": 0.984375,
+                "ahash_similarity": 1.0,
+                "histogram_similarity": 0.652514,
+                "aspect_ratio_similarity": 1.0,
+                "dimension_similarity": 0.8
+            },
+            "overall_similarity": 0.917378,
+            "confidence": "HIGH"
+        },
+        {
+            "artifact_a": "artifact_23ea3a2bf844",
+            "artifact_b": "artifact_f67c6210a823",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.625,
+                "dhash_similarity": 0.640625,
+                "ahash_similarity": 0.765625,
+                "histogram_similarity": 0.828684,
+                "aspect_ratio_similarity": 0.221344,
+                "dimension_similarity": 0.755
+            },
+            "overall_similarity": 0.676273,
+            "confidence": "LOW"
+        },
+        {
+            "artifact_a": "artifact_23ea3a2bf844",
+            "artifact_b": "artifact_3a9f1eb017d6",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.625,
+                "dhash_similarity": 0.640625,
+                "ahash_similarity": 0.765625,
+                "histogram_similarity": 0.828684,
+                "aspect_ratio_similarity": 0.221344,
+                "dimension_similarity": 0.755
+            },
+            "overall_similarity": 0.676273,
+            "confidence": "LOW"
+        },
+        {
+            "artifact_a": "artifact_2f7c66ca9ba3",
+            "artifact_b": "artifact_23ea3a2bf844",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.625,
+                "dhash_similarity": 0.640625,
+                "ahash_similarity": 0.765625,
+                "histogram_similarity": 0.828045,
+                "aspect_ratio_similarity": 0.221344,
+                "dimension_similarity": 0.755
+            },
+            "overall_similarity": 0.676145,
+            "confidence": "LOW"
+        },
+        {
+            "artifact_a": "artifact_7c5c67e34144",
+            "artifact_b": "artifact_23ea3a2bf844",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.625,
+                "dhash_similarity": 0.640625,
+                "ahash_similarity": 0.765625,
+                "histogram_similarity": 0.828045,
+                "aspect_ratio_similarity": 0.221344,
+                "dimension_similarity": 0.755
+            },
+            "overall_similarity": 0.676145,
+            "confidence": "LOW"
+        },
+        {
+            "artifact_a": "artifact_a1834a35be22",
+            "artifact_b": "artifact_23ea3a2bf844",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.625,
+                "dhash_similarity": 0.640625,
+                "ahash_similarity": 0.765625,
+                "histogram_similarity": 0.825142,
+                "aspect_ratio_similarity": 0.222222,
+                "dimension_similarity": 0.434028
+            },
+            "overall_similarity": 0.65956,
+            "confidence": "LOW"
+        },
+        {
+            "artifact_a": "artifact_23ea3a2bf844",
+            "artifact_b": "artifact_453e8cb68727",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.625,
+                "dhash_similarity": 0.640625,
+                "ahash_similarity": 0.765625,
+                "histogram_similarity": 0.825142,
+                "aspect_ratio_similarity": 0.222222,
+                "dimension_similarity": 0.434028
+            },
+            "overall_similarity": 0.65956,
+            "confidence": "LOW"
+        },
+        {
+            "artifact_a": "artifact_23ea3a2bf844",
+            "artifact_b": "artifact_b591f0dcafb5",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.625,
+                "dhash_similarity": 0.640625,
+                "ahash_similarity": 0.765625,
+                "histogram_similarity": 0.825142,
+                "aspect_ratio_similarity": 0.222222,
+                "dimension_similarity": 0.434028
+            },
+            "overall_similarity": 0.65956,
+            "confidence": "LOW"
+        },
+        {
+            "artifact_a": "artifact_f67c6210a823",
+            "artifact_b": "artifact_23259097ed45",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5625,
+                "dhash_similarity": 0.625,
+                "ahash_similarity": 0.734375,
+                "histogram_similarity": 0.6993,
+                "aspect_ratio_similarity": 0.221344,
+                "dimension_similarity": 0.751389
+            },
+            "overall_similarity": 0.620528,
+            "confidence": "LOW"
+        },
+        {
+            "artifact_a": "artifact_3a9f1eb017d6",
+            "artifact_b": "artifact_23259097ed45",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5625,
+                "dhash_similarity": 0.625,
+                "ahash_similarity": 0.734375,
+                "histogram_similarity": 0.6993,
+                "aspect_ratio_similarity": 0.221344,
+                "dimension_similarity": 0.751389
+            },
+            "overall_similarity": 0.620528,
+            "confidence": "LOW"
+        },
+        {
+            "artifact_a": "artifact_2f7c66ca9ba3",
+            "artifact_b": "artifact_23259097ed45",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5625,
+                "dhash_similarity": 0.625,
+                "ahash_similarity": 0.734375,
+                "histogram_similarity": 0.699032,
+                "aspect_ratio_similarity": 0.221344,
+                "dimension_similarity": 0.751389
+            },
+            "overall_similarity": 0.620474,
+            "confidence": "LOW"
+        },
+        {
+            "artifact_a": "artifact_7c5c67e34144",
+            "artifact_b": "artifact_23259097ed45",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5625,
+                "dhash_similarity": 0.625,
+                "ahash_similarity": 0.734375,
+                "histogram_similarity": 0.699032,
+                "aspect_ratio_similarity": 0.221344,
+                "dimension_similarity": 0.751389
+            },
+            "overall_similarity": 0.620474,
+            "confidence": "LOW"
+        },
+        {
+            "artifact_a": "artifact_f67c6210a823",
+            "artifact_b": "artifact_913e3a0f4975",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5625,
+                "dhash_similarity": 0.609375,
+                "ahash_similarity": 0.734375,
+                "histogram_similarity": 0.686251,
+                "aspect_ratio_similarity": 0.221344,
+                "dimension_similarity": 0.781111
+            },
+            "overall_similarity": 0.616279,
+            "confidence": "LOW"
+        },
+        {
+            "artifact_a": "artifact_3a9f1eb017d6",
+            "artifact_b": "artifact_913e3a0f4975",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5625,
+                "dhash_similarity": 0.609375,
+                "ahash_similarity": 0.734375,
+                "histogram_similarity": 0.686251,
+                "aspect_ratio_similarity": 0.221344,
+                "dimension_similarity": 0.781111
+            },
+            "overall_similarity": 0.616279,
+            "confidence": "LOW"
+        },
+        {
+            "artifact_a": "artifact_2f7c66ca9ba3",
+            "artifact_b": "artifact_913e3a0f4975",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5625,
+                "dhash_similarity": 0.609375,
+                "ahash_similarity": 0.734375,
+                "histogram_similarity": 0.6857,
+                "aspect_ratio_similarity": 0.221344,
+                "dimension_similarity": 0.781111
+            },
+            "overall_similarity": 0.616169,
+            "confidence": "LOW"
+        },
+        {
+            "artifact_a": "artifact_7c5c67e34144",
+            "artifact_b": "artifact_913e3a0f4975",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5625,
+                "dhash_similarity": 0.609375,
+                "ahash_similarity": 0.734375,
+                "histogram_similarity": 0.6857,
+                "aspect_ratio_similarity": 0.221344,
+                "dimension_similarity": 0.781111
+            },
+            "overall_similarity": 0.616169,
+            "confidence": "LOW"
+        },
+        {
+            "artifact_a": "artifact_a1834a35be22",
+            "artifact_b": "artifact_913e3a0f4975",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5625,
+                "dhash_similarity": 0.609375,
+                "ahash_similarity": 0.734375,
+                "histogram_similarity": 0.676325,
+                "aspect_ratio_similarity": 0.222222,
+                "dimension_similarity": 0.651042
+            },
+            "overall_similarity": 0.607834,
+            "confidence": "LOW"
+        },
+        {
+            "artifact_a": "artifact_453e8cb68727",
+            "artifact_b": "artifact_913e3a0f4975",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5625,
+                "dhash_similarity": 0.609375,
+                "ahash_similarity": 0.734375,
+                "histogram_similarity": 0.676325,
+                "aspect_ratio_similarity": 0.222222,
+                "dimension_similarity": 0.651042
+            },
+            "overall_similarity": 0.607834,
+            "confidence": "LOW"
+        },
+        {
+            "artifact_a": "artifact_b591f0dcafb5",
+            "artifact_b": "artifact_913e3a0f4975",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5625,
+                "dhash_similarity": 0.609375,
+                "ahash_similarity": 0.734375,
+                "histogram_similarity": 0.676325,
+                "aspect_ratio_similarity": 0.222222,
+                "dimension_similarity": 0.651042
+            },
+            "overall_similarity": 0.607834,
+            "confidence": "LOW"
+        },
+        {
+            "artifact_a": "artifact_a1834a35be22",
+            "artifact_b": "artifact_23259097ed45",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5625,
+                "dhash_similarity": 0.625,
+                "ahash_similarity": 0.734375,
+                "histogram_similarity": 0.69088,
+                "aspect_ratio_similarity": 0.222222,
+                "dimension_similarity": 0.520833
+            },
+            "overall_similarity": 0.60736,
+            "confidence": "LOW"
+        },
+        {
+            "artifact_a": "artifact_453e8cb68727",
+            "artifact_b": "artifact_23259097ed45",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5625,
+                "dhash_similarity": 0.625,
+                "ahash_similarity": 0.734375,
+                "histogram_similarity": 0.69088,
+                "aspect_ratio_similarity": 0.222222,
+                "dimension_similarity": 0.520833
+            },
+            "overall_similarity": 0.60736,
+            "confidence": "LOW"
+        },
+        {
+            "artifact_a": "artifact_23259097ed45",
+            "artifact_b": "artifact_b591f0dcafb5",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5625,
+                "dhash_similarity": 0.625,
+                "ahash_similarity": 0.734375,
+                "histogram_similarity": 0.69088,
+                "aspect_ratio_similarity": 0.222222,
+                "dimension_similarity": 0.520833
+            },
+            "overall_similarity": 0.60736,
+            "confidence": "LOW"
+        },
+        {
+            "artifact_a": "artifact_23ea3a2bf844",
+            "artifact_b": "artifact_23259097ed45",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.40625,
+                "dhash_similarity": 0.453125,
+                "ahash_similarity": 0.6875,
+                "histogram_similarity": 0.662893,
+                "aspect_ratio_similarity": 1.0,
+                "dimension_similarity": 0.833333
+            },
+            "overall_similarity": 0.560183,
+            "confidence": "MINIMAL"
+        },
+        {
+            "artifact_a": "artifact_23ea3a2bf844",
+            "artifact_b": "artifact_913e3a0f4975",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.40625,
+                "dhash_similarity": 0.4375,
+                "ahash_similarity": 0.6875,
+                "histogram_similarity": 0.669286,
+                "aspect_ratio_similarity": 1.0,
+                "dimension_similarity": 0.666667
+            },
+            "overall_similarity": 0.550003,
+            "confidence": "MINIMAL"
+        },
+        {
+            "artifact_a": "artifact_3983673b6feb",
+            "artifact_b": "artifact_23259097ed45",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.46875,
+                "dhash_similarity": 0.484375,
+                "ahash_similarity": 0.515625,
+                "histogram_similarity": 0.549958,
+                "aspect_ratio_similarity": 1.0,
+                "dimension_similarity": 1.0
+            },
+            "overall_similarity": 0.548273,
+            "confidence": "MINIMAL"
+        },
+        {
+            "artifact_a": "artifact_6a2dafad0a62",
+            "artifact_b": "artifact_23259097ed45",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.46875,
+                "dhash_similarity": 0.484375,
+                "ahash_similarity": 0.515625,
+                "histogram_similarity": 0.549958,
+                "aspect_ratio_similarity": 1.0,
+                "dimension_similarity": 1.0
+            },
+            "overall_similarity": 0.548273,
+            "confidence": "MINIMAL"
+        },
+        {
+            "artifact_a": "artifact_23259097ed45",
+            "artifact_b": "artifact_9ba3d4ef8cb2",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.46875,
+                "dhash_similarity": 0.484375,
+                "ahash_similarity": 0.515625,
+                "histogram_similarity": 0.54953,
+                "aspect_ratio_similarity": 1.0,
+                "dimension_similarity": 1.0
+            },
+            "overall_similarity": 0.548187,
+            "confidence": "MINIMAL"
+        },
+        {
+            "artifact_a": "artifact_3983673b6feb",
+            "artifact_b": "artifact_913e3a0f4975",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.46875,
+                "dhash_similarity": 0.46875,
+                "ahash_similarity": 0.515625,
+                "histogram_similarity": 0.548379,
+                "aspect_ratio_similarity": 1.0,
+                "dimension_similarity": 0.8
+            },
+            "overall_similarity": 0.534832,
+            "confidence": "MINIMAL"
+        },
+        {
+            "artifact_a": "artifact_6a2dafad0a62",
+            "artifact_b": "artifact_913e3a0f4975",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.46875,
+                "dhash_similarity": 0.46875,
+                "ahash_similarity": 0.515625,
+                "histogram_similarity": 0.548379,
+                "aspect_ratio_similarity": 1.0,
+                "dimension_similarity": 0.8
+            },
+            "overall_similarity": 0.534832,
+            "confidence": "MINIMAL"
+        },
+        {
+            "artifact_a": "artifact_9ba3d4ef8cb2",
+            "artifact_b": "artifact_913e3a0f4975",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.46875,
+                "dhash_similarity": 0.46875,
+                "ahash_similarity": 0.515625,
+                "histogram_similarity": 0.547719,
+                "aspect_ratio_similarity": 1.0,
+                "dimension_similarity": 0.8
+            },
+            "overall_similarity": 0.5347,
+            "confidence": "MINIMAL"
+        },
+        {
+            "artifact_a": "artifact_23ea3a2bf844",
+            "artifact_b": "artifact_9ba3d4ef8cb2",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.40625,
+                "dhash_similarity": 0.40625,
+                "ahash_similarity": 0.453125,
+                "histogram_similarity": 0.736329,
+                "aspect_ratio_similarity": 1.0,
+                "dimension_similarity": 0.833333
+            },
+            "overall_similarity": 0.530339,
+            "confidence": "MINIMAL"
+        },
+        {
+            "artifact_a": "artifact_3983673b6feb",
+            "artifact_b": "artifact_23ea3a2bf844",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.40625,
+                "dhash_similarity": 0.40625,
+                "ahash_similarity": 0.453125,
+                "histogram_similarity": 0.73588,
+                "aspect_ratio_similarity": 1.0,
+                "dimension_similarity": 0.833333
+            },
+            "overall_similarity": 0.530249,
+            "confidence": "MINIMAL"
+        },
+        {
+            "artifact_a": "artifact_23ea3a2bf844",
+            "artifact_b": "artifact_6a2dafad0a62",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.40625,
+                "dhash_similarity": 0.40625,
+                "ahash_similarity": 0.453125,
+                "histogram_similarity": 0.73588,
+                "aspect_ratio_similarity": 1.0,
+                "dimension_similarity": 0.833333
+            },
+            "overall_similarity": 0.530249,
+            "confidence": "MINIMAL"
+        },
+        {
+            "artifact_a": "artifact_3983673b6feb",
+            "artifact_b": "artifact_f67c6210a823",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5,
+                "dhash_similarity": 0.390625,
+                "ahash_similarity": 0.4375,
+                "histogram_similarity": 0.639698,
+                "aspect_ratio_similarity": 0.221344,
+                "dimension_similarity": 0.751389
+            },
+            "overall_similarity": 0.495326,
+            "confidence": "MINIMAL"
+        },
+        {
+            "artifact_a": "artifact_3983673b6feb",
+            "artifact_b": "artifact_3a9f1eb017d6",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5,
+                "dhash_similarity": 0.390625,
+                "ahash_similarity": 0.4375,
+                "histogram_similarity": 0.639698,
+                "aspect_ratio_similarity": 0.221344,
+                "dimension_similarity": 0.751389
+            },
+            "overall_similarity": 0.495326,
+            "confidence": "MINIMAL"
+        },
+        {
+            "artifact_a": "artifact_f67c6210a823",
+            "artifact_b": "artifact_6a2dafad0a62",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5,
+                "dhash_similarity": 0.390625,
+                "ahash_similarity": 0.4375,
+                "histogram_similarity": 0.639698,
+                "aspect_ratio_similarity": 0.221344,
+                "dimension_similarity": 0.751389
+            },
+            "overall_similarity": 0.495326,
+            "confidence": "MINIMAL"
+        },
+        {
+            "artifact_a": "artifact_3a9f1eb017d6",
+            "artifact_b": "artifact_6a2dafad0a62",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5,
+                "dhash_similarity": 0.390625,
+                "ahash_similarity": 0.4375,
+                "histogram_similarity": 0.639698,
+                "aspect_ratio_similarity": 0.221344,
+                "dimension_similarity": 0.751389
+            },
+            "overall_similarity": 0.495326,
+            "confidence": "MINIMAL"
+        },
+        {
+            "artifact_a": "artifact_2f7c66ca9ba3",
+            "artifact_b": "artifact_3983673b6feb",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5,
+                "dhash_similarity": 0.390625,
+                "ahash_similarity": 0.4375,
+                "histogram_similarity": 0.639449,
+                "aspect_ratio_similarity": 0.221344,
+                "dimension_similarity": 0.751389
+            },
+            "overall_similarity": 0.495276,
+            "confidence": "MINIMAL"
+        },
+        {
+            "artifact_a": "artifact_2f7c66ca9ba3",
+            "artifact_b": "artifact_6a2dafad0a62",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5,
+                "dhash_similarity": 0.390625,
+                "ahash_similarity": 0.4375,
+                "histogram_similarity": 0.639449,
+                "aspect_ratio_similarity": 0.221344,
+                "dimension_similarity": 0.751389
+            },
+            "overall_similarity": 0.495276,
+            "confidence": "MINIMAL"
+        },
+        {
+            "artifact_a": "artifact_7c5c67e34144",
+            "artifact_b": "artifact_3983673b6feb",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5,
+                "dhash_similarity": 0.390625,
+                "ahash_similarity": 0.4375,
+                "histogram_similarity": 0.639449,
+                "aspect_ratio_similarity": 0.221344,
+                "dimension_similarity": 0.751389
+            },
+            "overall_similarity": 0.495276,
+            "confidence": "MINIMAL"
+        },
+        {
+            "artifact_a": "artifact_7c5c67e34144",
+            "artifact_b": "artifact_6a2dafad0a62",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5,
+                "dhash_similarity": 0.390625,
+                "ahash_similarity": 0.4375,
+                "histogram_similarity": 0.639449,
+                "aspect_ratio_similarity": 0.221344,
+                "dimension_similarity": 0.751389
+            },
+            "overall_similarity": 0.495276,
+            "confidence": "MINIMAL"
+        },
+        {
+            "artifact_a": "artifact_f67c6210a823",
+            "artifact_b": "artifact_9ba3d4ef8cb2",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5,
+                "dhash_similarity": 0.390625,
+                "ahash_similarity": 0.4375,
+                "histogram_similarity": 0.638836,
+                "aspect_ratio_similarity": 0.221344,
+                "dimension_similarity": 0.751389
+            },
+            "overall_similarity": 0.495154,
+            "confidence": "MINIMAL"
+        },
+        {
+            "artifact_a": "artifact_3a9f1eb017d6",
+            "artifact_b": "artifact_9ba3d4ef8cb2",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5,
+                "dhash_similarity": 0.390625,
+                "ahash_similarity": 0.4375,
+                "histogram_similarity": 0.638836,
+                "aspect_ratio_similarity": 0.221344,
+                "dimension_similarity": 0.751389
+            },
+            "overall_similarity": 0.495154,
+            "confidence": "MINIMAL"
+        },
+        {
+            "artifact_a": "artifact_2f7c66ca9ba3",
+            "artifact_b": "artifact_9ba3d4ef8cb2",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5,
+                "dhash_similarity": 0.390625,
+                "ahash_similarity": 0.4375,
+                "histogram_similarity": 0.638304,
+                "aspect_ratio_similarity": 0.221344,
+                "dimension_similarity": 0.751389
+            },
+            "overall_similarity": 0.495047,
+            "confidence": "MINIMAL"
+        },
+        {
+            "artifact_a": "artifact_7c5c67e34144",
+            "artifact_b": "artifact_9ba3d4ef8cb2",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5,
+                "dhash_similarity": 0.390625,
+                "ahash_similarity": 0.4375,
+                "histogram_similarity": 0.638304,
+                "aspect_ratio_similarity": 0.221344,
+                "dimension_similarity": 0.751389
+            },
+            "overall_similarity": 0.495047,
+            "confidence": "MINIMAL"
+        },
+        {
+            "artifact_a": "artifact_a1834a35be22",
+            "artifact_b": "artifact_3983673b6feb",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5,
+                "dhash_similarity": 0.390625,
+                "ahash_similarity": 0.4375,
+                "histogram_similarity": 0.641024,
+                "aspect_ratio_similarity": 0.222222,
+                "dimension_similarity": 0.520833
+            },
+            "overall_similarity": 0.484108,
+            "confidence": "MINIMAL"
+        },
+        {
+            "artifact_a": "artifact_a1834a35be22",
+            "artifact_b": "artifact_6a2dafad0a62",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5,
+                "dhash_similarity": 0.390625,
+                "ahash_similarity": 0.4375,
+                "histogram_similarity": 0.641024,
+                "aspect_ratio_similarity": 0.222222,
+                "dimension_similarity": 0.520833
+            },
+            "overall_similarity": 0.484108,
+            "confidence": "MINIMAL"
+        },
+        {
+            "artifact_a": "artifact_3983673b6feb",
+            "artifact_b": "artifact_453e8cb68727",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5,
+                "dhash_similarity": 0.390625,
+                "ahash_similarity": 0.4375,
+                "histogram_similarity": 0.641024,
+                "aspect_ratio_similarity": 0.222222,
+                "dimension_similarity": 0.520833
+            },
+            "overall_similarity": 0.484108,
+            "confidence": "MINIMAL"
+        },
+        {
+            "artifact_a": "artifact_3983673b6feb",
+            "artifact_b": "artifact_b591f0dcafb5",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5,
+                "dhash_similarity": 0.390625,
+                "ahash_similarity": 0.4375,
+                "histogram_similarity": 0.641024,
+                "aspect_ratio_similarity": 0.222222,
+                "dimension_similarity": 0.520833
+            },
+            "overall_similarity": 0.484108,
+            "confidence": "MINIMAL"
+        },
+        {
+            "artifact_a": "artifact_453e8cb68727",
+            "artifact_b": "artifact_6a2dafad0a62",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5,
+                "dhash_similarity": 0.390625,
+                "ahash_similarity": 0.4375,
+                "histogram_similarity": 0.641024,
+                "aspect_ratio_similarity": 0.222222,
+                "dimension_similarity": 0.520833
+            },
+            "overall_similarity": 0.484108,
+            "confidence": "MINIMAL"
+        },
+        {
+            "artifact_a": "artifact_6a2dafad0a62",
+            "artifact_b": "artifact_b591f0dcafb5",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5,
+                "dhash_similarity": 0.390625,
+                "ahash_similarity": 0.4375,
+                "histogram_similarity": 0.641024,
+                "aspect_ratio_similarity": 0.222222,
+                "dimension_similarity": 0.520833
+            },
+            "overall_similarity": 0.484108,
+            "confidence": "MINIMAL"
+        },
+        {
+            "artifact_a": "artifact_a1834a35be22",
+            "artifact_b": "artifact_9ba3d4ef8cb2",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5,
+                "dhash_similarity": 0.390625,
+                "ahash_similarity": 0.4375,
+                "histogram_similarity": 0.64005,
+                "aspect_ratio_similarity": 0.222222,
+                "dimension_similarity": 0.520833
+            },
+            "overall_similarity": 0.483913,
+            "confidence": "MINIMAL"
+        },
+        {
+            "artifact_a": "artifact_453e8cb68727",
+            "artifact_b": "artifact_9ba3d4ef8cb2",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5,
+                "dhash_similarity": 0.390625,
+                "ahash_similarity": 0.4375,
+                "histogram_similarity": 0.64005,
+                "aspect_ratio_similarity": 0.222222,
+                "dimension_similarity": 0.520833
+            },
+            "overall_similarity": 0.483913,
+            "confidence": "MINIMAL"
+        },
+        {
+            "artifact_a": "artifact_b591f0dcafb5",
+            "artifact_b": "artifact_9ba3d4ef8cb2",
+            "exact_sha256_match": false,
+            "signals": {
+                "phash_similarity": 0.5,
+                "dhash_similarity": 0.390625,
+                "ahash_similarity": 0.4375,
+                "histogram_similarity": 0.64005,
+                "aspect_ratio_similarity": 0.222222,
+                "dimension_similarity": 0.520833
+            },
+            "overall_similarity": 0.483913,
+            "confidence": "MINIMAL"
+        }
+    ]
+}

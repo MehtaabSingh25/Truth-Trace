@@ -1,0 +1,323 @@
+{
+    "investigation_id": "investigation_20260904_213240_7ca7ac51",
+    "processor": {
+        "name": "Truth Trace Artifact Preprocessor",
+        "version": "1.0"
+    },
+    "processed_at": "2026-09-04T21:35:22.058578",
+    "artifact_count": 13,
+    "artifacts": [
+        {
+            "artifact_id": "artifact_a1834a35be22",
+            "investigation_id": "investigation_20260904_213240_7ca7ac51",
+            "source_file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_213240_7ca7ac51\\XMock\\media\\post_1_c7e8460d-6759-4642-8aeb-384333a5d6c1.jpg",
+            "collected_at": "2026-09-04T21:35:22.042460",
+            "analysis": {
+                "file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_213240_7ca7ac51\\XMock\\media\\post_1_c7e8460d-6759-4642-8aeb-384333a5d6c1.jpg",
+                "file_info": {
+                    "filename": "post_1_c7e8460d-6759-4642-8aeb-384333a5d6c1.jpg",
+                    "extension": ".jpg",
+                    "size_bytes": 205674,
+                    "sha256": "51d0180a246d3db30e32ddff7b1f202147d6868c6fb23ca936b2b1426d8688ec"
+                },
+                "image_info": {
+                    "format": "JPEG",
+                    "mode": "RGB",
+                    "width": 1920,
+                    "height": 1080,
+                    "aspect_ratio": 1.777778,
+                    "has_transparency": false
+                },
+                "exif": {}
+            }
+        },
+        {
+            "artifact_id": "artifact_2f7c66ca9ba3",
+            "investigation_id": "investigation_20260904_213240_7ca7ac51",
+            "source_file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_213240_7ca7ac51\\XMock\\media\\post_2_43050850-4b91-4294-9be0-d22676bfd903.jpg",
+            "collected_at": "2026-09-04T21:35:22.043537",
+            "analysis": {
+                "file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_213240_7ca7ac51\\XMock\\media\\post_2_43050850-4b91-4294-9be0-d22676bfd903.jpg",
+                "file_info": {
+                    "filename": "post_2_43050850-4b91-4294-9be0-d22676bfd903.jpg",
+                    "extension": ".jpg",
+                    "size_bytes": 68922,
+                    "sha256": "2396b7fb8f4589210ae63433349f63e7537495c4b0983d55a613f5864541afb2"
+                },
+                "image_info": {
+                    "format": "JPEG",
+                    "mode": "RGB",
+                    "width": 900,
+                    "height": 506,
+                    "aspect_ratio": 1.778656,
+                    "has_transparency": false
+                },
+                "exif": {}
+            }
+        },
+        {
+            "artifact_id": "artifact_7c5c67e34144",
+            "investigation_id": "investigation_20260904_213240_7ca7ac51",
+            "source_file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_213240_7ca7ac51\\XMock\\media\\post_3_3dfee8d3-2ada-4806-b653-7d031cff4830.jpg",
+            "collected_at": "2026-09-04T21:35:22.044465",
+            "analysis": {
+                "file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_213240_7ca7ac51\\XMock\\media\\post_3_3dfee8d3-2ada-4806-b653-7d031cff4830.jpg",
+                "file_info": {
+                    "filename": "post_3_3dfee8d3-2ada-4806-b653-7d031cff4830.jpg",
+                    "extension": ".jpg",
+                    "size_bytes": 68922,
+                    "sha256": "2396b7fb8f4589210ae63433349f63e7537495c4b0983d55a613f5864541afb2"
+                },
+                "image_info": {
+                    "format": "JPEG",
+                    "mode": "RGB",
+                    "width": 900,
+                    "height": 506,
+                    "aspect_ratio": 1.778656,
+                    "has_transparency": false
+                },
+                "exif": {}
+            }
+        },
+        {
+            "artifact_id": "artifact_3983673b6feb",
+            "investigation_id": "investigation_20260904_213240_7ca7ac51",
+            "source_file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_213240_7ca7ac51\\XMock\\media\\post_4_306bdb98-40b1-4c04-b8ca-17ecca4a02fd.jpg",
+            "collected_at": "2026-09-04T21:35:22.045105",
+            "analysis": {
+                "file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_213240_7ca7ac51\\XMock\\media\\post_4_306bdb98-40b1-4c04-b8ca-17ecca4a02fd.jpg",
+                "file_info": {
+                    "filename": "post_4_306bdb98-40b1-4c04-b8ca-17ecca4a02fd.jpg",
+                    "extension": ".jpg",
+                    "size_bytes": 44337,
+                    "sha256": "3a3afd1789fb6ca3fd98ce9eb652ce95b9ed50b670771d8e877474124af89310"
+                },
+                "image_info": {
+                    "format": "JPEG",
+                    "mode": "RGB",
+                    "width": 720,
+                    "height": 720,
+                    "aspect_ratio": 1.0,
+                    "has_transparency": false
+                },
+                "exif": {}
+            }
+        },
+        {
+            "artifact_id": "artifact_23ea3a2bf844",
+            "investigation_id": "investigation_20260904_213240_7ca7ac51",
+            "source_file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_213240_7ca7ac51\\XMock\\media\\post_5_395d0aa9-2399-4e7c-93f5-c9f0ceeb2efd.jpg",
+            "collected_at": "2026-09-04T21:35:22.046216",
+            "analysis": {
+                "file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_213240_7ca7ac51\\XMock\\media\\post_5_395d0aa9-2399-4e7c-93f5-c9f0ceeb2efd.jpg",
+                "file_info": {
+                    "filename": "post_5_395d0aa9-2399-4e7c-93f5-c9f0ceeb2efd.jpg",
+                    "extension": ".jpg",
+                    "size_bytes": 37360,
+                    "sha256": "a839b69156fea98f8326fc7fbdbf837cc8f2222fe8a96440524d87abfac4f1ad"
+                },
+                "image_info": {
+                    "format": "JPEG",
+                    "mode": "RGB",
+                    "width": 600,
+                    "height": 600,
+                    "aspect_ratio": 1.0,
+                    "has_transparency": false
+                },
+                "exif": {}
+            }
+        },
+        {
+            "artifact_id": "artifact_453e8cb68727",
+            "investigation_id": "investigation_20260904_213240_7ca7ac51",
+            "source_file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_213240_7ca7ac51\\InstaMock\\media\\post_1_e0c4db95-2110-4bfb-8ae3-dfcff56541f8.jpg",
+            "collected_at": "2026-09-04T21:35:22.047440",
+            "analysis": {
+                "file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_213240_7ca7ac51\\InstaMock\\media\\post_1_e0c4db95-2110-4bfb-8ae3-dfcff56541f8.jpg",
+                "file_info": {
+                    "filename": "post_1_e0c4db95-2110-4bfb-8ae3-dfcff56541f8.jpg",
+                    "extension": ".jpg",
+                    "size_bytes": 205674,
+                    "sha256": "51d0180a246d3db30e32ddff7b1f202147d6868c6fb23ca936b2b1426d8688ec"
+                },
+                "image_info": {
+                    "format": "JPEG",
+                    "mode": "RGB",
+                    "width": 1920,
+                    "height": 1080,
+                    "aspect_ratio": 1.777778,
+                    "has_transparency": false
+                },
+                "exif": {}
+            }
+        },
+        {
+            "artifact_id": "artifact_f67c6210a823",
+            "investigation_id": "investigation_20260904_213240_7ca7ac51",
+            "source_file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_213240_7ca7ac51\\InstaMock\\media\\post_2_d8cdf83d-b7e5-4b01-8c08-7ee8219cf45c.jpg",
+            "collected_at": "2026-09-04T21:35:22.048835",
+            "analysis": {
+                "file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_213240_7ca7ac51\\InstaMock\\media\\post_2_d8cdf83d-b7e5-4b01-8c08-7ee8219cf45c.jpg",
+                "file_info": {
+                    "filename": "post_2_d8cdf83d-b7e5-4b01-8c08-7ee8219cf45c.jpg",
+                    "extension": ".jpg",
+                    "size_bytes": 54077,
+                    "sha256": "c4b5846e349321dd1e3d073cac1c3f01771969dd2d6f3e48db5a2550dbe5db77"
+                },
+                "image_info": {
+                    "format": "JPEG",
+                    "mode": "RGB",
+                    "width": 900,
+                    "height": 506,
+                    "aspect_ratio": 1.778656,
+                    "has_transparency": false
+                },
+                "exif": {}
+            }
+        },
+        {
+            "artifact_id": "artifact_3a9f1eb017d6",
+            "investigation_id": "investigation_20260904_213240_7ca7ac51",
+            "source_file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_213240_7ca7ac51\\InstaMock\\media\\post_3_f883c428-88d2-4a51-be1f-3288bab9b064.jpg",
+            "collected_at": "2026-09-04T21:35:22.049533",
+            "analysis": {
+                "file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_213240_7ca7ac51\\InstaMock\\media\\post_3_f883c428-88d2-4a51-be1f-3288bab9b064.jpg",
+                "file_info": {
+                    "filename": "post_3_f883c428-88d2-4a51-be1f-3288bab9b064.jpg",
+                    "extension": ".jpg",
+                    "size_bytes": 54077,
+                    "sha256": "c4b5846e349321dd1e3d073cac1c3f01771969dd2d6f3e48db5a2550dbe5db77"
+                },
+                "image_info": {
+                    "format": "JPEG",
+                    "mode": "RGB",
+                    "width": 900,
+                    "height": 506,
+                    "aspect_ratio": 1.778656,
+                    "has_transparency": false
+                },
+                "exif": {}
+            }
+        },
+        {
+            "artifact_id": "artifact_6a2dafad0a62",
+            "investigation_id": "investigation_20260904_213240_7ca7ac51",
+            "source_file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_213240_7ca7ac51\\InstaMock\\media\\post_4_3ef81079-3e00-45c9-acbc-210ffa0fca15.jpg",
+            "collected_at": "2026-09-04T21:35:22.050122",
+            "analysis": {
+                "file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_213240_7ca7ac51\\InstaMock\\media\\post_4_3ef81079-3e00-45c9-acbc-210ffa0fca15.jpg",
+                "file_info": {
+                    "filename": "post_4_3ef81079-3e00-45c9-acbc-210ffa0fca15.jpg",
+                    "extension": ".jpg",
+                    "size_bytes": 44337,
+                    "sha256": "3a3afd1789fb6ca3fd98ce9eb652ce95b9ed50b670771d8e877474124af89310"
+                },
+                "image_info": {
+                    "format": "JPEG",
+                    "mode": "RGB",
+                    "width": 720,
+                    "height": 720,
+                    "aspect_ratio": 1.0,
+                    "has_transparency": false
+                },
+                "exif": {}
+            }
+        },
+        {
+            "artifact_id": "artifact_23259097ed45",
+            "investigation_id": "investigation_20260904_213240_7ca7ac51",
+            "source_file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_213240_7ca7ac51\\InstaMock\\media\\post_5_1e675f4f-93af-4f71-8d7d-bb8f9a061175.webp",
+            "collected_at": "2026-09-04T21:35:22.056471",
+            "analysis": {
+                "file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_213240_7ca7ac51\\InstaMock\\media\\post_5_1e675f4f-93af-4f71-8d7d-bb8f9a061175.webp",
+                "file_info": {
+                    "filename": "post_5_1e675f4f-93af-4f71-8d7d-bb8f9a061175.webp",
+                    "extension": ".webp",
+                    "size_bytes": 31770,
+                    "sha256": "e3401a1097884ad9bdd38da88fec8d09ac3852f16c634449c4d9606576522017"
+                },
+                "image_info": {
+                    "format": "WEBP",
+                    "mode": "RGB",
+                    "width": 720,
+                    "height": 720,
+                    "aspect_ratio": 1.0,
+                    "has_transparency": false
+                },
+                "exif": {}
+            }
+        },
+        {
+            "artifact_id": "artifact_b591f0dcafb5",
+            "investigation_id": "investigation_20260904_213240_7ca7ac51",
+            "source_file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_213240_7ca7ac51\\FaceMock\\media\\post_1_2afa8fb1-d278-4223-ba31-cc3c19fb6ae0.jpg",
+            "collected_at": "2026-09-04T21:35:22.057221",
+            "analysis": {
+                "file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_213240_7ca7ac51\\FaceMock\\media\\post_1_2afa8fb1-d278-4223-ba31-cc3c19fb6ae0.jpg",
+                "file_info": {
+                    "filename": "post_1_2afa8fb1-d278-4223-ba31-cc3c19fb6ae0.jpg",
+                    "extension": ".jpg",
+                    "size_bytes": 205674,
+                    "sha256": "51d0180a246d3db30e32ddff7b1f202147d6868c6fb23ca936b2b1426d8688ec"
+                },
+                "image_info": {
+                    "format": "JPEG",
+                    "mode": "RGB",
+                    "width": 1920,
+                    "height": 1080,
+                    "aspect_ratio": 1.777778,
+                    "has_transparency": false
+                },
+                "exif": {}
+            }
+        },
+        {
+            "artifact_id": "artifact_9ba3d4ef8cb2",
+            "investigation_id": "investigation_20260904_213240_7ca7ac51",
+            "source_file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_213240_7ca7ac51\\FaceMock\\media\\post_2_2e4fe8fa-3614-401f-894c-21450ecca6ed.jpg",
+            "collected_at": "2026-09-04T21:35:22.057963",
+            "analysis": {
+                "file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_213240_7ca7ac51\\FaceMock\\media\\post_2_2e4fe8fa-3614-401f-894c-21450ecca6ed.jpg",
+                "file_info": {
+                    "filename": "post_2_2e4fe8fa-3614-401f-894c-21450ecca6ed.jpg",
+                    "extension": ".jpg",
+                    "size_bytes": 44939,
+                    "sha256": "43c920de149787603c9144631c53a3375306df677215782e966a47c3bae00a9a"
+                },
+                "image_info": {
+                    "format": "JPEG",
+                    "mode": "RGB",
+                    "width": 720,
+                    "height": 720,
+                    "aspect_ratio": 1.0,
+                    "has_transparency": false
+                },
+                "exif": {}
+            }
+        },
+        {
+            "artifact_id": "artifact_913e3a0f4975",
+            "investigation_id": "investigation_20260904_213240_7ca7ac51",
+            "source_file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_213240_7ca7ac51\\FaceMock\\media\\post_3_92ff7a40-e78a-47cf-afef-cd5f94c914b4.jpg",
+            "collected_at": "2026-09-04T21:35:22.058568",
+            "analysis": {
+                "file": "C:\\chd_police hackathon\\provenance\\collector\\outputs\\investigation_20260904_213240_7ca7ac51\\FaceMock\\media\\post_3_92ff7a40-e78a-47cf-afef-cd5f94c914b4.jpg",
+                "file_info": {
+                    "filename": "post_3_92ff7a40-e78a-47cf-afef-cd5f94c914b4.jpg",
+                    "extension": ".jpg",
+                    "size_bytes": 51912,
+                    "sha256": "267b87bae1213a9524b9a7c0533caa80281802280147036a4d0381a9c05646ab"
+                },
+                "image_info": {
+                    "format": "JPEG",
+                    "mode": "RGB",
+                    "width": 900,
+                    "height": 900,
+                    "aspect_ratio": 1.0,
+                    "has_transparency": false
+                },
+                "exif": {}
+            }
+        }
+    ]
+}
