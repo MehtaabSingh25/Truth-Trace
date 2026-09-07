@@ -21,6 +21,11 @@
             1080,
             1200
         ],
+        "video_resize_widths": [
+            240,
+            360,
+            480
+        ],
 
         "crop": true,
 
@@ -30,6 +35,7 @@
             800,
             900
         ],
+        "video_crop": false,
 
         "compression": true,
 
@@ -43,6 +49,9 @@
             "jpg",
             "png",
             "webp"
+        ],
+        "video_formats": [
+            "mp4"
         ]
     },
 

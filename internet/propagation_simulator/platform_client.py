@@ -89,11 +89,16 @@ class PlatformClient:
 
             ".jpg": "image/jpeg",
             ".jpeg": "image/jpeg",
+            ".jpe": "image/jpeg",
             ".png": "image/png",
             ".webp": "image/webp",
 
             ".mp4": "video/mp4",
-            ".mov": "video/quicktime"
+            ".mov": "video/quicktime",
+            ".m4v": "video/x-m4v",
+            ".webm": "video/webm",
+            ".avi": "video/x-msvideo",
+            ".mkv": "video/x-matroska"
         }
 
         return content_types.get(

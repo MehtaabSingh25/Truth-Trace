@@ -2,6 +2,7 @@
 from pathlib import Path
 from datetime import datetime
 import json
+import math
 
 
 # ============================================================
@@ -172,6 +173,17 @@ def histogram_similarity(
     )
 
 
+def embedding_similarity(embedding_a, embedding_b):
+    if not embedding_a or not embedding_b:
+        return 0.0
+    if len(embedding_a) != len(embedding_b):
+        return 0.0
+    score = sum(a * b for a, b in zip(embedding_a, embedding_b))
+    if not math.isfinite(score):
+        return 0.0
+    return round(max(0.0, min(1.0, score)), 6)
+
+
 # ============================================================
 # ARTIFACT COMPARISON
 # ============================================================
@@ -183,6 +195,11 @@ def compare_artifacts(
 
     dna_a = artifact_a["dna"]
     dna_b = artifact_b["dna"]
+
+    same_media_kind = (
+        dna_a.get("media_type", "image")
+        == dna_b.get("media_type", "image")
+    )
 
     # --------------------------------------------------------
     # EXACT HASH
@@ -198,19 +215,19 @@ def compare_artifacts(
     # --------------------------------------------------------
 
     phash_similarity = hash_similarity(
-        dna_a["perceptual_hash"]["phash"],
-        dna_b["perceptual_hash"]["phash"]
-    )
+        dna_a.get("perceptual_hash", {}).get("phash"),
+        dna_b.get("perceptual_hash", {}).get("phash")
+    ) if same_media_kind else 0.0
 
     dhash_similarity = hash_similarity(
-        dna_a["perceptual_hash"]["dhash"],
-        dna_b["perceptual_hash"]["dhash"]
-    )
+        dna_a.get("perceptual_hash", {}).get("dhash"),
+        dna_b.get("perceptual_hash", {}).get("dhash")
+    ) if same_media_kind else 0.0
 
     ahash_similarity = hash_similarity(
-        dna_a["perceptual_hash"]["ahash"],
-        dna_b["perceptual_hash"]["ahash"]
-    )
+        dna_a.get("perceptual_hash", {}).get("ahash"),
+        dna_b.get("perceptual_hash", {}).get("ahash")
+    ) if same_media_kind else 0.0
 
     # --------------------------------------------------------
     # DIMENSIONS
@@ -239,7 +256,13 @@ def compare_artifacts(
     histogram = histogram_similarity(
         dna_a.get("color_histogram"),
         dna_b.get("color_histogram")
-    )
+    ) if same_media_kind else 0.0
+
+    embedding_a = dna_a.get("image_embedding", {}).get("vector")
+    embedding_b = dna_b.get("image_embedding", {}).get("vector")
+    semantic_similarity = embedding_similarity(
+        embedding_a, embedding_b
+    ) if same_media_kind else 0.0
 
     # --------------------------------------------------------
     # OVERALL SCORE
@@ -252,13 +275,14 @@ def compare_artifacts(
     #
 
     overall_score = (
-        (phash_similarity * 0.35) +
-        (dhash_similarity * 0.20) +
-        (ahash_similarity * 0.15) +
-        (histogram * 0.20) +
-        (aspect_ratio * 0.05) +
-        (dimensions * 0.05)
-    )
+        (phash_similarity * 0.30) +
+        (dhash_similarity * 0.15) +
+        (ahash_similarity * 0.10) +
+        (histogram * 0.15) +
+        (semantic_similarity * 0.25) +
+        (aspect_ratio * 0.025) +
+        (dimensions * 0.025)
+    ) if same_media_kind else 0.0
 
     overall_score = round(
         overall_score,
@@ -298,7 +322,7 @@ def compare_artifacts(
             artifact_b["artifact_id"],
 
         "exact_sha256_match":
-            exact_match,
+            exact_match and same_media_kind,
 
         "signals": {
 
@@ -318,14 +342,17 @@ def compare_artifacts(
                 aspect_ratio,
 
             "dimension_similarity":
-                dimensions
+                dimensions,
+            "semantic_similarity":
+                semantic_similarity
         },
 
         "overall_similarity":
             overall_score,
 
         "confidence":
-            confidence
+            confidence,
+        "media_type_match": same_media_kind
     }
 
 
@@ -593,4 +620,3 @@ def run():
 
 if __name__ == "__main__":
     run()
-

@@ -346,6 +346,13 @@ async function loadFeed() {
                 }
             }
 
+            html += `
+                <div class="post-actions">
+                    ${post.media_url ? `<a href="${API}${post.media_url}" download>Download</a>` : ""}
+                    <button type="button" onclick="deletePost(${post.id})">Delete</button>
+                </div>
+            `;
+
 
             container.innerHTML =
                 html;
@@ -372,6 +379,18 @@ async function loadFeed() {
 
         console.error(error);
     }
+
+}
+
+async function deletePost(postId) {
+    if (!confirm("Delete this post and its media?")) return;
+    const response = await fetch(`${API}/api/posts/${postId}`, { method: "DELETE" });
+    const data = await response.json();
+    if (!response.ok) {
+        alert(data.detail || "Failed to delete post.");
+        return;
+    }
+    loadFeed();
 }
 
 

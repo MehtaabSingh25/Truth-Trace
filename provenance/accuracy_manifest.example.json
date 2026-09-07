@@ -1,0 +1,10 @@
+[
+  {
+    "file": "internet/mediaModifier/input/image.png",
+    "expected_label": "ai_generated"
+  },
+  {
+    "file": "internet/mediaModifier/input/636281ee-c9f1-470f-9eea-76135e96df29.jpg",
+    "expected_label": "authentic_unknown"
+  }
+]

@@ -79,89 +79,9 @@ def calculate_color_histogram(image):
 # ============================================================
 
 def extract_media_dna(file_path):
-
     file_path = Path(file_path)
-
-    sha256 = calculate_sha256(
-        file_path
-    )
-
-    with Image.open(file_path) as image:
-
-        width, height = image.size
-
-        # ----------------------------------------------------
-        # PERCEPTUAL HASHES
-        # ----------------------------------------------------
-
-        phash = str(
-            imagehash.phash(image)
-        )
-
-        dhash = str(
-            imagehash.dhash(image)
-        )
-
-        ahash = str(
-            imagehash.average_hash(image)
-        )
-
-        # ----------------------------------------------------
-        # BASIC PROPERTIES
-        # ----------------------------------------------------
-
-        aspect_ratio = (
-            round(width / height, 6)
-            if height
-            else None
-        )
-
-        # ----------------------------------------------------
-        # HISTOGRAM
-        # ----------------------------------------------------
-
-        histogram = calculate_color_histogram(
-            image
-        )
-
-        dna = {
-
-            "sha256": sha256,
-
-            "file": str(file_path),
-
-            "file_size_bytes":
-                file_path.stat().st_size,
-
-            "format":
-                image.format,
-
-            "mode":
-                image.mode,
-
-            "width":
-                width,
-
-            "height":
-                height,
-
-            "aspect_ratio":
-                aspect_ratio,
-
-            "perceptual_hash": {
-                "phash": phash,
-                "dhash": dhash,
-                "ahash": ahash
-            },
-
-            "color_histogram":
-                histogram,
-
-            "extracted_at":
-                datetime.now().isoformat()
-        }
-
-        return dna
+    from media_features import analyze_media
+    return analyze_media(file_path)
 
 
 # ============================================================

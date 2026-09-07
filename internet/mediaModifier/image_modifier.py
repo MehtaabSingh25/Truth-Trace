@@ -2,6 +2,14 @@ from PIL import Image
 from pathlib import Path
 
 
+def _save_image(image, output_path, **kwargs):
+    """Save images safely when a transformation selects JPEG output."""
+    output_path = Path(output_path)
+    if output_path.suffix.lower() in {".jpg", ".jpeg"} and image.mode not in {"RGB", "L"}:
+        image = image.convert("RGB")
+    image.save(output_path, **kwargs)
+
+
 def resize_image(input_path, output_path, width):
     """
     Resize image while maintaining aspect ratio.
@@ -19,7 +27,7 @@ def resize_image(input_path, output_path, width):
         Image.Resampling.LANCZOS
     )
 
-    resized.save(output_path)
+    _save_image(resized, output_path)
 
     return {
         "operation": "resize",
@@ -68,7 +76,7 @@ def crop_image(input_path, output_path, left, top, right, bottom):
         (left, top, right, bottom)
     )
 
-    cropped.save(output_path)
+    _save_image(cropped, output_path)
 
     return {
         "operation": "crop",

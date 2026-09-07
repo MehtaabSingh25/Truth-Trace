@@ -1,0 +1,9 @@
+Pillow
+imagehash
+numpy
+opencv-python-headless>=4.13
+torch
+transformers
+fastapi
+uvicorn
+python-multipart

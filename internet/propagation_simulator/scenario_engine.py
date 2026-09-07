@@ -61,7 +61,7 @@ class ScenarioEngine:
     # RANDOM OPERATIONS
     # -----------------------------------------
 
-    def generate_operations(self):
+    def generate_operations(self, media_type=None, allow_video_transformations=True):
 
         config = self.scenario.get(
             "random_operations",
@@ -69,6 +69,10 @@ class ScenarioEngine:
         )
 
         operations = []
+        is_video = bool(media_type and media_type.startswith("video"))
+
+        if is_video and not allow_video_transformations:
+            return operations
 
         # -----------------------------
         # RESIZE
@@ -85,8 +89,12 @@ class ScenarioEngine:
 
                 width = random.choice(
                     config.get(
-                        "resize_widths",
+                        "video_resize_widths" if is_video else "resize_widths",
                         [
+                            360,
+                            480,
+                            720
+                        ] if is_video else [
                             720,
                             900,
                             1080,
@@ -108,9 +116,8 @@ class ScenarioEngine:
         # CROP
         # -----------------------------
 
-        if config.get(
-            "crop",
-            False
+        if config.get("crop", False) and (
+            not is_video or config.get("video_crop", False)
         ):
 
             if random.choice(
@@ -198,12 +205,8 @@ class ScenarioEngine:
             ):
 
                 formats = config.get(
-                    "formats",
-                    [
-                        "jpg",
-                        "png",
-                        "webp"
-                    ]
+                    "video_formats" if is_video else "formats",
+                    ["mp4", "webm", "mov"] if is_video else ["jpg", "png", "webp"],
                 )
 
                 selected_format = random.choice(

@@ -11,6 +11,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from pathlib import Path
 import shutil
 import uuid
+import mimetypes
 
 from database import (
     get_connection,
@@ -26,6 +27,7 @@ from schemas import (
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 MEDIA_DIR = BASE_DIR / "media"
+FRONTEND_DIR = BASE_DIR / "frontend"
 
 MEDIA_DIR.mkdir(
     parents=True,
@@ -62,6 +64,11 @@ app.mount(
     "/media",
     StaticFiles(directory=MEDIA_DIR),
     name="media"
+)
+app.mount(
+    "/frontend",
+    StaticFiles(directory=FRONTEND_DIR, html=True),
+    name="frontend"
 )
 
 
@@ -195,6 +202,23 @@ def create_post(
 
     if media:
 
+        media_type = media.content_type
+        if not media_type or not (
+            media_type.startswith("image/")
+            or media_type.startswith("video/")
+        ):
+            media_type = mimetypes.guess_type(media.filename or "")[0]
+
+        if not media_type or not (
+            media_type.startswith("image/")
+            or media_type.startswith("video/")
+        ):
+            connection.close()
+            raise HTTPException(
+                status_code=415,
+                detail="Only image and video media are supported",
+            )
+
         extension = Path(
             media.filename
         ).suffix
@@ -202,8 +226,6 @@ def create_post(
         media_filename = (
             f"{uuid.uuid4()}{extension}"
         )
-
-        media_type = media.content_type
 
         file_path = (
             MEDIA_DIR /
@@ -334,3 +356,31 @@ def get_posts():
 
 
     return posts
+
+
+@app.delete("/api/posts/{post_id}")
+def delete_post(post_id: int):
+    connection = get_connection()
+    cursor = connection.cursor()
+    cursor.execute(
+        "SELECT media_filename FROM posts WHERE id = ?",
+        (post_id,),
+    )
+    row = cursor.fetchone()
+    if row is None:
+        connection.close()
+        raise HTTPException(status_code=404, detail="Post not found")
+
+    filename = row["media_filename"]
+    if filename:
+        media_path = (MEDIA_DIR / filename).resolve()
+        if MEDIA_DIR.resolve() not in media_path.parents:
+            connection.close()
+            raise HTTPException(status_code=500, detail="Invalid media path")
+        if media_path.is_file():
+            media_path.unlink()
+
+    cursor.execute("DELETE FROM posts WHERE id = ?", (post_id,))
+    connection.commit()
+    connection.close()
+    return {"status": "deleted", "post_id": post_id}

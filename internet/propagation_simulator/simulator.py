@@ -4,6 +4,7 @@ import hashlib
 import time
 import uuid
 import random
+import argparse
 
 from platform_client import PlatformClient
 from scenario_engine import ScenarioEngine
@@ -21,6 +22,7 @@ MEDIA_MODIFIER = PROJECT_ROOT / "internet" / "mediaModifier"
 sys.path.append(str(MEDIA_MODIFIER))
 
 from modifier import transform_media
+from video_modifier import ffmpeg_available
 
 
 # ============================================================
@@ -130,7 +132,7 @@ def transform_current_media(current_file, operations):
 # MAIN SIMULATION
 # ============================================================
 
-def run():
+def run(media_path=None, caption="DummyUser propagation test"):
 
     print()
     print("=" * 60)
@@ -153,17 +155,34 @@ def run():
     # FIND ORIGINAL MEDIA
     # --------------------------------------------------------
 
-    input_files = [
-        file for file in INPUT_DIR.iterdir()
-        if file.is_file()
-    ]
+    supported_extensions = {
+        ".jpg", ".jpeg", ".jpe", ".png", ".webp",
+        ".mp4", ".mov", ".m4v", ".webm", ".avi", ".mkv",
+    }
 
-    if not input_files:
-        raise FileNotFoundError(
-            f"No media found in {INPUT_DIR}"
+    if media_path:
+        original_file = Path(media_path).expanduser().resolve()
+        if not original_file.is_file():
+            raise FileNotFoundError(f"Media file not found: {original_file}")
+    else:
+        input_files = sorted(
+            file for file in INPUT_DIR.iterdir()
+            if file.is_file()
+            and file.suffix.lower() in supported_extensions
         )
 
-    original_file = input_files[0]
+        if not input_files:
+            raise FileNotFoundError(
+                f"No supported media found in {INPUT_DIR}"
+            )
+
+        video_files = [
+            file for file in input_files
+            if file.suffix.lower() in {
+                ".mp4", ".mov", ".m4v", ".webm", ".avi", ".mkv"
+            }
+        ]
+        original_file = video_files[0] if video_files else input_files[0]
 
     original_hash = calculate_hash(original_file)
 
@@ -288,7 +307,17 @@ def run():
         # GENERATE RANDOM OPERATIONS
         # ----------------------------------------------------
 
-        operations = engine.generate_operations()
+        media_type = (
+            "video/" + current_file.suffix.lower().lstrip(".")
+            if current_file.suffix.lower() in {
+                ".mp4", ".mov", ".m4v", ".webm", ".avi", ".mkv"
+            }
+            else "image/" + current_file.suffix.lower().lstrip(".")
+        )
+        operations = engine.generate_operations(
+            media_type=media_type,
+            allow_video_transformations=ffmpeg_available(),
+        )
 
         print("\nOperations:")
 
@@ -386,7 +415,7 @@ def run():
 
         post = platform.create_post(
             user_id=user_id,
-            text="DummyUser propagation test",
+            text=caption,
             media_path=transformed_file
         )
 
@@ -447,7 +476,7 @@ def run():
 
             duplicate_post = platform.create_post(
                 user_id=duplicate_user["id"],
-                text="DummyUser duplicate propagation",
+                text=f"{caption} (duplicate)",
                 media_path=transformed_file
             )
 
@@ -549,5 +578,13 @@ def run():
 # ============================================================
 
 if __name__ == "__main__":
-    run()
-
+    parser = argparse.ArgumentParser(
+        description="Propagate image or video media through all mock platforms."
+    )
+    parser.add_argument(
+        "--media",
+        type=Path,
+        help="Image/video path. Defaults to a video, then the first supported file in mediaModifier/input.",
+    )
+    args = parser.parse_args()
+    run(args.media)

@@ -10,6 +10,12 @@ from image_modifier import (
     crop_image,
     convert_format
 )
+from video_modifier import (
+    compress_video,
+    convert_video,
+    crop_video,
+    resize_video,
+)
 
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -101,6 +107,9 @@ def transform_media(input_file, operations):
     )
 
     current_file = input_path
+    is_video = input_path.suffix.lower() in {
+        ".mp4", ".mov", ".m4v", ".webm", ".avi", ".mkv"
+    }
 
     operation_history = []
 
@@ -123,14 +132,14 @@ def transform_media(input_file, operations):
 
             output_file = (
                 OUTPUT_DIR /
-                f"{transformation_id}_step{index}.jpg"
+                f"{transformation_id}_step{index}"
+                f"{'.mp4' if is_video else '.jpg'}"
             )
 
-            result = resize_image(
-                current_file,
-                output_file,
-                operation["width"]
-            )
+            if is_video:
+                result = resize_video(current_file, output_file, operation["width"])
+            else:
+                result = resize_image(current_file, output_file, operation["width"])
 
         # -----------------------------
         # COMPRESSION
@@ -140,17 +149,22 @@ def transform_media(input_file, operations):
 
             output_file = (
                 OUTPUT_DIR /
-                f"{transformation_id}_step{index}.jpg"
+                f"{transformation_id}_step{index}"
+                f"{'.mp4' if is_video else '.jpg'}"
             )
 
-            result = compress_jpeg(
-                current_file,
-                output_file,
-                operation.get(
-                    "quality",
-                    70
+            if is_video:
+                result = compress_video(
+                    current_file,
+                    output_file,
+                    operation.get("quality", 70),
                 )
-            )
+            else:
+                result = compress_jpeg(
+                    current_file,
+                    output_file,
+                    operation.get("quality", 70),
+                )
 
         # -----------------------------
         # CROP
@@ -160,17 +174,28 @@ def transform_media(input_file, operations):
 
             output_file = (
                 OUTPUT_DIR /
-                f"{transformation_id}_step{index}.jpg"
+                f"{transformation_id}_step{index}"
+                f"{'.mp4' if is_video else '.jpg'}"
             )
 
-            result = crop_image(
-                current_file,
-                output_file,
-                operation["left"],
-                operation["top"],
-                operation["right"],
-                operation["bottom"]
-            )
+            if is_video:
+                result = crop_video(
+                    current_file,
+                    output_file,
+                    operation["left"],
+                    operation["top"],
+                    operation["right"],
+                    operation["bottom"],
+                )
+            else:
+                result = crop_image(
+                    current_file,
+                    output_file,
+                    operation["left"],
+                    operation["top"],
+                    operation["right"],
+                    operation["bottom"],
+                )
 
         # -----------------------------
         # FORMAT CONVERSION
@@ -178,21 +203,19 @@ def transform_media(input_file, operations):
 
         elif operation_type == "convert":
 
+            requested_format = operation["format"].lower()
             extension = (
-                operation["format"]
-                .lower()
+                "mp4"
+                if is_video and requested_format in {"jpg", "jpeg", "png", "webp"}
+                else requested_format
             )
 
-            output_file = (
-                OUTPUT_DIR /
-                f"{transformation_id}_step{index}.{extension}"
-            )
+            output_file = OUTPUT_DIR / f"{transformation_id}_step{index}.{extension}"
 
-            result = convert_format(
-                current_file,
-                output_file,
-                operation["format"]
-            )
+            if is_video:
+                result = convert_video(current_file, output_file, extension)
+            else:
+                result = convert_format(current_file, output_file, operation["format"])
 
         else:
 
@@ -238,6 +261,9 @@ def transform_media(input_file, operations):
         )
 
         current_file = output_file
+        is_video = current_file.suffix.lower() in {
+            ".mp4", ".mov", ".m4v", ".webm", ".avi", ".mkv"
+        }
 
     final_hash = calculate_hash(
         current_file
@@ -318,13 +344,13 @@ def modify_media(
 if __name__ == "__main__":
 
     parser = argparse.ArgumentParser(
-        description="Transform an image using the configured media scenario."
+        description="Transform an image or video using the configured media scenario."
     )
     parser.add_argument(
         "input_file",
         nargs="?",
         type=Path,
-        help="Path to the input image (defaults to the first image in input/).",
+        help="Path to the input image or video (defaults to the first supported file in input/).",
     )
     args = parser.parse_args()
 
@@ -340,7 +366,10 @@ if __name__ == "__main__":
     input_file = args.input_file
 
     if input_file is None:
-        supported_extensions = {".jpg", ".jpeg", ".png", ".webp"}
+        supported_extensions = {
+            ".jpg", ".jpeg", ".jpe", ".png", ".webp",
+            ".mp4", ".mov", ".m4v", ".webm", ".avi", ".mkv",
+        }
         input_files = sorted(
             file_path
             for file_path in INPUT_DIR.iterdir()
@@ -350,15 +379,21 @@ if __name__ == "__main__":
 
         if not input_files:
             raise FileNotFoundError(
-                f"No supported image found in {INPUT_DIR}. "
-                "Pass an input image path as an argument."
+                f"No supported media found in {INPUT_DIR}. "
+                "Pass an input image or video path as an argument."
             )
 
         input_file = input_files[0]
 
+    operations = scenario.get("operations", [])
+    if input_file.suffix.lower() in {
+        ".mp4", ".mov", ".m4v", ".webm", ".avi", ".mkv"
+    }:
+        operations = scenario.get("video_operations", operations)
+
     result = transform_media(
         input_file,
-        scenario["operations"]
+        operations
     )
 
     print()

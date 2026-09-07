@@ -3,8 +3,12 @@ from pathlib import Path
 from datetime import datetime
 import json
 import uuid
+import sys
 
-from image_features import analyze_image
+MEDIA_DNA_DIR = Path(__file__).resolve().parent.parent / "media_dna"
+sys.path.insert(0, str(MEDIA_DNA_DIR))
+
+from media_features import analyze_media
 
 
 # ============================================================
@@ -90,7 +94,7 @@ class ArtifactPreprocessor:
             f"{file_path.name}"
         )
 
-        analysis = analyze_image(
+        analysis = analyze_media(
             file_path
         )
 
@@ -256,4 +260,3 @@ if __name__ == "__main__":
     )
 
     preprocessor.process()
-
