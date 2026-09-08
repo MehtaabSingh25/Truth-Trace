@@ -13,6 +13,7 @@ from fastapi.staticfiles import StaticFiles
 BASE_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(BASE_DIR / "media_dna"))
 from media_features import analyze_media
+from web_search.search_engine import search_public_web
 
 
 UPLOAD_DIR = BASE_DIR / "web_uploads"
@@ -150,4 +151,24 @@ def analyze(media: UploadFile = File(...)):
     result = analyze_media(target)
     result["uploaded_filename"] = media.filename
     result["platform_trace"] = _trace_platforms(target)
+
+    # Public-web provenance search is deliberately best-effort. It never
+    # bypasses login, private content, robots/authentication, or blocked pages.
+    try:
+        result["web_trace"] = search_public_web(target)
+    except Exception as error:
+        result["web_trace"] = {
+            "status": "error",
+            "error": str(error),
+            "results": [],
+            "summary": {
+                "sources_found": 0,
+                "unique_domains": 0,
+                "domains": [],
+                "exact_matches": 0,
+                "accessible_pages": 0,
+                "blocked_pages": 0,
+            },
+        }
+
     return result
