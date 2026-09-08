@@ -3,114 +3,148 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Truth Trace | Provenance Investigation</title>
+    <meta name="theme-color" content="#071a33" />
+    <title>Truth Trace | Chandigarh Police Digital Forensics</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <main>
-      <header class="topbar">
-        <div>
-          <p class="eyebrow">TRUTH TRACE</p>
-          <h1>
-            Don't just detect the fake.<br /><span>Trace its story.</span>
-          </h1>
-        </div>
-        <div class="pill">FORENSIC WORKSPACE</div>
-      </header>
-      <nav class="steps" aria-label="Investigation steps">
-        <button class="step active" data-view="upload">01 Upload</button>
-        <button class="step" data-view="investigation">02 Investigation</button>
-        <button class="step" data-view="report">03 Evidence</button>
-        <button class="step" data-view="history">04 History</button>
-      </nav>
-      <section class="hero">
-        <div>
-          <h2>Start an investigation</h2>
-          <p>
-            Upload an image or video to inspect its identity, edits, metadata
-            and provenance signals.
-          </p>
-        </div>
-        <label class="dropzone" id="dropzone">
-          <input id="media" type="file" accept="image/*,video/*" />
-          <strong>Choose evidence</strong>
-          <span>JPG, PNG, WEBP, MP4, MOV and more</span>
-        </label>
-        <div class="url-source">
-          <label for="image-url"
-            ><strong>Or investigate an online image</strong></label
-          >
-          <div class="url-row">
-            <input
-              id="image-url"
-              type="url"
-              placeholder="Paste public image URL here..."
-              autocomplete="off"
-            />
-            <button id="use-url" class="secondary" type="button">
-              Use URL
-            </button>
-          </div>
-          <span
-            >Works with publicly accessible JPG, PNG and WEBP image links. No
-            login bypass.</span
-          >
-        </div>
-        <div class="actions">
-          <span id="filename">No evidence selected</span>
-          <button id="analyze">Analyze evidence</button>
-          <button id="reset" class="secondary">Reset</button>
-        </div>
-      </section>
-      <pre id="status"></pre>
-      <section id="summary" class="grid hidden"></section>
-      <section id="investigation" class="panel workspace-panel">
-        <div class="workspace-heading">
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand">
+          <div class="crest" aria-hidden="true"><span>CP</span></div>
           <div>
-            <p class="eyebrow">INVESTIGATION WORKSPACE</p>
-            <h2>Trace the media story</h2>
+            <strong>TRUTH TRACE</strong>
+            <small>Digital Forensics</small>
           </div>
-          <span id="investigation-state" class="state"
-            >Waiting for evidence</span
-          >
         </div>
-        <div class="workspace-track">
-          <span class="track-node active">Upload</span
-          ><span class="track-line"></span>
-          <span class="track-node">Analyze</span
-          ><span class="track-line"></span>
-          <span class="track-node">Evidence</span>
+        <div class="agency">CHANDIGARH POLICE <span>•</span> CYBER CELL</div>
+        <nav class="side-nav" aria-label="Primary">
+          <a class="side-link active" href="#upload"><span class="nav-icon">⌁</span>New investigation</a>
+          <a class="side-link" href="#investigation"><span class="nav-icon">◈</span>Investigation</a>
+          <a class="side-link" href="#report"><span class="nav-icon">▤</span>Evidence report</a>
+          <a class="side-link" href="#history"><span class="nav-icon">◷</span>Case history</a>
+        </nav>
+        <div class="sidebar-bottom">
+          <div class="secure-card">
+            <span class="secure-dot"></span>
+            <div><strong>Local evidence vault</strong><small>Session protected</small></div>
+          </div>
+          <small class="build">TRUTH TRACE MVP · 1.0</small>
         </div>
-      </section>
-      <section id="story" class="story-layout hidden">
-        <div id="timeline" class="panel"></div>
-        <div id="matches" class="panel"></div>
-      </section>
-      <section class="evidence-layout">
-        <div id="preview" class="panel preview-panel">
-          <h3>Evidence preview</h3>
-          <p>Select a file to preview it here.</p>
-        </div>
-        <div id="report" class="panel report-panel">
-          <h3>Investigation evidence</h3>
-          <p>Analysis findings will appear here.</p>
-        </div>
-      </section>
-      <section id="history" class="panel history-panel">
-        <div class="workspace-heading">
+      </aside>
+
+      <main class="content">
+        <header class="topbar">
           <div>
-            <p class="eyebrow">PAST INVESTIGATIONS</p>
-            <h2>History</h2>
+            <div class="breadcrumb">CYBER CRIME UNIT <span>/</span> MEDIA PROVENANCE</div>
+            <h1>Trace the story behind the media.</h1>
+            <p class="lede">A forensic workspace for identifying media, reconstructing its propagation and reviewing evidence signals.</p>
           </div>
-          <button id="history-refresh" class="secondary" type="button">
-            Refresh
-          </button>
-        </div>
-        <div id="history-list" class="history-list">
-          <p class="empty-value">Loading history...</p>
-        </div>
-      </section>
-    </main>
-    <script src="app.js?v=11"></script>
+          <div class="top-actions">
+            <span class="status-chip"><i></i> SYSTEM ONLINE</span>
+            <span class="case-chip">CASE <b>NEW</b></span>
+          </div>
+        </header>
+
+        <nav class="steps" aria-label="Investigation steps">
+          <button class="step active" data-view="upload"><span>01</span> Intake</button>
+          <button class="step" data-view="investigation"><span>02</span> Investigation</button>
+          <button class="step" data-view="report"><span>03</span> Evidence</button>
+          <button class="step" data-view="history"><span>04</span> History</button>
+        </nav>
+
+        <section id="upload" class="hero">
+          <div class="section-kicker">NEW DIGITAL EVIDENCE</div>
+          <div class="hero-heading">
+            <div>
+              <h2>Start an investigation</h2>
+              <p>Upload a suspected image or video. Truth Trace will build its Media DNA, inspect forensic signals and search the simulated social provenance layer.</p>
+            </div>
+            <div class="evidence-badge"><span class="pulse"></span> FORENSIC INTAKE</div>
+          </div>
+
+          <label class="dropzone" id="dropzone">
+            <input id="media" type="file" accept="image/*,video/*" />
+            <div class="upload-glyph">↑</div>
+            <strong>Drop evidence here or choose a file</strong>
+            <span>Images & videos · JPG · PNG · WEBP · MP4 · MOV · WEBM</span>
+            <em>Original files are analyzed locally by the active investigation server.</em>
+          </label>
+
+          <div class="or-divider"><span>OR</span></div>
+
+          <div class="url-source">
+            <div class="url-label">
+              <div class="mini-icon">↗</div>
+              <div><strong>Investigate a public image URL</strong><span>Use a publicly accessible image without bypassing login or access controls.</span></div>
+            </div>
+            <div class="url-row">
+              <input id="image-url" type="url" placeholder="https://example.com/image.jpg" autocomplete="off" />
+              <button id="use-url" class="secondary" type="button">Use URL</button>
+            </div>
+          </div>
+
+          <div class="actions">
+            <div class="selected-file"><span class="file-dot"></span><span id="filename">No evidence selected</span></div>
+            <div class="action-buttons">
+              <button id="reset" class="secondary" type="button">Reset</button>
+              <button id="analyze" type="button">Analyze evidence <span>→</span></button>
+            </div>
+          </div>
+        </section>
+
+        <div class="status-line"><span class="status-mark">●</span><pre id="status"></pre></div>
+        <section id="summary" class="grid hidden"></section>
+
+        <section id="investigation" class="panel workspace-panel">
+          <div class="workspace-heading">
+            <div>
+              <p class="section-kicker">INVESTIGATION WORKSPACE</p>
+              <h2>Evidence journey</h2>
+            </div>
+            <span id="investigation-state" class="state">Waiting for evidence</span>
+          </div>
+          <div class="workspace-track">
+            <span class="track-node active"><b>01</b> Intake</span><span class="track-line"></span>
+            <span class="track-node"><b>02</b> Analyze</span><span class="track-line"></span>
+            <span class="track-node"><b>03</b> Trace</span><span class="track-line"></span>
+            <span class="track-node"><b>04</b> Report</span>
+          </div>
+          <div class="workspace-note"><span>i</span> Signals are forensic indicators, not legal proof. Human review remains part of the decision.</div>
+        </section>
+
+        <section id="story" class="story-layout hidden">
+          <div id="timeline" class="panel"></div>
+          <div id="matches" class="panel"></div>
+        </section>
+
+        <section class="evidence-layout">
+          <div id="preview" class="panel preview-panel">
+            <div class="panel-head"><div><span class="section-kicker">EVIDENCE</span><h3>Media preview</h3></div><span class="panel-number">01</span></div>
+            <p class="empty-state">Select a file to preview it here.</p>
+          </div>
+          <div id="report" class="panel report-panel">
+            <div class="panel-head"><div><span class="section-kicker">FORENSIC OUTPUT</span><h3>Investigation evidence</h3></div><span class="panel-number">02</span></div>
+            <p class="empty-state">Analysis findings will appear here.</p>
+          </div>
+        </section>
+
+        <section id="history" class="panel history-panel">
+          <div class="workspace-heading">
+            <div><span class="section-kicker">CASE ARCHIVE</span><h2>Past investigations</h2></div>
+            <button id="history-refresh" class="secondary" type="button">Refresh archive</button>
+          </div>
+          <div id="history-list" class="history-list"><p class="empty-value">Loading history...</p></div>
+        </section>
+
+        <footer class="footer">
+          <span>TRUTH TRACE</span><span>Chandigarh Police • Digital Media Provenance</span><span>Forensic screening workspace</span>
+        </footer>
+      </main>
+    </div>
+    <script src="app.js?v=12"></script>
   </body>
 </html>
