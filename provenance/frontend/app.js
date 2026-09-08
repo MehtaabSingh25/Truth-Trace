@@ -14,6 +14,8 @@ const investigationState = document.querySelector("#investigation-state");
 const story = document.querySelector("#story");
 const timeline = document.querySelector("#timeline");
 const matches = document.querySelector("#matches");
+const historyList = document.querySelector("#history-list");
+const historyRefresh = document.querySelector("#history-refresh");
 let previewUrl;
 let analysisController;
 let analysisGeneration = 0;
@@ -44,8 +46,97 @@ steps.forEach((step) => {
         `#${step.dataset.view === "upload" ? "dropzone" : step.dataset.view}`,
       )
       .scrollIntoView({ behavior: "smooth", block: "start" });
+    if (step.dataset.view === "history") loadHistory();
   });
 });
+
+historyRefresh?.addEventListener("click", () => loadHistory());
+
+async function loadHistory() {
+  if (!historyList) return;
+  historyList.innerHTML = `<p class="empty-value">Loading history...</p>`;
+  try {
+    const response = await fetch("/api/history");
+    if (!response.ok) throw new Error(`Request failed (${response.status})`);
+    const records = await response.json();
+    renderHistoryList(records);
+  } catch (error) {
+    historyList.innerHTML = `<p class="empty-value">Could not load history: ${escapeHtml(error.message)}</p>`;
+  }
+}
+
+function renderHistoryList(records) {
+  if (!records.length) {
+    historyList.innerHTML = `<p class="empty-value">No investigations yet. Analyze evidence to build history.</p>`;
+    return;
+  }
+  historyList.innerHTML = records
+    .map((record) => {
+      const thumb = record.thumbnail_url
+        ? `<img class="history-thumb" src="${escapeHtml(record.thumbnail_url)}" alt="Evidence thumbnail">`
+        : `<div class="history-thumb"></div>`;
+      const confidence =
+        record.confidence !== undefined && record.confidence !== null
+          ? `${Math.round(record.confidence * 100)}%`
+          : "—";
+      const when = record.created_at
+        ? new Date(record.created_at).toLocaleString()
+        : "Unknown time";
+      return `<article class="history-card" data-id="${escapeHtml(record.id)}">
+        ${thumb}
+        <div class="history-meta">
+          <strong>${escapeHtml(record.uploaded_filename || "Untitled evidence")}</strong>
+          <span>${escapeHtml(when)} · ${escapeHtml((record.media_type || "media").toUpperCase())}</span>
+          <span class="history-badge ${escapeHtml(record.verdict_class || "inconclusive")}">${escapeHtml(record.verdict || "No verdict")} · ${confidence}</span>
+        </div>
+        <div class="history-card-actions">
+          <button type="button" class="history-delete" data-delete="${escapeHtml(record.id)}">Delete</button>
+        </div>
+      </article>`;
+    })
+    .join("");
+
+  historyList.querySelectorAll(".history-card").forEach((card) => {
+    card.addEventListener("click", (event) => {
+      if (event.target.closest("[data-delete]")) return;
+      openHistoryRecord(card.dataset.id);
+    });
+  });
+  historyList.querySelectorAll("[data-delete]").forEach((button) => {
+    button.addEventListener("click", async (event) => {
+      event.stopPropagation();
+      const id = button.dataset.delete;
+      try {
+        await fetch(`/api/history/${id}`, { method: "DELETE" });
+      } finally {
+        loadHistory();
+      }
+    });
+  });
+}
+
+async function openHistoryRecord(id) {
+  status.textContent = "Loading past investigation...";
+  try {
+    const response = await fetch(`/api/history/${id}`);
+    if (!response.ok) throw new Error(`Request failed (${response.status})`);
+    const data = await response.json();
+    steps.forEach((step) =>
+      step.classList.toggle("active", step.dataset.view === "report"),
+    );
+    filename.textContent = data.uploaded_filename || "Past evidence";
+    investigationState.textContent = "Evidence ready (from history)";
+    preview.innerHTML = `<h3>Evidence preview</h3>`;
+    if (data.uploaded_filename) {
+      preview.innerHTML += `<p>${escapeHtml(data.uploaded_filename)}</p>`;
+    }
+    renderResults(data);
+    document.querySelector("#report").scrollIntoView({ behavior: "smooth" });
+    status.textContent = "Loaded past investigation.";
+  } catch (error) {
+    status.textContent = `Could not open investigation: ${error.message}`;
+  }
+}
 
 useUrl.addEventListener("click", () => {
   const value = imageUrl.value.trim();

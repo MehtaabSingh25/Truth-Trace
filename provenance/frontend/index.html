@@ -21,6 +21,7 @@
         <button class="step active" data-view="upload">01 Upload</button>
         <button class="step" data-view="investigation">02 Investigation</button>
         <button class="step" data-view="report">03 Evidence</button>
+        <button class="step" data-view="history">04 History</button>
       </nav>
       <section class="hero">
         <div>
@@ -95,7 +96,21 @@
           <p>Analysis findings will appear here.</p>
         </div>
       </section>
+      <section id="history" class="panel history-panel">
+        <div class="workspace-heading">
+          <div>
+            <p class="eyebrow">PAST INVESTIGATIONS</p>
+            <h2>History</h2>
+          </div>
+          <button id="history-refresh" class="secondary" type="button">
+            Refresh
+          </button>
+        </div>
+        <div id="history-list" class="history-list">
+          <p class="empty-value">Loading history...</p>
+        </div>
+      </section>
     </main>
-    <script src="app.js?v=10"></script>
+    <script src="app.js?v=11"></script>
   </body>
 </html>

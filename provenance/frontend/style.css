@@ -558,3 +558,84 @@ pre {
     display: grid;
   }
 }
+
+.history-panel {
+  margin-top: 24px;
+}
+.history-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 14px;
+  margin-top: 16px;
+}
+.history-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 12px;
+  cursor: pointer;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.history-card:hover {
+  border-color: rgba(125, 211, 252, 0.5);
+  transform: translateY(-2px);
+}
+.history-thumb {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.25);
+}
+.history-meta strong {
+  display: block;
+  font-size: 14px;
+  word-break: break-word;
+}
+.history-meta span {
+  font-size: 12px;
+  color: #8aa4bf;
+}
+.history-badge {
+  display: inline-block;
+  margin-top: 4px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.history-badge.likely_ai {
+  background: rgba(248, 113, 113, 0.18);
+  color: #fca5a5;
+}
+.history-badge.review {
+  background: rgba(250, 204, 21, 0.18);
+  color: #fde68a;
+}
+.history-badge.provenance_found {
+  background: rgba(96, 165, 250, 0.18);
+  color: #93c5fd;
+}
+.history-badge.inconclusive {
+  background: rgba(148, 163, 184, 0.18);
+  color: #cbd5f5;
+}
+.history-card-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+.history-delete {
+  background: none;
+  border: none;
+  color: #8aa4bf;
+  font-size: 12px;
+  cursor: pointer;
+  padding: 2px 4px;
+}
+.history-delete:hover {
+  color: #fca5a5;
+}
