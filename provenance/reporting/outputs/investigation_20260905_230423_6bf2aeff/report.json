@@ -1,0 +1,5109 @@
+{
+    "report": {
+        "name": "Truth Trace Media Provenance Report",
+        "version": "1.0",
+        "investigation_id": "investigation_20260905_230423_6bf2aeff",
+        "generated_at": "2026-09-05T23:08:02.539945"
+    },
+    "evidence": {
+        "artifact_count": 37,
+        "comparison_count": 666
+    },
+    "lineage": {
+        "node_count": 37,
+        "edge_count": 173,
+        "roots": [
+            "artifact_258dc49aaed0",
+            "artifact_2a0f9aee12bc",
+            "artifact_4a06a03f2b04",
+            "artifact_9ea37e94da3b",
+            "artifact_ccea0fda24bf",
+            "artifact_e2f002477b58",
+            "artifact_fc77a6f20c39"
+        ],
+        "leaves": [
+            "artifact_0aebbe92044e",
+            "artifact_7c2c8f0f5214",
+            "artifact_9458f43ca433",
+            "artifact_a46a836fdac0",
+            "artifact_d1e34596ae60",
+            "artifact_e73826749318"
+        ],
+        "edges": [
+            {
+                "parent": "artifact_fc0dd3f4dbdc",
+                "child": "artifact_bdf7944f1b31",
+                "similarity_score": 0.95935,
+                "confidence_score": 0.97935,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "same_platform",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-05 15:49:05",
+                    "child_timestamp": "2026-09-05 15:51:35",
+                    "parent_dimensions": [
+                        480,
+                        834
+                    ],
+                    "child_dimensions": [
+                        368,
+                        640
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_fc0dd3f4dbdc",
+                "child": "artifact_b28bc0da964c",
+                "similarity_score": 0.972253,
+                "confidence_score": 0.992253,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "same_platform",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-05 15:49:05",
+                    "child_timestamp": "2026-09-05 16:00:06",
+                    "parent_dimensions": [
+                        480,
+                        834
+                    ],
+                    "child_dimensions": [
+                        368,
+                        640
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_9410de1a947d",
+                "child": "artifact_fc0dd3f4dbdc",
+                "similarity_score": 0.90884,
+                "confidence_score": 0.90884,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "same_platform"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-05 15:29:41",
+                    "child_timestamp": "2026-09-05 15:49:05",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        480,
+                        834
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_fc0dd3f4dbdc",
+                "child": "artifact_d460055c39af",
+                "similarity_score": 0.981853,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:XMock->InstaMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:49:05",
+                    "child_timestamp": "2026-09-05 15:49:15",
+                    "parent_dimensions": [
+                        480,
+                        834
+                    ],
+                    "child_dimensions": [
+                        480,
+                        834
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_fc0dd3f4dbdc",
+                "child": "artifact_1a9bf6d4b9f7",
+                "similarity_score": 0.970869,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:XMock->InstaMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:49:05",
+                    "child_timestamp": "2026-09-05 15:51:53",
+                    "parent_dimensions": [
+                        480,
+                        834
+                    ],
+                    "child_dimensions": [
+                        480,
+                        834
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_fc0dd3f4dbdc",
+                "child": "artifact_274ff09d8d4c",
+                "similarity_score": 0.929734,
+                "confidence_score": 0.969734,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:XMock->InstaMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:49:05",
+                    "child_timestamp": "2026-09-05 16:00:18",
+                    "parent_dimensions": [
+                        480,
+                        834
+                    ],
+                    "child_dimensions": [
+                        240,
+                        418
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_fc0dd3f4dbdc",
+                "child": "artifact_676e07223cdf",
+                "similarity_score": 0.929734,
+                "confidence_score": 0.969734,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:XMock->InstaMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:49:05",
+                    "child_timestamp": "2026-09-05 16:00:18",
+                    "parent_dimensions": [
+                        480,
+                        834
+                    ],
+                    "child_dimensions": [
+                        240,
+                        418
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_258dc49aaed0",
+                "child": "artifact_fc0dd3f4dbdc",
+                "similarity_score": 0.90884,
+                "confidence_score": 0.92884,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->XMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-05 14:37:40",
+                    "child_timestamp": "2026-09-05 15:49:05",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        480,
+                        834
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_29370cbd9dc6",
+                "child": "artifact_fc0dd3f4dbdc",
+                "similarity_score": 0.90884,
+                "confidence_score": 0.92884,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->XMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-05 15:29:21",
+                    "child_timestamp": "2026-09-05 15:49:05",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        480,
+                        834
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_5f027e2a1f1f",
+                "child": "artifact_fc0dd3f4dbdc",
+                "similarity_score": 0.90884,
+                "confidence_score": 0.92884,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->XMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-05 15:29:40",
+                    "child_timestamp": "2026-09-05 15:49:05",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        480,
+                        834
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_fc0dd3f4dbdc",
+                "child": "artifact_e73826749318",
+                "similarity_score": 0.94289,
+                "confidence_score": 0.98289,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:XMock->FaceMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:49:05",
+                    "child_timestamp": "2026-09-05 16:00:27",
+                    "parent_dimensions": [
+                        480,
+                        834
+                    ],
+                    "child_dimensions": [
+                        360,
+                        628
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_fc0dd3f4dbdc",
+                "child": "artifact_0aebbe92044e",
+                "similarity_score": 0.94289,
+                "confidence_score": 0.98289,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:XMock->FaceMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:49:05",
+                    "child_timestamp": "2026-09-05 16:00:27",
+                    "parent_dimensions": [
+                        480,
+                        834
+                    ],
+                    "child_dimensions": [
+                        360,
+                        628
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_6a8b63035e6b",
+                "child": "artifact_fc0dd3f4dbdc",
+                "similarity_score": 0.90884,
+                "confidence_score": 0.92884,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:FaceMock->XMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-05 15:29:41",
+                    "child_timestamp": "2026-09-05 15:49:05",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        480,
+                        834
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_fc0dd3f4dbdc",
+                "child": "artifact_8bc0a6212edb",
+                "similarity_score": 1.0,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "exact_sha256_match",
+                    "cross_platform:XMock->FaceMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": true,
+                    "parent_platform": "XMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:49:05",
+                    "child_timestamp": "2026-09-05 15:49:08",
+                    "parent_dimensions": [
+                        480,
+                        834
+                    ],
+                    "child_dimensions": [
+                        480,
+                        834
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_fc0dd3f4dbdc",
+                "child": "artifact_486953746da9",
+                "similarity_score": 0.95991,
+                "confidence_score": 0.99991,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:XMock->FaceMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:49:05",
+                    "child_timestamp": "2026-09-05 15:51:30",
+                    "parent_dimensions": [
+                        480,
+                        834
+                    ],
+                    "child_dimensions": [
+                        368,
+                        640
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_bdf7944f1b31",
+                "child": "artifact_b28bc0da964c",
+                "similarity_score": 0.968191,
+                "confidence_score": 0.988191,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "same_platform",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-05 15:51:35",
+                    "child_timestamp": "2026-09-05 16:00:06",
+                    "parent_dimensions": [
+                        368,
+                        640
+                    ],
+                    "child_dimensions": [
+                        368,
+                        640
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_9410de1a947d",
+                "child": "artifact_bdf7944f1b31",
+                "similarity_score": 0.911228,
+                "confidence_score": 0.911228,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "same_platform"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-05 15:29:41",
+                    "child_timestamp": "2026-09-05 15:51:35",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        368,
+                        640
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_d460055c39af",
+                "child": "artifact_bdf7944f1b31",
+                "similarity_score": 0.970845,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->XMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-05 15:49:15",
+                    "child_timestamp": "2026-09-05 15:51:35",
+                    "parent_dimensions": [
+                        480,
+                        834
+                    ],
+                    "child_dimensions": [
+                        368,
+                        640
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_bdf7944f1b31",
+                "child": "artifact_1a9bf6d4b9f7",
+                "similarity_score": 0.972391,
+                "confidence_score": 0.992391,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:XMock->InstaMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:51:35",
+                    "child_timestamp": "2026-09-05 15:51:53",
+                    "parent_dimensions": [
+                        368,
+                        640
+                    ],
+                    "child_dimensions": [
+                        480,
+                        834
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_bdf7944f1b31",
+                "child": "artifact_274ff09d8d4c",
+                "similarity_score": 0.945936,
+                "confidence_score": 0.985936,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:XMock->InstaMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:51:35",
+                    "child_timestamp": "2026-09-05 16:00:18",
+                    "parent_dimensions": [
+                        368,
+                        640
+                    ],
+                    "child_dimensions": [
+                        240,
+                        418
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_bdf7944f1b31",
+                "child": "artifact_676e07223cdf",
+                "similarity_score": 0.945936,
+                "confidence_score": 0.985936,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:XMock->InstaMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:51:35",
+                    "child_timestamp": "2026-09-05 16:00:18",
+                    "parent_dimensions": [
+                        368,
+                        640
+                    ],
+                    "child_dimensions": [
+                        240,
+                        418
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_258dc49aaed0",
+                "child": "artifact_bdf7944f1b31",
+                "similarity_score": 0.911228,
+                "confidence_score": 0.931228,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->XMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-05 14:37:40",
+                    "child_timestamp": "2026-09-05 15:51:35",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        368,
+                        640
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_29370cbd9dc6",
+                "child": "artifact_bdf7944f1b31",
+                "similarity_score": 0.911228,
+                "confidence_score": 0.931228,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->XMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-05 15:29:21",
+                    "child_timestamp": "2026-09-05 15:51:35",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        368,
+                        640
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_5f027e2a1f1f",
+                "child": "artifact_bdf7944f1b31",
+                "similarity_score": 0.911228,
+                "confidence_score": 0.931228,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->XMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-05 15:29:40",
+                    "child_timestamp": "2026-09-05 15:51:35",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        368,
+                        640
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_bdf7944f1b31",
+                "child": "artifact_e73826749318",
+                "similarity_score": 0.962479,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:XMock->FaceMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:51:35",
+                    "child_timestamp": "2026-09-05 16:00:27",
+                    "parent_dimensions": [
+                        368,
+                        640
+                    ],
+                    "child_dimensions": [
+                        360,
+                        628
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_bdf7944f1b31",
+                "child": "artifact_0aebbe92044e",
+                "similarity_score": 0.962479,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:XMock->FaceMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:51:35",
+                    "child_timestamp": "2026-09-05 16:00:27",
+                    "parent_dimensions": [
+                        368,
+                        640
+                    ],
+                    "child_dimensions": [
+                        360,
+                        628
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_6a8b63035e6b",
+                "child": "artifact_bdf7944f1b31",
+                "similarity_score": 0.911228,
+                "confidence_score": 0.931228,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:FaceMock->XMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-05 15:29:41",
+                    "child_timestamp": "2026-09-05 15:51:35",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        368,
+                        640
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_8bc0a6212edb",
+                "child": "artifact_bdf7944f1b31",
+                "similarity_score": 0.95935,
+                "confidence_score": 0.99935,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:FaceMock->XMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-05 15:49:08",
+                    "child_timestamp": "2026-09-05 15:51:35",
+                    "parent_dimensions": [
+                        480,
+                        834
+                    ],
+                    "child_dimensions": [
+                        368,
+                        640
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_486953746da9",
+                "child": "artifact_bdf7944f1b31",
+                "similarity_score": 0.992359,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:FaceMock->XMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-05 15:51:30",
+                    "child_timestamp": "2026-09-05 15:51:35",
+                    "parent_dimensions": [
+                        368,
+                        640
+                    ],
+                    "child_dimensions": [
+                        368,
+                        640
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_9410de1a947d",
+                "child": "artifact_b28bc0da964c",
+                "similarity_score": 0.903583,
+                "confidence_score": 0.903583,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "same_platform"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-05 15:29:41",
+                    "child_timestamp": "2026-09-05 16:00:06",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        368,
+                        640
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_d460055c39af",
+                "child": "artifact_b28bc0da964c",
+                "similarity_score": 0.961003,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->XMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-05 15:49:15",
+                    "child_timestamp": "2026-09-05 16:00:06",
+                    "parent_dimensions": [
+                        480,
+                        834
+                    ],
+                    "child_dimensions": [
+                        368,
+                        640
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_1a9bf6d4b9f7",
+                "child": "artifact_b28bc0da964c",
+                "similarity_score": 0.956627,
+                "confidence_score": 0.996627,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->XMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-05 15:51:53",
+                    "child_timestamp": "2026-09-05 16:00:06",
+                    "parent_dimensions": [
+                        480,
+                        834
+                    ],
+                    "child_dimensions": [
+                        368,
+                        640
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_b28bc0da964c",
+                "child": "artifact_274ff09d8d4c",
+                "similarity_score": 0.936399,
+                "confidence_score": 0.976399,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:XMock->InstaMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 16:00:06",
+                    "child_timestamp": "2026-09-05 16:00:18",
+                    "parent_dimensions": [
+                        368,
+                        640
+                    ],
+                    "child_dimensions": [
+                        240,
+                        418
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_b28bc0da964c",
+                "child": "artifact_676e07223cdf",
+                "similarity_score": 0.936399,
+                "confidence_score": 0.976399,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:XMock->InstaMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 16:00:06",
+                    "child_timestamp": "2026-09-05 16:00:18",
+                    "parent_dimensions": [
+                        368,
+                        640
+                    ],
+                    "child_dimensions": [
+                        240,
+                        418
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_258dc49aaed0",
+                "child": "artifact_b28bc0da964c",
+                "similarity_score": 0.903583,
+                "confidence_score": 0.923583,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->XMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-05 14:37:40",
+                    "child_timestamp": "2026-09-05 16:00:06",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        368,
+                        640
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_29370cbd9dc6",
+                "child": "artifact_b28bc0da964c",
+                "similarity_score": 0.903583,
+                "confidence_score": 0.923583,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->XMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-05 15:29:21",
+                    "child_timestamp": "2026-09-05 16:00:06",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        368,
+                        640
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_5f027e2a1f1f",
+                "child": "artifact_b28bc0da964c",
+                "similarity_score": 0.903583,
+                "confidence_score": 0.923583,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->XMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-05 15:29:40",
+                    "child_timestamp": "2026-09-05 16:00:06",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        368,
+                        640
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_b28bc0da964c",
+                "child": "artifact_e73826749318",
+                "similarity_score": 0.952616,
+                "confidence_score": 0.992616,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:XMock->FaceMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 16:00:06",
+                    "child_timestamp": "2026-09-05 16:00:27",
+                    "parent_dimensions": [
+                        368,
+                        640
+                    ],
+                    "child_dimensions": [
+                        360,
+                        628
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_b28bc0da964c",
+                "child": "artifact_0aebbe92044e",
+                "similarity_score": 0.952616,
+                "confidence_score": 0.992616,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:XMock->FaceMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 16:00:06",
+                    "child_timestamp": "2026-09-05 16:00:27",
+                    "parent_dimensions": [
+                        368,
+                        640
+                    ],
+                    "child_dimensions": [
+                        360,
+                        628
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_6a8b63035e6b",
+                "child": "artifact_b28bc0da964c",
+                "similarity_score": 0.903583,
+                "confidence_score": 0.923583,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:FaceMock->XMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-05 15:29:41",
+                    "child_timestamp": "2026-09-05 16:00:06",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        368,
+                        640
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_8bc0a6212edb",
+                "child": "artifact_b28bc0da964c",
+                "similarity_score": 0.972253,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:FaceMock->XMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-05 15:49:08",
+                    "child_timestamp": "2026-09-05 16:00:06",
+                    "parent_dimensions": [
+                        480,
+                        834
+                    ],
+                    "child_dimensions": [
+                        368,
+                        640
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_486953746da9",
+                "child": "artifact_b28bc0da964c",
+                "similarity_score": 0.96878,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:FaceMock->XMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-05 15:51:30",
+                    "child_timestamp": "2026-09-05 16:00:06",
+                    "parent_dimensions": [
+                        368,
+                        640
+                    ],
+                    "child_dimensions": [
+                        368,
+                        640
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_fc77a6f20c39",
+                "child": "artifact_b53973eb6d0f",
+                "similarity_score": 0.966337,
+                "confidence_score": 0.986337,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "same_platform",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-04 14:10:53",
+                    "child_timestamp": "2026-09-04 15:15:59",
+                    "parent_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "child_dimensions": [
+                        900,
+                        506
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_fc77a6f20c39",
+                "child": "artifact_6cbdc43234c2",
+                "similarity_score": 0.966337,
+                "confidence_score": 0.986337,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "same_platform",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-04 14:10:53",
+                    "child_timestamp": "2026-09-04 15:15:59",
+                    "parent_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "child_dimensions": [
+                        900,
+                        506
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_fc77a6f20c39",
+                "child": "artifact_e7bea489c286",
+                "similarity_score": 1.0,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "exact_sha256_match",
+                    "same_platform",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": true,
+                    "parent_platform": "XMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-04 14:10:53",
+                    "child_timestamp": "2026-09-05 15:28:06",
+                    "parent_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "child_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_fc77a6f20c39",
+                "child": "artifact_f6a16fa3481f",
+                "similarity_score": 0.965793,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:XMock->InstaMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-04 14:10:53",
+                    "child_timestamp": "2026-09-04 15:16:03",
+                    "parent_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "child_dimensions": [
+                        900,
+                        506
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_fc77a6f20c39",
+                "child": "artifact_a22c1643023e",
+                "similarity_score": 0.965793,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:XMock->InstaMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-04 14:10:53",
+                    "child_timestamp": "2026-09-04 15:16:03",
+                    "parent_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "child_dimensions": [
+                        900,
+                        506
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_fc77a6f20c39",
+                "child": "artifact_9a1fbc495ce4",
+                "similarity_score": 1.0,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "exact_sha256_match",
+                    "cross_platform:XMock->InstaMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": true,
+                    "parent_platform": "XMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-04 14:10:53",
+                    "child_timestamp": "2026-09-05 15:28:06",
+                    "parent_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "child_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_fc77a6f20c39",
+                "child": "artifact_d1e34596ae60",
+                "similarity_score": 1.0,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "exact_sha256_match",
+                    "cross_platform:XMock->FaceMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": true,
+                    "parent_platform": "XMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-04 14:10:53",
+                    "child_timestamp": "2026-09-05 15:28:07",
+                    "parent_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "child_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_b53973eb6d0f",
+                "child": "artifact_e7bea489c286",
+                "similarity_score": 0.966337,
+                "confidence_score": 0.966337,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "same_platform"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-04 15:15:59",
+                    "child_timestamp": "2026-09-05 15:28:06",
+                    "parent_dimensions": [
+                        900,
+                        506
+                    ],
+                    "child_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_2a0f9aee12bc",
+                "child": "artifact_b53973eb6d0f",
+                "similarity_score": 0.966337,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->XMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-04 14:10:53",
+                    "child_timestamp": "2026-09-04 15:15:59",
+                    "parent_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "child_dimensions": [
+                        900,
+                        506
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_b53973eb6d0f",
+                "child": "artifact_f6a16fa3481f",
+                "similarity_score": 0.996553,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:XMock->InstaMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-04 15:15:59",
+                    "child_timestamp": "2026-09-04 15:16:03",
+                    "parent_dimensions": [
+                        900,
+                        506
+                    ],
+                    "child_dimensions": [
+                        900,
+                        506
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_b53973eb6d0f",
+                "child": "artifact_a22c1643023e",
+                "similarity_score": 0.996553,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:XMock->InstaMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-04 15:15:59",
+                    "child_timestamp": "2026-09-04 15:16:03",
+                    "parent_dimensions": [
+                        900,
+                        506
+                    ],
+                    "child_dimensions": [
+                        900,
+                        506
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_b53973eb6d0f",
+                "child": "artifact_9a1fbc495ce4",
+                "similarity_score": 0.966337,
+                "confidence_score": 0.986337,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:XMock->InstaMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-04 15:15:59",
+                    "child_timestamp": "2026-09-05 15:28:06",
+                    "parent_dimensions": [
+                        900,
+                        506
+                    ],
+                    "child_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_ccea0fda24bf",
+                "child": "artifact_b53973eb6d0f",
+                "similarity_score": 0.966337,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:FaceMock->XMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-04 14:10:53",
+                    "child_timestamp": "2026-09-04 15:15:59",
+                    "parent_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "child_dimensions": [
+                        900,
+                        506
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_b53973eb6d0f",
+                "child": "artifact_d1e34596ae60",
+                "similarity_score": 0.966337,
+                "confidence_score": 0.986337,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:XMock->FaceMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-04 15:15:59",
+                    "child_timestamp": "2026-09-05 15:28:07",
+                    "parent_dimensions": [
+                        900,
+                        506
+                    ],
+                    "child_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_6cbdc43234c2",
+                "child": "artifact_e7bea489c286",
+                "similarity_score": 0.966337,
+                "confidence_score": 0.966337,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "same_platform"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-04 15:15:59",
+                    "child_timestamp": "2026-09-05 15:28:06",
+                    "parent_dimensions": [
+                        900,
+                        506
+                    ],
+                    "child_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_2a0f9aee12bc",
+                "child": "artifact_6cbdc43234c2",
+                "similarity_score": 0.966337,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->XMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-04 14:10:53",
+                    "child_timestamp": "2026-09-04 15:15:59",
+                    "parent_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "child_dimensions": [
+                        900,
+                        506
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_6cbdc43234c2",
+                "child": "artifact_f6a16fa3481f",
+                "similarity_score": 0.996553,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:XMock->InstaMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-04 15:15:59",
+                    "child_timestamp": "2026-09-04 15:16:03",
+                    "parent_dimensions": [
+                        900,
+                        506
+                    ],
+                    "child_dimensions": [
+                        900,
+                        506
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_6cbdc43234c2",
+                "child": "artifact_a22c1643023e",
+                "similarity_score": 0.996553,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:XMock->InstaMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-04 15:15:59",
+                    "child_timestamp": "2026-09-04 15:16:03",
+                    "parent_dimensions": [
+                        900,
+                        506
+                    ],
+                    "child_dimensions": [
+                        900,
+                        506
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_6cbdc43234c2",
+                "child": "artifact_9a1fbc495ce4",
+                "similarity_score": 0.966337,
+                "confidence_score": 0.986337,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:XMock->InstaMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-04 15:15:59",
+                    "child_timestamp": "2026-09-05 15:28:06",
+                    "parent_dimensions": [
+                        900,
+                        506
+                    ],
+                    "child_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_ccea0fda24bf",
+                "child": "artifact_6cbdc43234c2",
+                "similarity_score": 0.966337,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:FaceMock->XMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-04 14:10:53",
+                    "child_timestamp": "2026-09-04 15:15:59",
+                    "parent_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "child_dimensions": [
+                        900,
+                        506
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_6cbdc43234c2",
+                "child": "artifact_d1e34596ae60",
+                "similarity_score": 0.966337,
+                "confidence_score": 0.986337,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:XMock->FaceMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-04 15:15:59",
+                    "child_timestamp": "2026-09-05 15:28:07",
+                    "parent_dimensions": [
+                        900,
+                        506
+                    ],
+                    "child_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_4a06a03f2b04",
+                "child": "artifact_7d7dc9754d78",
+                "similarity_score": 1.0,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "exact_sha256_match",
+                    "cross_platform:XMock->InstaMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": true,
+                    "parent_platform": "XMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-04 15:20:43",
+                    "child_timestamp": "2026-09-04 15:20:47",
+                    "parent_dimensions": [
+                        720,
+                        720
+                    ],
+                    "child_dimensions": [
+                        720,
+                        720
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_4a06a03f2b04",
+                "child": "artifact_7c2c8f0f5214",
+                "similarity_score": 0.996018,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:XMock->FaceMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-04 15:20:43",
+                    "child_timestamp": "2026-09-04 15:20:51",
+                    "parent_dimensions": [
+                        720,
+                        720
+                    ],
+                    "child_dimensions": [
+                        720,
+                        720
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_9ea37e94da3b",
+                "child": "artifact_cd219d7e1926",
+                "similarity_score": 0.823964,
+                "confidence_score": 0.823964,
+                "confidence": "MEDIUM",
+                "reasons": [
+                    "moderate_media_similarity",
+                    "same_platform",
+                    "format_changed"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-04 15:21:23",
+                    "child_timestamp": "2026-09-05 15:30:08",
+                    "parent_dimensions": [
+                        600,
+                        600
+                    ],
+                    "child_dimensions": [
+                        720,
+                        720
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "PNG"
+                }
+            },
+            {
+                "parent": "artifact_9ea37e94da3b",
+                "child": "artifact_b65abab1e0dc",
+                "similarity_score": 0.823964,
+                "confidence_score": 0.823964,
+                "confidence": "MEDIUM",
+                "reasons": [
+                    "moderate_media_similarity",
+                    "same_platform",
+                    "format_changed"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-04 15:21:23",
+                    "child_timestamp": "2026-09-05 15:30:08",
+                    "parent_dimensions": [
+                        600,
+                        600
+                    ],
+                    "child_dimensions": [
+                        720,
+                        720
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "PNG"
+                }
+            },
+            {
+                "parent": "artifact_9ea37e94da3b",
+                "child": "artifact_9458f43ca433",
+                "similarity_score": 0.823964,
+                "confidence_score": 0.843964,
+                "confidence": "MEDIUM",
+                "reasons": [
+                    "moderate_media_similarity",
+                    "cross_platform:XMock->InstaMock",
+                    "format_changed"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-04 15:21:23",
+                    "child_timestamp": "2026-09-05 15:30:12",
+                    "parent_dimensions": [
+                        600,
+                        600
+                    ],
+                    "child_dimensions": [
+                        720,
+                        720
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "PNG"
+                }
+            },
+            {
+                "parent": "artifact_9ea37e94da3b",
+                "child": "artifact_a65ad0450a39",
+                "similarity_score": 0.831148,
+                "confidence_score": 0.871148,
+                "confidence": "MEDIUM",
+                "reasons": [
+                    "moderate_media_similarity",
+                    "cross_platform:XMock->FaceMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-04 15:21:23",
+                    "child_timestamp": "2026-09-05 15:30:04",
+                    "parent_dimensions": [
+                        600,
+                        600
+                    ],
+                    "child_dimensions": [
+                        600,
+                        600
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_9ea37e94da3b",
+                "child": "artifact_30e7e1c6d60d",
+                "similarity_score": 0.831148,
+                "confidence_score": 0.871148,
+                "confidence": "MEDIUM",
+                "reasons": [
+                    "moderate_media_similarity",
+                    "cross_platform:XMock->FaceMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-04 15:21:23",
+                    "child_timestamp": "2026-09-05 15:30:04",
+                    "parent_dimensions": [
+                        600,
+                        600
+                    ],
+                    "child_dimensions": [
+                        600,
+                        600
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_2a0f9aee12bc",
+                "child": "artifact_e7bea489c286",
+                "similarity_score": 1.0,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "exact_sha256_match",
+                    "cross_platform:InstaMock->XMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": true,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-04 14:10:53",
+                    "child_timestamp": "2026-09-05 15:28:06",
+                    "parent_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "child_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_f6a16fa3481f",
+                "child": "artifact_e7bea489c286",
+                "similarity_score": 0.965793,
+                "confidence_score": 0.985793,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->XMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-04 15:16:03",
+                    "child_timestamp": "2026-09-05 15:28:06",
+                    "parent_dimensions": [
+                        900,
+                        506
+                    ],
+                    "child_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_a22c1643023e",
+                "child": "artifact_e7bea489c286",
+                "similarity_score": 0.965793,
+                "confidence_score": 0.985793,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->XMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-04 15:16:03",
+                    "child_timestamp": "2026-09-05 15:28:06",
+                    "parent_dimensions": [
+                        900,
+                        506
+                    ],
+                    "child_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_ccea0fda24bf",
+                "child": "artifact_e7bea489c286",
+                "similarity_score": 1.0,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "exact_sha256_match",
+                    "cross_platform:FaceMock->XMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": true,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-04 14:10:53",
+                    "child_timestamp": "2026-09-05 15:28:06",
+                    "parent_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "child_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_e7bea489c286",
+                "child": "artifact_d1e34596ae60",
+                "similarity_score": 1.0,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "exact_sha256_match",
+                    "cross_platform:XMock->FaceMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": true,
+                    "parent_platform": "XMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:28:06",
+                    "child_timestamp": "2026-09-05 15:28:07",
+                    "parent_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "child_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_9410de1a947d",
+                "child": "artifact_d460055c39af",
+                "similarity_score": 0.918292,
+                "confidence_score": 0.938292,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:XMock->InstaMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:29:41",
+                    "child_timestamp": "2026-09-05 15:49:15",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        480,
+                        834
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_9410de1a947d",
+                "child": "artifact_1a9bf6d4b9f7",
+                "similarity_score": 0.91152,
+                "confidence_score": 0.93152,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:XMock->InstaMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:29:41",
+                    "child_timestamp": "2026-09-05 15:51:53",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        480,
+                        834
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_9410de1a947d",
+                "child": "artifact_274ff09d8d4c",
+                "similarity_score": 0.897448,
+                "confidence_score": 0.917448,
+                "confidence": "HIGH",
+                "reasons": [
+                    "moderate_media_similarity",
+                    "cross_platform:XMock->InstaMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:29:41",
+                    "child_timestamp": "2026-09-05 16:00:18",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        240,
+                        418
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_9410de1a947d",
+                "child": "artifact_676e07223cdf",
+                "similarity_score": 0.897448,
+                "confidence_score": 0.917448,
+                "confidence": "HIGH",
+                "reasons": [
+                    "moderate_media_similarity",
+                    "cross_platform:XMock->InstaMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:29:41",
+                    "child_timestamp": "2026-09-05 16:00:18",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        240,
+                        418
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_258dc49aaed0",
+                "child": "artifact_9410de1a947d",
+                "similarity_score": 1.0,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "exact_sha256_match",
+                    "cross_platform:InstaMock->XMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": true,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-05 14:37:40",
+                    "child_timestamp": "2026-09-05 15:29:41",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        640,
+                        368
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_29370cbd9dc6",
+                "child": "artifact_9410de1a947d",
+                "similarity_score": 1.0,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "exact_sha256_match",
+                    "cross_platform:InstaMock->XMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": true,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-05 15:29:21",
+                    "child_timestamp": "2026-09-05 15:29:41",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        640,
+                        368
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_5f027e2a1f1f",
+                "child": "artifact_9410de1a947d",
+                "similarity_score": 1.0,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "exact_sha256_match",
+                    "cross_platform:InstaMock->XMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": true,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-05 15:29:40",
+                    "child_timestamp": "2026-09-05 15:29:41",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        640,
+                        368
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_9410de1a947d",
+                "child": "artifact_e73826749318",
+                "similarity_score": 0.895045,
+                "confidence_score": 0.915045,
+                "confidence": "HIGH",
+                "reasons": [
+                    "moderate_media_similarity",
+                    "cross_platform:XMock->FaceMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:29:41",
+                    "child_timestamp": "2026-09-05 16:00:27",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        360,
+                        628
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_9410de1a947d",
+                "child": "artifact_0aebbe92044e",
+                "similarity_score": 0.895045,
+                "confidence_score": 0.915045,
+                "confidence": "HIGH",
+                "reasons": [
+                    "moderate_media_similarity",
+                    "cross_platform:XMock->FaceMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:29:41",
+                    "child_timestamp": "2026-09-05 16:00:27",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        360,
+                        628
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_9410de1a947d",
+                "child": "artifact_8bc0a6212edb",
+                "similarity_score": 0.90884,
+                "confidence_score": 0.92884,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:XMock->FaceMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:29:41",
+                    "child_timestamp": "2026-09-05 15:49:08",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        480,
+                        834
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_9410de1a947d",
+                "child": "artifact_486953746da9",
+                "similarity_score": 0.911748,
+                "confidence_score": 0.931748,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:XMock->FaceMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "XMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:29:41",
+                    "child_timestamp": "2026-09-05 15:51:30",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        368,
+                        640
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_cd219d7e1926",
+                "child": "artifact_9458f43ca433",
+                "similarity_score": 1.0,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "exact_sha256_match",
+                    "cross_platform:XMock->InstaMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": true,
+                    "parent_platform": "XMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:30:08",
+                    "child_timestamp": "2026-09-05 15:30:12",
+                    "parent_dimensions": [
+                        720,
+                        720
+                    ],
+                    "child_dimensions": [
+                        720,
+                        720
+                    ],
+                    "parent_format": "PNG",
+                    "child_format": "PNG"
+                }
+            },
+            {
+                "parent": "artifact_a65ad0450a39",
+                "child": "artifact_cd219d7e1926",
+                "similarity_score": 0.987146,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:FaceMock->XMock",
+                    "format_changed"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-05 15:30:04",
+                    "child_timestamp": "2026-09-05 15:30:08",
+                    "parent_dimensions": [
+                        600,
+                        600
+                    ],
+                    "child_dimensions": [
+                        720,
+                        720
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "PNG"
+                }
+            },
+            {
+                "parent": "artifact_30e7e1c6d60d",
+                "child": "artifact_cd219d7e1926",
+                "similarity_score": 0.987146,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:FaceMock->XMock",
+                    "format_changed"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-05 15:30:04",
+                    "child_timestamp": "2026-09-05 15:30:08",
+                    "parent_dimensions": [
+                        600,
+                        600
+                    ],
+                    "child_dimensions": [
+                        720,
+                        720
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "PNG"
+                }
+            },
+            {
+                "parent": "artifact_b65abab1e0dc",
+                "child": "artifact_9458f43ca433",
+                "similarity_score": 1.0,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "exact_sha256_match",
+                    "cross_platform:XMock->InstaMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": true,
+                    "parent_platform": "XMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:30:08",
+                    "child_timestamp": "2026-09-05 15:30:12",
+                    "parent_dimensions": [
+                        720,
+                        720
+                    ],
+                    "child_dimensions": [
+                        720,
+                        720
+                    ],
+                    "parent_format": "PNG",
+                    "child_format": "PNG"
+                }
+            },
+            {
+                "parent": "artifact_a65ad0450a39",
+                "child": "artifact_b65abab1e0dc",
+                "similarity_score": 0.987146,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:FaceMock->XMock",
+                    "format_changed"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-05 15:30:04",
+                    "child_timestamp": "2026-09-05 15:30:08",
+                    "parent_dimensions": [
+                        600,
+                        600
+                    ],
+                    "child_dimensions": [
+                        720,
+                        720
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "PNG"
+                }
+            },
+            {
+                "parent": "artifact_30e7e1c6d60d",
+                "child": "artifact_b65abab1e0dc",
+                "similarity_score": 0.987146,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:FaceMock->XMock",
+                    "format_changed"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "XMock",
+                    "parent_timestamp": "2026-09-05 15:30:04",
+                    "child_timestamp": "2026-09-05 15:30:08",
+                    "parent_dimensions": [
+                        600,
+                        600
+                    ],
+                    "child_dimensions": [
+                        720,
+                        720
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "PNG"
+                }
+            },
+            {
+                "parent": "artifact_a65ad0450a39",
+                "child": "artifact_9458f43ca433",
+                "similarity_score": 0.987146,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:FaceMock->InstaMock",
+                    "format_changed"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:30:04",
+                    "child_timestamp": "2026-09-05 15:30:12",
+                    "parent_dimensions": [
+                        600,
+                        600
+                    ],
+                    "child_dimensions": [
+                        720,
+                        720
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "PNG"
+                }
+            },
+            {
+                "parent": "artifact_30e7e1c6d60d",
+                "child": "artifact_9458f43ca433",
+                "similarity_score": 0.987146,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:FaceMock->InstaMock",
+                    "format_changed"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:30:04",
+                    "child_timestamp": "2026-09-05 15:30:12",
+                    "parent_dimensions": [
+                        600,
+                        600
+                    ],
+                    "child_dimensions": [
+                        720,
+                        720
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "PNG"
+                }
+            },
+            {
+                "parent": "artifact_d460055c39af",
+                "child": "artifact_1a9bf6d4b9f7",
+                "similarity_score": 0.982523,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "same_platform",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:49:15",
+                    "child_timestamp": "2026-09-05 15:51:53",
+                    "parent_dimensions": [
+                        480,
+                        834
+                    ],
+                    "child_dimensions": [
+                        480,
+                        834
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_d460055c39af",
+                "child": "artifact_274ff09d8d4c",
+                "similarity_score": 0.9414,
+                "confidence_score": 0.9614,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "same_platform",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:49:15",
+                    "child_timestamp": "2026-09-05 16:00:18",
+                    "parent_dimensions": [
+                        480,
+                        834
+                    ],
+                    "child_dimensions": [
+                        240,
+                        418
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_d460055c39af",
+                "child": "artifact_676e07223cdf",
+                "similarity_score": 0.9414,
+                "confidence_score": 0.9614,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "same_platform",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:49:15",
+                    "child_timestamp": "2026-09-05 16:00:18",
+                    "parent_dimensions": [
+                        480,
+                        834
+                    ],
+                    "child_dimensions": [
+                        240,
+                        418
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_258dc49aaed0",
+                "child": "artifact_d460055c39af",
+                "similarity_score": 0.918292,
+                "confidence_score": 0.918292,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "same_platform"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 14:37:40",
+                    "child_timestamp": "2026-09-05 15:49:15",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        480,
+                        834
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_29370cbd9dc6",
+                "child": "artifact_d460055c39af",
+                "similarity_score": 0.918292,
+                "confidence_score": 0.918292,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "same_platform"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:29:21",
+                    "child_timestamp": "2026-09-05 15:49:15",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        480,
+                        834
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_5f027e2a1f1f",
+                "child": "artifact_d460055c39af",
+                "similarity_score": 0.918292,
+                "confidence_score": 0.918292,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "same_platform"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:29:40",
+                    "child_timestamp": "2026-09-05 15:49:15",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        480,
+                        834
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_d460055c39af",
+                "child": "artifact_e73826749318",
+                "similarity_score": 0.954623,
+                "confidence_score": 0.994623,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->FaceMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:49:15",
+                    "child_timestamp": "2026-09-05 16:00:27",
+                    "parent_dimensions": [
+                        480,
+                        834
+                    ],
+                    "child_dimensions": [
+                        360,
+                        628
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_d460055c39af",
+                "child": "artifact_0aebbe92044e",
+                "similarity_score": 0.954623,
+                "confidence_score": 0.994623,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->FaceMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:49:15",
+                    "child_timestamp": "2026-09-05 16:00:27",
+                    "parent_dimensions": [
+                        480,
+                        834
+                    ],
+                    "child_dimensions": [
+                        360,
+                        628
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_6a8b63035e6b",
+                "child": "artifact_d460055c39af",
+                "similarity_score": 0.918292,
+                "confidence_score": 0.938292,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:FaceMock->InstaMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:29:41",
+                    "child_timestamp": "2026-09-05 15:49:15",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        480,
+                        834
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_8bc0a6212edb",
+                "child": "artifact_d460055c39af",
+                "similarity_score": 0.981853,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:FaceMock->InstaMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:49:08",
+                    "child_timestamp": "2026-09-05 15:49:15",
+                    "parent_dimensions": [
+                        480,
+                        834
+                    ],
+                    "child_dimensions": [
+                        480,
+                        834
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_d460055c39af",
+                "child": "artifact_486953746da9",
+                "similarity_score": 0.971075,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->FaceMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:49:15",
+                    "child_timestamp": "2026-09-05 15:51:30",
+                    "parent_dimensions": [
+                        480,
+                        834
+                    ],
+                    "child_dimensions": [
+                        368,
+                        640
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_1a9bf6d4b9f7",
+                "child": "artifact_274ff09d8d4c",
+                "similarity_score": 0.94522,
+                "confidence_score": 0.96522,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "same_platform",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:51:53",
+                    "child_timestamp": "2026-09-05 16:00:18",
+                    "parent_dimensions": [
+                        480,
+                        834
+                    ],
+                    "child_dimensions": [
+                        240,
+                        418
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_1a9bf6d4b9f7",
+                "child": "artifact_676e07223cdf",
+                "similarity_score": 0.94522,
+                "confidence_score": 0.96522,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "same_platform",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:51:53",
+                    "child_timestamp": "2026-09-05 16:00:18",
+                    "parent_dimensions": [
+                        480,
+                        834
+                    ],
+                    "child_dimensions": [
+                        240,
+                        418
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_258dc49aaed0",
+                "child": "artifact_1a9bf6d4b9f7",
+                "similarity_score": 0.91152,
+                "confidence_score": 0.91152,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "same_platform"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 14:37:40",
+                    "child_timestamp": "2026-09-05 15:51:53",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        480,
+                        834
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_29370cbd9dc6",
+                "child": "artifact_1a9bf6d4b9f7",
+                "similarity_score": 0.91152,
+                "confidence_score": 0.91152,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "same_platform"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:29:21",
+                    "child_timestamp": "2026-09-05 15:51:53",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        480,
+                        834
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_5f027e2a1f1f",
+                "child": "artifact_1a9bf6d4b9f7",
+                "similarity_score": 0.91152,
+                "confidence_score": 0.91152,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "same_platform"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:29:40",
+                    "child_timestamp": "2026-09-05 15:51:53",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        480,
+                        834
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_1a9bf6d4b9f7",
+                "child": "artifact_e73826749318",
+                "similarity_score": 0.957874,
+                "confidence_score": 0.997874,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->FaceMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:51:53",
+                    "child_timestamp": "2026-09-05 16:00:27",
+                    "parent_dimensions": [
+                        480,
+                        834
+                    ],
+                    "child_dimensions": [
+                        360,
+                        628
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_1a9bf6d4b9f7",
+                "child": "artifact_0aebbe92044e",
+                "similarity_score": 0.957874,
+                "confidence_score": 0.997874,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->FaceMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:51:53",
+                    "child_timestamp": "2026-09-05 16:00:27",
+                    "parent_dimensions": [
+                        480,
+                        834
+                    ],
+                    "child_dimensions": [
+                        360,
+                        628
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_6a8b63035e6b",
+                "child": "artifact_1a9bf6d4b9f7",
+                "similarity_score": 0.91152,
+                "confidence_score": 0.93152,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:FaceMock->InstaMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:29:41",
+                    "child_timestamp": "2026-09-05 15:51:53",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        480,
+                        834
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_8bc0a6212edb",
+                "child": "artifact_1a9bf6d4b9f7",
+                "similarity_score": 0.970869,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:FaceMock->InstaMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:49:08",
+                    "child_timestamp": "2026-09-05 15:51:53",
+                    "parent_dimensions": [
+                        480,
+                        834
+                    ],
+                    "child_dimensions": [
+                        480,
+                        834
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_486953746da9",
+                "child": "artifact_1a9bf6d4b9f7",
+                "similarity_score": 0.97194,
+                "confidence_score": 0.99194,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:FaceMock->InstaMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:51:30",
+                    "child_timestamp": "2026-09-05 15:51:53",
+                    "parent_dimensions": [
+                        368,
+                        640
+                    ],
+                    "child_dimensions": [
+                        480,
+                        834
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_258dc49aaed0",
+                "child": "artifact_274ff09d8d4c",
+                "similarity_score": 0.897448,
+                "confidence_score": 0.897448,
+                "confidence": "MEDIUM",
+                "reasons": [
+                    "moderate_media_similarity",
+                    "same_platform"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 14:37:40",
+                    "child_timestamp": "2026-09-05 16:00:18",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        240,
+                        418
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_29370cbd9dc6",
+                "child": "artifact_274ff09d8d4c",
+                "similarity_score": 0.897448,
+                "confidence_score": 0.897448,
+                "confidence": "MEDIUM",
+                "reasons": [
+                    "moderate_media_similarity",
+                    "same_platform"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:29:21",
+                    "child_timestamp": "2026-09-05 16:00:18",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        240,
+                        418
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_5f027e2a1f1f",
+                "child": "artifact_274ff09d8d4c",
+                "similarity_score": 0.897448,
+                "confidence_score": 0.897448,
+                "confidence": "MEDIUM",
+                "reasons": [
+                    "moderate_media_similarity",
+                    "same_platform"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:29:40",
+                    "child_timestamp": "2026-09-05 16:00:18",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        240,
+                        418
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_274ff09d8d4c",
+                "child": "artifact_e73826749318",
+                "similarity_score": 0.974215,
+                "confidence_score": 0.994215,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->FaceMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 16:00:18",
+                    "child_timestamp": "2026-09-05 16:00:27",
+                    "parent_dimensions": [
+                        240,
+                        418
+                    ],
+                    "child_dimensions": [
+                        360,
+                        628
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_274ff09d8d4c",
+                "child": "artifact_0aebbe92044e",
+                "similarity_score": 0.974215,
+                "confidence_score": 0.994215,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->FaceMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 16:00:18",
+                    "child_timestamp": "2026-09-05 16:00:27",
+                    "parent_dimensions": [
+                        240,
+                        418
+                    ],
+                    "child_dimensions": [
+                        360,
+                        628
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_6a8b63035e6b",
+                "child": "artifact_274ff09d8d4c",
+                "similarity_score": 0.897448,
+                "confidence_score": 0.917448,
+                "confidence": "HIGH",
+                "reasons": [
+                    "moderate_media_similarity",
+                    "cross_platform:FaceMock->InstaMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:29:41",
+                    "child_timestamp": "2026-09-05 16:00:18",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        240,
+                        418
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_8bc0a6212edb",
+                "child": "artifact_274ff09d8d4c",
+                "similarity_score": 0.929734,
+                "confidence_score": 0.969734,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:FaceMock->InstaMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:49:08",
+                    "child_timestamp": "2026-09-05 16:00:18",
+                    "parent_dimensions": [
+                        480,
+                        834
+                    ],
+                    "child_dimensions": [
+                        240,
+                        418
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_486953746da9",
+                "child": "artifact_274ff09d8d4c",
+                "similarity_score": 0.945849,
+                "confidence_score": 0.985849,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:FaceMock->InstaMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:51:30",
+                    "child_timestamp": "2026-09-05 16:00:18",
+                    "parent_dimensions": [
+                        368,
+                        640
+                    ],
+                    "child_dimensions": [
+                        240,
+                        418
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_258dc49aaed0",
+                "child": "artifact_676e07223cdf",
+                "similarity_score": 0.897448,
+                "confidence_score": 0.897448,
+                "confidence": "MEDIUM",
+                "reasons": [
+                    "moderate_media_similarity",
+                    "same_platform"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 14:37:40",
+                    "child_timestamp": "2026-09-05 16:00:18",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        240,
+                        418
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_29370cbd9dc6",
+                "child": "artifact_676e07223cdf",
+                "similarity_score": 0.897448,
+                "confidence_score": 0.897448,
+                "confidence": "MEDIUM",
+                "reasons": [
+                    "moderate_media_similarity",
+                    "same_platform"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:29:21",
+                    "child_timestamp": "2026-09-05 16:00:18",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        240,
+                        418
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_5f027e2a1f1f",
+                "child": "artifact_676e07223cdf",
+                "similarity_score": 0.897448,
+                "confidence_score": 0.897448,
+                "confidence": "MEDIUM",
+                "reasons": [
+                    "moderate_media_similarity",
+                    "same_platform"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:29:40",
+                    "child_timestamp": "2026-09-05 16:00:18",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        240,
+                        418
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_676e07223cdf",
+                "child": "artifact_e73826749318",
+                "similarity_score": 0.974215,
+                "confidence_score": 0.994215,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->FaceMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 16:00:18",
+                    "child_timestamp": "2026-09-05 16:00:27",
+                    "parent_dimensions": [
+                        240,
+                        418
+                    ],
+                    "child_dimensions": [
+                        360,
+                        628
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_676e07223cdf",
+                "child": "artifact_0aebbe92044e",
+                "similarity_score": 0.974215,
+                "confidence_score": 0.994215,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->FaceMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 16:00:18",
+                    "child_timestamp": "2026-09-05 16:00:27",
+                    "parent_dimensions": [
+                        240,
+                        418
+                    ],
+                    "child_dimensions": [
+                        360,
+                        628
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_6a8b63035e6b",
+                "child": "artifact_676e07223cdf",
+                "similarity_score": 0.897448,
+                "confidence_score": 0.917448,
+                "confidence": "HIGH",
+                "reasons": [
+                    "moderate_media_similarity",
+                    "cross_platform:FaceMock->InstaMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:29:41",
+                    "child_timestamp": "2026-09-05 16:00:18",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        240,
+                        418
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_8bc0a6212edb",
+                "child": "artifact_676e07223cdf",
+                "similarity_score": 0.929734,
+                "confidence_score": 0.969734,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:FaceMock->InstaMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:49:08",
+                    "child_timestamp": "2026-09-05 16:00:18",
+                    "parent_dimensions": [
+                        480,
+                        834
+                    ],
+                    "child_dimensions": [
+                        240,
+                        418
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_486953746da9",
+                "child": "artifact_676e07223cdf",
+                "similarity_score": 0.945849,
+                "confidence_score": 0.985849,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:FaceMock->InstaMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:51:30",
+                    "child_timestamp": "2026-09-05 16:00:18",
+                    "parent_dimensions": [
+                        368,
+                        640
+                    ],
+                    "child_dimensions": [
+                        240,
+                        418
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_2a0f9aee12bc",
+                "child": "artifact_f6a16fa3481f",
+                "similarity_score": 0.965793,
+                "confidence_score": 0.985793,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "same_platform",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-04 14:10:53",
+                    "child_timestamp": "2026-09-04 15:16:03",
+                    "parent_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "child_dimensions": [
+                        900,
+                        506
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_2a0f9aee12bc",
+                "child": "artifact_a22c1643023e",
+                "similarity_score": 0.965793,
+                "confidence_score": 0.985793,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "same_platform",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-04 14:10:53",
+                    "child_timestamp": "2026-09-04 15:16:03",
+                    "parent_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "child_dimensions": [
+                        900,
+                        506
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_2a0f9aee12bc",
+                "child": "artifact_9a1fbc495ce4",
+                "similarity_score": 1.0,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "exact_sha256_match",
+                    "same_platform",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": true,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-04 14:10:53",
+                    "child_timestamp": "2026-09-05 15:28:06",
+                    "parent_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "child_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_2a0f9aee12bc",
+                "child": "artifact_d1e34596ae60",
+                "similarity_score": 1.0,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "exact_sha256_match",
+                    "cross_platform:InstaMock->FaceMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": true,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-04 14:10:53",
+                    "child_timestamp": "2026-09-05 15:28:07",
+                    "parent_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "child_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_f6a16fa3481f",
+                "child": "artifact_9a1fbc495ce4",
+                "similarity_score": 0.965793,
+                "confidence_score": 0.965793,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "same_platform"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-04 15:16:03",
+                    "child_timestamp": "2026-09-05 15:28:06",
+                    "parent_dimensions": [
+                        900,
+                        506
+                    ],
+                    "child_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_ccea0fda24bf",
+                "child": "artifact_f6a16fa3481f",
+                "similarity_score": 0.965793,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:FaceMock->InstaMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-04 14:10:53",
+                    "child_timestamp": "2026-09-04 15:16:03",
+                    "parent_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "child_dimensions": [
+                        900,
+                        506
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_f6a16fa3481f",
+                "child": "artifact_d1e34596ae60",
+                "similarity_score": 0.965793,
+                "confidence_score": 0.985793,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->FaceMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-04 15:16:03",
+                    "child_timestamp": "2026-09-05 15:28:07",
+                    "parent_dimensions": [
+                        900,
+                        506
+                    ],
+                    "child_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_a22c1643023e",
+                "child": "artifact_9a1fbc495ce4",
+                "similarity_score": 0.965793,
+                "confidence_score": 0.965793,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "same_platform"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-04 15:16:03",
+                    "child_timestamp": "2026-09-05 15:28:06",
+                    "parent_dimensions": [
+                        900,
+                        506
+                    ],
+                    "child_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_ccea0fda24bf",
+                "child": "artifact_a22c1643023e",
+                "similarity_score": 0.965793,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:FaceMock->InstaMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-04 14:10:53",
+                    "child_timestamp": "2026-09-04 15:16:03",
+                    "parent_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "child_dimensions": [
+                        900,
+                        506
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_a22c1643023e",
+                "child": "artifact_d1e34596ae60",
+                "similarity_score": 0.965793,
+                "confidence_score": 0.985793,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->FaceMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-04 15:16:03",
+                    "child_timestamp": "2026-09-05 15:28:07",
+                    "parent_dimensions": [
+                        900,
+                        506
+                    ],
+                    "child_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_7d7dc9754d78",
+                "child": "artifact_7c2c8f0f5214",
+                "similarity_score": 0.996018,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->FaceMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-04 15:20:47",
+                    "child_timestamp": "2026-09-04 15:20:51",
+                    "parent_dimensions": [
+                        720,
+                        720
+                    ],
+                    "child_dimensions": [
+                        720,
+                        720
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_e2f002477b58",
+                "child": "artifact_a46a836fdac0",
+                "similarity_score": 0.917378,
+                "confidence_score": 0.937378,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->FaceMock",
+                    "format_changed"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-04 15:21:15",
+                    "child_timestamp": "2026-09-04 15:21:20",
+                    "parent_dimensions": [
+                        720,
+                        720
+                    ],
+                    "child_dimensions": [
+                        900,
+                        900
+                    ],
+                    "parent_format": "WEBP",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_258dc49aaed0",
+                "child": "artifact_29370cbd9dc6",
+                "similarity_score": 1.0,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "exact_sha256_match",
+                    "same_platform",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": true,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 14:37:40",
+                    "child_timestamp": "2026-09-05 15:29:21",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        640,
+                        368
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_258dc49aaed0",
+                "child": "artifact_5f027e2a1f1f",
+                "similarity_score": 1.0,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "exact_sha256_match",
+                    "same_platform",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": true,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 14:37:40",
+                    "child_timestamp": "2026-09-05 15:29:40",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        640,
+                        368
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_258dc49aaed0",
+                "child": "artifact_e73826749318",
+                "similarity_score": 0.895045,
+                "confidence_score": 0.915045,
+                "confidence": "HIGH",
+                "reasons": [
+                    "moderate_media_similarity",
+                    "cross_platform:InstaMock->FaceMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 14:37:40",
+                    "child_timestamp": "2026-09-05 16:00:27",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        360,
+                        628
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_258dc49aaed0",
+                "child": "artifact_0aebbe92044e",
+                "similarity_score": 0.895045,
+                "confidence_score": 0.915045,
+                "confidence": "HIGH",
+                "reasons": [
+                    "moderate_media_similarity",
+                    "cross_platform:InstaMock->FaceMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 14:37:40",
+                    "child_timestamp": "2026-09-05 16:00:27",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        360,
+                        628
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_258dc49aaed0",
+                "child": "artifact_6a8b63035e6b",
+                "similarity_score": 1.0,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "exact_sha256_match",
+                    "cross_platform:InstaMock->FaceMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": true,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 14:37:40",
+                    "child_timestamp": "2026-09-05 15:29:41",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        640,
+                        368
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_258dc49aaed0",
+                "child": "artifact_8bc0a6212edb",
+                "similarity_score": 0.90884,
+                "confidence_score": 0.92884,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->FaceMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 14:37:40",
+                    "child_timestamp": "2026-09-05 15:49:08",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        480,
+                        834
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_258dc49aaed0",
+                "child": "artifact_486953746da9",
+                "similarity_score": 0.911748,
+                "confidence_score": 0.931748,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->FaceMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 14:37:40",
+                    "child_timestamp": "2026-09-05 15:51:30",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        368,
+                        640
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_ccea0fda24bf",
+                "child": "artifact_9a1fbc495ce4",
+                "similarity_score": 1.0,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "exact_sha256_match",
+                    "cross_platform:FaceMock->InstaMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": true,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-04 14:10:53",
+                    "child_timestamp": "2026-09-05 15:28:06",
+                    "parent_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "child_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_9a1fbc495ce4",
+                "child": "artifact_d1e34596ae60",
+                "similarity_score": 1.0,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "exact_sha256_match",
+                    "cross_platform:InstaMock->FaceMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": true,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:28:06",
+                    "child_timestamp": "2026-09-05 15:28:07",
+                    "parent_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "child_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_29370cbd9dc6",
+                "child": "artifact_5f027e2a1f1f",
+                "similarity_score": 1.0,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "exact_sha256_match",
+                    "same_platform",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": true,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "InstaMock",
+                    "parent_timestamp": "2026-09-05 15:29:21",
+                    "child_timestamp": "2026-09-05 15:29:40",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        640,
+                        368
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_29370cbd9dc6",
+                "child": "artifact_e73826749318",
+                "similarity_score": 0.895045,
+                "confidence_score": 0.915045,
+                "confidence": "HIGH",
+                "reasons": [
+                    "moderate_media_similarity",
+                    "cross_platform:InstaMock->FaceMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:29:21",
+                    "child_timestamp": "2026-09-05 16:00:27",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        360,
+                        628
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_29370cbd9dc6",
+                "child": "artifact_0aebbe92044e",
+                "similarity_score": 0.895045,
+                "confidence_score": 0.915045,
+                "confidence": "HIGH",
+                "reasons": [
+                    "moderate_media_similarity",
+                    "cross_platform:InstaMock->FaceMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:29:21",
+                    "child_timestamp": "2026-09-05 16:00:27",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        360,
+                        628
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_29370cbd9dc6",
+                "child": "artifact_6a8b63035e6b",
+                "similarity_score": 1.0,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "exact_sha256_match",
+                    "cross_platform:InstaMock->FaceMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": true,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:29:21",
+                    "child_timestamp": "2026-09-05 15:29:41",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        640,
+                        368
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_29370cbd9dc6",
+                "child": "artifact_8bc0a6212edb",
+                "similarity_score": 0.90884,
+                "confidence_score": 0.92884,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->FaceMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:29:21",
+                    "child_timestamp": "2026-09-05 15:49:08",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        480,
+                        834
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_29370cbd9dc6",
+                "child": "artifact_486953746da9",
+                "similarity_score": 0.911748,
+                "confidence_score": 0.931748,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->FaceMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:29:21",
+                    "child_timestamp": "2026-09-05 15:51:30",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        368,
+                        640
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_5f027e2a1f1f",
+                "child": "artifact_e73826749318",
+                "similarity_score": 0.895045,
+                "confidence_score": 0.915045,
+                "confidence": "HIGH",
+                "reasons": [
+                    "moderate_media_similarity",
+                    "cross_platform:InstaMock->FaceMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:29:40",
+                    "child_timestamp": "2026-09-05 16:00:27",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        360,
+                        628
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_5f027e2a1f1f",
+                "child": "artifact_0aebbe92044e",
+                "similarity_score": 0.895045,
+                "confidence_score": 0.915045,
+                "confidence": "HIGH",
+                "reasons": [
+                    "moderate_media_similarity",
+                    "cross_platform:InstaMock->FaceMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:29:40",
+                    "child_timestamp": "2026-09-05 16:00:27",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        360,
+                        628
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_5f027e2a1f1f",
+                "child": "artifact_6a8b63035e6b",
+                "similarity_score": 1.0,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "exact_sha256_match",
+                    "cross_platform:InstaMock->FaceMock",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": true,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:29:40",
+                    "child_timestamp": "2026-09-05 15:29:41",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        640,
+                        368
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_5f027e2a1f1f",
+                "child": "artifact_8bc0a6212edb",
+                "similarity_score": 0.90884,
+                "confidence_score": 0.92884,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->FaceMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:29:40",
+                    "child_timestamp": "2026-09-05 15:49:08",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        480,
+                        834
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_5f027e2a1f1f",
+                "child": "artifact_486953746da9",
+                "similarity_score": 0.911748,
+                "confidence_score": 0.931748,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "cross_platform:InstaMock->FaceMock"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "InstaMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:29:40",
+                    "child_timestamp": "2026-09-05 15:51:30",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        368,
+                        640
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_6a8b63035e6b",
+                "child": "artifact_e73826749318",
+                "similarity_score": 0.895045,
+                "confidence_score": 0.895045,
+                "confidence": "MEDIUM",
+                "reasons": [
+                    "moderate_media_similarity",
+                    "same_platform"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:29:41",
+                    "child_timestamp": "2026-09-05 16:00:27",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        360,
+                        628
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_8bc0a6212edb",
+                "child": "artifact_e73826749318",
+                "similarity_score": 0.94289,
+                "confidence_score": 0.96289,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "same_platform",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:49:08",
+                    "child_timestamp": "2026-09-05 16:00:27",
+                    "parent_dimensions": [
+                        480,
+                        834
+                    ],
+                    "child_dimensions": [
+                        360,
+                        628
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_486953746da9",
+                "child": "artifact_e73826749318",
+                "similarity_score": 0.962521,
+                "confidence_score": 0.982521,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "same_platform",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:51:30",
+                    "child_timestamp": "2026-09-05 16:00:27",
+                    "parent_dimensions": [
+                        368,
+                        640
+                    ],
+                    "child_dimensions": [
+                        360,
+                        628
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_6a8b63035e6b",
+                "child": "artifact_0aebbe92044e",
+                "similarity_score": 0.895045,
+                "confidence_score": 0.895045,
+                "confidence": "MEDIUM",
+                "reasons": [
+                    "moderate_media_similarity",
+                    "same_platform"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:29:41",
+                    "child_timestamp": "2026-09-05 16:00:27",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        360,
+                        628
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_8bc0a6212edb",
+                "child": "artifact_0aebbe92044e",
+                "similarity_score": 0.94289,
+                "confidence_score": 0.96289,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "same_platform",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:49:08",
+                    "child_timestamp": "2026-09-05 16:00:27",
+                    "parent_dimensions": [
+                        480,
+                        834
+                    ],
+                    "child_dimensions": [
+                        360,
+                        628
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_486953746da9",
+                "child": "artifact_0aebbe92044e",
+                "similarity_score": 0.962521,
+                "confidence_score": 0.982521,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "same_platform",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:51:30",
+                    "child_timestamp": "2026-09-05 16:00:27",
+                    "parent_dimensions": [
+                        368,
+                        640
+                    ],
+                    "child_dimensions": [
+                        360,
+                        628
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_ccea0fda24bf",
+                "child": "artifact_d1e34596ae60",
+                "similarity_score": 1.0,
+                "confidence_score": 1.0,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "exact_sha256_match",
+                    "same_platform",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": true,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-04 14:10:53",
+                    "child_timestamp": "2026-09-05 15:28:07",
+                    "parent_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "child_dimensions": [
+                        1920,
+                        1080
+                    ],
+                    "parent_format": "JPEG",
+                    "child_format": "JPEG"
+                }
+            },
+            {
+                "parent": "artifact_6a8b63035e6b",
+                "child": "artifact_8bc0a6212edb",
+                "similarity_score": 0.90884,
+                "confidence_score": 0.90884,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "same_platform"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:29:41",
+                    "child_timestamp": "2026-09-05 15:49:08",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        480,
+                        834
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_6a8b63035e6b",
+                "child": "artifact_486953746da9",
+                "similarity_score": 0.911748,
+                "confidence_score": 0.911748,
+                "confidence": "HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "same_platform"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:29:41",
+                    "child_timestamp": "2026-09-05 15:51:30",
+                    "parent_dimensions": [
+                        640,
+                        368
+                    ],
+                    "child_dimensions": [
+                        368,
+                        640
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            },
+            {
+                "parent": "artifact_8bc0a6212edb",
+                "child": "artifact_486953746da9",
+                "similarity_score": 0.95991,
+                "confidence_score": 0.97991,
+                "confidence": "VERY_HIGH",
+                "reasons": [
+                    "very_high_media_similarity",
+                    "same_platform",
+                    "child_dimensions_not_larger"
+                ],
+                "evidence": {
+                    "exact_sha256_match": false,
+                    "parent_platform": "FaceMock",
+                    "child_platform": "FaceMock",
+                    "parent_timestamp": "2026-09-05 15:49:08",
+                    "child_timestamp": "2026-09-05 15:51:30",
+                    "parent_dimensions": [
+                        480,
+                        834
+                    ],
+                    "child_dimensions": [
+                        368,
+                        640
+                    ],
+                    "parent_format": "MP4",
+                    "child_format": "MP4"
+                }
+            }
+        ]
+    },
+    "platform_distribution": {
+        "XMock": {
+            "artifacts": 12,
+            "artifact_ids": [
+                "artifact_fc0dd3f4dbdc",
+                "artifact_bdf7944f1b31",
+                "artifact_b28bc0da964c",
+                "artifact_fc77a6f20c39",
+                "artifact_b53973eb6d0f",
+                "artifact_6cbdc43234c2",
+                "artifact_4a06a03f2b04",
+                "artifact_9ea37e94da3b",
+                "artifact_e7bea489c286",
+                "artifact_9410de1a947d",
+                "artifact_cd219d7e1926",
+                "artifact_b65abab1e0dc"
+            ]
+        },
+        "InstaMock": {
+            "artifacts": 14,
+            "artifact_ids": [
+                "artifact_9458f43ca433",
+                "artifact_d460055c39af",
+                "artifact_1a9bf6d4b9f7",
+                "artifact_274ff09d8d4c",
+                "artifact_676e07223cdf",
+                "artifact_2a0f9aee12bc",
+                "artifact_f6a16fa3481f",
+                "artifact_a22c1643023e",
+                "artifact_7d7dc9754d78",
+                "artifact_e2f002477b58",
+                "artifact_258dc49aaed0",
+                "artifact_9a1fbc495ce4",
+                "artifact_29370cbd9dc6",
+                "artifact_5f027e2a1f1f"
+            ]
+        },
+        "FaceMock": {
+            "artifacts": 11,
+            "artifact_ids": [
+                "artifact_e73826749318",
+                "artifact_0aebbe92044e",
+                "artifact_ccea0fda24bf",
+                "artifact_7c2c8f0f5214",
+                "artifact_a46a836fdac0",
+                "artifact_d1e34596ae60",
+                "artifact_6a8b63035e6b",
+                "artifact_a65ad0450a39",
+                "artifact_30e7e1c6d60d",
+                "artifact_8bc0a6212edb",
+                "artifact_486953746da9"
+            ]
+        }
+    },
+    "platform_transitions": {
+        "XMock -> InstaMock": 26,
+        "InstaMock -> XMock": 20,
+        "XMock -> FaceMock": 19,
+        "FaceMock -> XMock": 14,
+        "FaceMock -> InstaMock": 16,
+        "InstaMock -> FaceMock": 30
+    },
+    "confidence_summary": {
+        "VERY_HIGH": 98,
+        "HIGH": 62,
+        "MEDIUM": 13,
+        "LOW": 0
+    },
+    "likely_roots": [
+        {
+            "artifact_id": "artifact_258dc49aaed0",
+            "platform": "InstaMock",
+            "post_id": 6,
+            "username": "dummy_instamock_8b2777f6",
+            "created_at": "2026-09-05 14:37:40",
+            "file": null
+        },
+        {
+            "artifact_id": "artifact_2a0f9aee12bc",
+            "platform": "InstaMock",
+            "post_id": 1,
+            "username": "dummyuser_instamock",
+            "created_at": "2026-09-04 14:10:53",
+            "file": null
+        },
+        {
+            "artifact_id": "artifact_4a06a03f2b04",
+            "platform": "XMock",
+            "post_id": 4,
+            "username": "dummy_xmock_1590a163",
+            "created_at": "2026-09-04 15:20:43",
+            "file": null
+        },
+        {
+            "artifact_id": "artifact_9ea37e94da3b",
+            "platform": "XMock",
+            "post_id": 5,
+            "username": "dummy_xmock_0570fd85",
+            "created_at": "2026-09-04 15:21:23",
+            "file": null
+        },
+        {
+            "artifact_id": "artifact_ccea0fda24bf",
+            "platform": "FaceMock",
+            "post_id": 1,
+            "username": "dummyuser_facemock",
+            "created_at": "2026-09-04 14:10:53",
+            "file": null
+        },
+        {
+            "artifact_id": "artifact_e2f002477b58",
+            "platform": "InstaMock",
+            "post_id": 5,
+            "username": "dummy_instamock_46cd197e",
+            "created_at": "2026-09-04 15:21:15",
+            "file": null
+        },
+        {
+            "artifact_id": "artifact_fc77a6f20c39",
+            "platform": "XMock",
+            "post_id": 1,
+            "username": "dummyuser_xmock",
+            "created_at": "2026-09-04 14:10:53",
+            "file": null
+        }
+    ],
+    "methodology": {
+        "ground_truth_used": false,
+        "description": "Lineage was independently inferred from collected artifact metadata and media similarity evidence."
+    }
+}

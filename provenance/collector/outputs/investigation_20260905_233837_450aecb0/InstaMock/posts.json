@@ -1,0 +1,114 @@
+[
+    {
+        "id": 13,
+        "username": "dummy_instamock_1dcc365c",
+        "caption": "",
+        "media_url": "/media/9d4ef377-f327-41fb-a468-4f0f0e125f71.mp4",
+        "media_type": "video/mp4",
+        "created_at": "2026-09-05 16:00:18"
+    },
+    {
+        "id": 14,
+        "username": "dummy_instamock_1dcc365c",
+        "caption": "",
+        "media_url": "/media/1c96fcda-9bd1-4286-8a1f-c60b4810e95c.mp4",
+        "media_type": "video/mp4",
+        "created_at": "2026-09-05 16:00:18"
+    },
+    {
+        "id": 12,
+        "username": "dummy_instamock_de0e1b1f",
+        "caption": "",
+        "media_url": "/media/f34d3e91-cc1a-4d15-9273-2f1449fe43d3.mp4",
+        "media_type": "video/mp4",
+        "created_at": "2026-09-05 15:51:53"
+    },
+    {
+        "id": 11,
+        "username": "dummy_instamock_554c251f",
+        "caption": "",
+        "media_url": "/media/c866bf04-1183-45e1-a5f0-9354b545940c.mp4",
+        "media_type": "video/mp4",
+        "created_at": "2026-09-05 15:49:15"
+    },
+    {
+        "id": 10,
+        "username": "dummy_instamock_88982565",
+        "caption": "",
+        "media_url": "/media/d1c3c254-9f7a-4089-a805-597336392fed.png",
+        "media_type": "image/png",
+        "created_at": "2026-09-05 15:30:12"
+    },
+    {
+        "id": 9,
+        "username": "video_19c796fc",
+        "caption": "video smoke test",
+        "media_url": "/media/511a966c-848b-4b16-aa37-ade0b789edc4.mp4",
+        "media_type": "video/mp4",
+        "created_at": "2026-09-05 15:29:40"
+    },
+    {
+        "id": 8,
+        "username": "video_166a03d4",
+        "caption": "video smoke test",
+        "media_url": "/media/a6caadd5-5ca3-47f5-9204-94901c60f263.mp4",
+        "media_type": "video/mp4",
+        "created_at": "2026-09-05 15:29:21"
+    },
+    {
+        "id": 7,
+        "username": "smoke_0074caec",
+        "caption": "internet smoke test",
+        "media_url": "/media/c787be57-7fbb-48d1-a189-57b881b8c8f8.jpg",
+        "media_type": "image/jpeg",
+        "created_at": "2026-09-05 15:28:06"
+    },
+    {
+        "id": 6,
+        "username": "dummy_instamock_8b2777f6",
+        "caption": "video",
+        "media_url": "/media/f924baf5-aaf1-4cbd-b087-7ef4e1b1d74f.mp4",
+        "media_type": "video/mp4",
+        "created_at": "2026-09-05 14:37:40"
+    },
+    {
+        "id": 5,
+        "username": "dummy_instamock_46cd197e",
+        "caption": "",
+        "media_url": "/media/1e675f4f-93af-4f71-8d7d-bb8f9a061175.webp",
+        "media_type": "image/webp",
+        "created_at": "2026-09-04 15:21:15"
+    },
+    {
+        "id": 4,
+        "username": "dummy_instamock_d34bc544",
+        "caption": "",
+        "media_url": "/media/3ef81079-3e00-45c9-acbc-210ffa0fca15.jpg",
+        "media_type": "image/jpeg",
+        "created_at": "2026-09-04 15:20:47"
+    },
+    {
+        "id": 2,
+        "username": "dummy_instamock_4dd03793",
+        "caption": "",
+        "media_url": "/media/d8cdf83d-b7e5-4b01-8c08-7ee8219cf45c.jpg",
+        "media_type": "image/jpeg",
+        "created_at": "2026-09-04 15:16:03"
+    },
+    {
+        "id": 3,
+        "username": "dummy_instamock_fcc411cb",
+        "caption": "",
+        "media_url": "/media/f883c428-88d2-4a51-be1f-3288bab9b064.jpg",
+        "media_type": "image/jpeg",
+        "created_at": "2026-09-04 15:16:03"
+    },
+    {
+        "id": 1,
+        "username": "dummyuser_instamock",
+        "caption": "",
+        "media_url": "/media/e0c4db95-2110-4bfb-8ae3-dfcff56541f8.jpg",
+        "media_type": "image/jpeg",
+        "created_at": "2026-09-04 14:10:53"
+    }
+]

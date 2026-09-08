@@ -1,0 +1,90 @@
+[
+    {
+        "id": 10,
+        "username": "dummy_facemock_4eafdba6",
+        "caption": "videoTest1",
+        "media_url": "/media/7af6910b-91c9-4261-bef1-3f589f72dd9f.mp4",
+        "media_type": "video/mp4",
+        "created_at": "2026-09-05 16:00:27"
+    },
+    {
+        "id": 11,
+        "username": "dummy_facemock_5f7ee634",
+        "caption": "videoTest1 (duplicate)",
+        "media_url": "/media/e6da17ec-eee1-4a03-ac0e-64ad50c280df.mp4",
+        "media_type": "video/mp4",
+        "created_at": "2026-09-05 16:00:27"
+    },
+    {
+        "id": 9,
+        "username": "dummy_facemock_033e1fcc",
+        "caption": "DummyUser propagation test",
+        "media_url": "/media/d4aa2aca-2fb9-4dd0-b18f-3b21ccdaf918.mp4",
+        "media_type": "video/mp4",
+        "created_at": "2026-09-05 15:51:30"
+    },
+    {
+        "id": 8,
+        "username": "dummy_facemock_18775ce1",
+        "caption": "DummyUser propagation test",
+        "media_url": "/media/8f1621fa-91b3-4994-90d0-e26984f1af67.mp4",
+        "media_type": "video/mp4",
+        "created_at": "2026-09-05 15:49:08"
+    },
+    {
+        "id": 6,
+        "username": "dummy_facemock_0bf0eec3",
+        "caption": "DummyUser propagation test",
+        "media_url": "/media/02136bde-9b85-43fb-b470-3b1a4cc8ef4a.jpg",
+        "media_type": "image/jpeg",
+        "created_at": "2026-09-05 15:30:04"
+    },
+    {
+        "id": 7,
+        "username": "dummy_facemock_0bf0eec3",
+        "caption": "DummyUser duplicate propagation",
+        "media_url": "/media/0e9a33d4-4720-447b-a943-b410a3d2b8d4.jpg",
+        "media_type": "image/jpeg",
+        "created_at": "2026-09-05 15:30:04"
+    },
+    {
+        "id": 5,
+        "username": "video_9d84d060",
+        "caption": "video smoke test",
+        "media_url": "/media/45b029ef-3717-48e1-91b0-2106e5b7a871.mp4",
+        "media_type": "video/mp4",
+        "created_at": "2026-09-05 15:29:41"
+    },
+    {
+        "id": 4,
+        "username": "smoke_d7617fd3",
+        "caption": "internet smoke test",
+        "media_url": "/media/8bcc397a-93b4-4b65-8c0f-2052ce43720d.jpg",
+        "media_type": "image/jpeg",
+        "created_at": "2026-09-05 15:28:07"
+    },
+    {
+        "id": 3,
+        "username": "dummy_facemock_94b55118",
+        "caption": "DummyUser propagation test",
+        "media_url": "/media/92ff7a40-e78a-47cf-afef-cd5f94c914b4.jpg",
+        "media_type": "image/jpeg",
+        "created_at": "2026-09-04 15:21:20"
+    },
+    {
+        "id": 2,
+        "username": "dummy_facemock_d8a3d87b",
+        "caption": "DummyUser propagation test",
+        "media_url": "/media/2e4fe8fa-3614-401f-894c-21450ecca6ed.jpg",
+        "media_type": "image/jpeg",
+        "created_at": "2026-09-04 15:20:51"
+    },
+    {
+        "id": 1,
+        "username": "dummyuser_facemock",
+        "caption": "DummyUser propagation test",
+        "media_url": "/media/2afa8fb1-d278-4223-ba31-cc3c19fb6ae0.jpg",
+        "media_type": "image/jpeg",
+        "created_at": "2026-09-04 14:10:53"
+    }
+]

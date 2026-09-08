@@ -1,0 +1,205 @@
+{
+    "media_id": "d9b38e21-7d1b-4a1a-9c01-8f778e351afb",
+    "original": {
+        "file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\internet\\mediaModifier\\input\\web\\bc16fdb4-3f23-4502-840e-6f4a6a020d51.mp4",
+        "sha256": "17fe5a465358a4cb270faefa71ca9971323f0e52300f24abd7dc25861cadcd92"
+    },
+    "scenario": {
+        "name": "random_adversarial_propagation",
+        "platform_order": [
+            "XMock",
+            "InstaMock",
+            "FaceMock"
+        ]
+    },
+    "users": {
+        "XMock": [
+            {
+                "id": 23,
+                "username": "dummy_xmock_ff92799a"
+            },
+            {
+                "id": 24,
+                "username": "dummy_xmock_81b96044"
+            },
+            {
+                "id": 25,
+                "username": "dummy_xmock_2ea10867"
+            }
+        ],
+        "InstaMock": [
+            {
+                "id": 28,
+                "username": "dummy_instamock_1dcc365c"
+            },
+            {
+                "id": 29,
+                "username": "dummy_instamock_92dbc8b9"
+            },
+            {
+                "id": 30,
+                "username": "dummy_instamock_73b1f74d"
+            }
+        ],
+        "FaceMock": [
+            {
+                "id": 23,
+                "username": "dummy_facemock_5f7ee634"
+            },
+            {
+                "id": 24,
+                "username": "dummy_facemock_4eafdba6"
+            },
+            {
+                "id": 25,
+                "username": "dummy_facemock_a758ef79"
+            }
+        ]
+    },
+    "events": [
+        {
+            "event_id": "event_1",
+            "event_type": "upload",
+            "platform": "XMock",
+            "user_id": 25,
+            "post_id": 12,
+            "parent_event_id": null,
+            "source": {
+                "platform": null,
+                "post_id": null
+            },
+            "input": {
+                "file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\internet\\mediaModifier\\input\\web\\bc16fdb4-3f23-4502-840e-6f4a6a020d51.mp4",
+                "sha256": "17fe5a465358a4cb270faefa71ca9971323f0e52300f24abd7dc25861cadcd92"
+            },
+            "output": {
+                "file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\internet\\mediaModifier\\output\\a89f6af7-4472-4b0b-9b7d-932fa679efb4_step2.mp4",
+                "sha256": "883e7144bbdeb0827383315212294f78eb1abbc440bdc48730b97a5435aa9072"
+            },
+            "transformation_id": "a89f6af7-4472-4b0b-9b7d-932fa679efb4",
+            "operations": [
+                {
+                    "type": "compress",
+                    "quality": 71
+                },
+                {
+                    "type": "convert",
+                    "format": "mp4"
+                }
+            ],
+            "delay_from_previous_event": 3.5537057971131913,
+            "timestamp": "2026-09-05T21:30:06.526364"
+        },
+        {
+            "event_id": "event_2",
+            "event_type": "upload",
+            "platform": "InstaMock",
+            "user_id": 28,
+            "post_id": 13,
+            "parent_event_id": "event_1",
+            "source": {
+                "platform": "XMock",
+                "post_id": 12
+            },
+            "input": {
+                "file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\internet\\mediaModifier\\output\\a89f6af7-4472-4b0b-9b7d-932fa679efb4_step2.mp4",
+                "sha256": "883e7144bbdeb0827383315212294f78eb1abbc440bdc48730b97a5435aa9072"
+            },
+            "output": {
+                "file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\internet\\mediaModifier\\output\\cf74f198-dfc3-463f-9ca6-198f13fa99a0_step2.mp4",
+                "sha256": "695357fa5b02ce52184bb71c422c2c6d080754b2c57710f7b97f04d9aa48cc36"
+            },
+            "transformation_id": "cf74f198-dfc3-463f-9ca6-198f13fa99a0",
+            "operations": [
+                {
+                    "type": "resize",
+                    "width": 240
+                },
+                {
+                    "type": "convert",
+                    "format": "mp4"
+                }
+            ],
+            "delay_from_previous_event": 2.076862027594709,
+            "timestamp": "2026-09-05T21:30:18.868465"
+        },
+        {
+            "event_id": "event_3",
+            "event_type": "duplicate_upload",
+            "platform": "InstaMock",
+            "user_id": 28,
+            "post_id": 14,
+            "parent_event_id": "event_2",
+            "source": {
+                "platform": "InstaMock",
+                "post_id": 13
+            },
+            "input": {
+                "file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\internet\\mediaModifier\\output\\cf74f198-dfc3-463f-9ca6-198f13fa99a0_step2.mp4",
+                "sha256": "695357fa5b02ce52184bb71c422c2c6d080754b2c57710f7b97f04d9aa48cc36"
+            },
+            "output": {
+                "file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\internet\\mediaModifier\\output\\cf74f198-dfc3-463f-9ca6-198f13fa99a0_step2.mp4",
+                "sha256": "695357fa5b02ce52184bb71c422c2c6d080754b2c57710f7b97f04d9aa48cc36"
+            },
+            "transformation_id": null,
+            "operations": [],
+            "delay_from_previous_event": 0.0,
+            "timestamp": "2026-09-05T21:30:18.958868"
+        },
+        {
+            "event_id": "event_4",
+            "event_type": "upload",
+            "platform": "FaceMock",
+            "user_id": 24,
+            "post_id": 10,
+            "parent_event_id": "event_3",
+            "source": {
+                "platform": "InstaMock",
+                "post_id": 14
+            },
+            "input": {
+                "file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\internet\\mediaModifier\\output\\cf74f198-dfc3-463f-9ca6-198f13fa99a0_step2.mp4",
+                "sha256": "695357fa5b02ce52184bb71c422c2c6d080754b2c57710f7b97f04d9aa48cc36"
+            },
+            "output": {
+                "file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\internet\\mediaModifier\\output\\0271d32f-a53f-4874-bd6c-50c8df7bd8fb_step1.mp4",
+                "sha256": "55663d7ded8a3b3fe39f6a57438066c98816db2dbc996cece2721f23a25d675e"
+            },
+            "transformation_id": "0271d32f-a53f-4874-bd6c-50c8df7bd8fb",
+            "operations": [
+                {
+                    "type": "resize",
+                    "width": 360
+                }
+            ],
+            "delay_from_previous_event": 3.898424401180019,
+            "timestamp": "2026-09-05T21:30:27.120618"
+        },
+        {
+            "event_id": "event_5",
+            "event_type": "duplicate_upload",
+            "platform": "FaceMock",
+            "user_id": 23,
+            "post_id": 11,
+            "parent_event_id": "event_4",
+            "source": {
+                "platform": "FaceMock",
+                "post_id": 10
+            },
+            "input": {
+                "file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\internet\\mediaModifier\\output\\0271d32f-a53f-4874-bd6c-50c8df7bd8fb_step1.mp4",
+                "sha256": "55663d7ded8a3b3fe39f6a57438066c98816db2dbc996cece2721f23a25d675e"
+            },
+            "output": {
+                "file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\internet\\mediaModifier\\output\\0271d32f-a53f-4874-bd6c-50c8df7bd8fb_step1.mp4",
+                "sha256": "55663d7ded8a3b3fe39f6a57438066c98816db2dbc996cece2721f23a25d675e"
+            },
+            "transformation_id": null,
+            "operations": [],
+            "delay_from_previous_event": 0.0,
+            "timestamp": "2026-09-05T21:30:27.201287"
+        }
+    ],
+    "created_at": "2026-09-05T21:29:54.218513"
+}

@@ -1,0 +1,206 @@
+{
+    "media_id": "8bd71f07-3179-4f6f-843a-5dbed08f4747",
+    "original": {
+        "file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\internet\\mediaModifier\\input\\web\\342891a4-b6ba-4559-bd2b-d6f565c6bc68.webp",
+        "sha256": "337d918c80c4c5f629a2bd244db7b62e351eab977841fbd818dc0a4b6271dace"
+    },
+    "scenario": {
+        "name": "random_adversarial_propagation",
+        "platform_order": [
+            "FaceMock",
+            "XMock",
+            "InstaMock"
+        ]
+    },
+    "users": {
+        "FaceMock": [
+            {
+                "id": 8,
+                "username": "dummy_facemock_d3d2743a"
+            },
+            {
+                "id": 9,
+                "username": "dummy_facemock_a7ff24d0"
+            },
+            {
+                "id": 10,
+                "username": "dummy_facemock_b1e80156"
+            }
+        ],
+        "XMock": [
+            {
+                "id": 8,
+                "username": "dummy_xmock_a2b35ca1"
+            },
+            {
+                "id": 9,
+                "username": "dummy_xmock_26b2084f"
+            },
+            {
+                "id": 10,
+                "username": "dummy_xmock_9bdc8aa7"
+            }
+        ],
+        "InstaMock": [
+            {
+                "id": 8,
+                "username": "dummy_instamock_1f5bbd29"
+            },
+            {
+                "id": 9,
+                "username": "dummy_instamock_8f4d606a"
+            },
+            {
+                "id": 10,
+                "username": "dummy_instamock_b9f37f0a"
+            }
+        ]
+    },
+    "events": [
+        {
+            "event_id": "event_1",
+            "event_type": "upload",
+            "platform": "FaceMock",
+            "user_id": 9,
+            "post_id": 3,
+            "parent_event_id": null,
+            "source": {
+                "platform": null,
+                "post_id": null
+            },
+            "input": {
+                "file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\internet\\mediaModifier\\input\\web\\342891a4-b6ba-4559-bd2b-d6f565c6bc68.webp",
+                "sha256": "337d918c80c4c5f629a2bd244db7b62e351eab977841fbd818dc0a4b6271dace"
+            },
+            "output": {
+                "file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\internet\\mediaModifier\\output\\d2972824-82dc-4391-aa50-2b0165c7a5f9_step3.webp",
+                "sha256": "a220be84600d774477f207c6b282d7dbdf3d2b4cd781617926d5f792dbed5f62"
+            },
+            "transformation_id": "d2972824-82dc-4391-aa50-2b0165c7a5f9",
+            "operations": [
+                {
+                    "type": "resize",
+                    "width": 720
+                },
+                {
+                    "type": "crop",
+                    "left": 0,
+                    "top": 0,
+                    "right": 800,
+                    "bottom": 800
+                },
+                {
+                    "type": "convert",
+                    "format": "webp"
+                }
+            ],
+            "delay_from_previous_event": 2.241200834750087,
+            "timestamp": "2026-09-07T19:44:09.681206"
+        },
+        {
+            "event_id": "event_2",
+            "event_type": "upload",
+            "platform": "XMock",
+            "user_id": 8,
+            "post_id": 4,
+            "parent_event_id": "event_1",
+            "source": {
+                "platform": "FaceMock",
+                "post_id": 3
+            },
+            "input": {
+                "file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\internet\\mediaModifier\\output\\d2972824-82dc-4391-aa50-2b0165c7a5f9_step3.webp",
+                "sha256": "a220be84600d774477f207c6b282d7dbdf3d2b4cd781617926d5f792dbed5f62"
+            },
+            "output": {
+                "file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\internet\\mediaModifier\\output\\60ffddb8-eb92-4ca1-bc17-941260688d1e_step3.webp",
+                "sha256": "5960812c249ab18b47e3975cd4385fc9304cd95fae97fd66eeb5dfe1b9843b03"
+            },
+            "transformation_id": "60ffddb8-eb92-4ca1-bc17-941260688d1e",
+            "operations": [
+                {
+                    "type": "crop",
+                    "left": 0,
+                    "top": 0,
+                    "right": 800,
+                    "bottom": 800
+                },
+                {
+                    "type": "compress",
+                    "quality": 79
+                },
+                {
+                    "type": "convert",
+                    "format": "webp"
+                }
+            ],
+            "delay_from_previous_event": 3.555143436980501,
+            "timestamp": "2026-09-07T19:44:13.593722"
+        },
+        {
+            "event_id": "event_3",
+            "event_type": "upload",
+            "platform": "InstaMock",
+            "user_id": 10,
+            "post_id": 4,
+            "parent_event_id": "event_2",
+            "source": {
+                "platform": "XMock",
+                "post_id": 4
+            },
+            "input": {
+                "file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\internet\\mediaModifier\\output\\60ffddb8-eb92-4ca1-bc17-941260688d1e_step3.webp",
+                "sha256": "5960812c249ab18b47e3975cd4385fc9304cd95fae97fd66eeb5dfe1b9843b03"
+            },
+            "output": {
+                "file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\internet\\mediaModifier\\output\\093ef0f3-7e3f-47b3-bde2-388507e8da99_step3.webp",
+                "sha256": "f6568fb0a54d8f6f9c2a429a50f5dfaf39085b43ccb977255cd6403baac01d4a"
+            },
+            "transformation_id": "093ef0f3-7e3f-47b3-bde2-388507e8da99",
+            "operations": [
+                {
+                    "type": "crop",
+                    "left": 0,
+                    "top": 0,
+                    "right": 900,
+                    "bottom": 900
+                },
+                {
+                    "type": "compress",
+                    "quality": 83
+                },
+                {
+                    "type": "convert",
+                    "format": "webp"
+                }
+            ],
+            "delay_from_previous_event": 4.647740869400158,
+            "timestamp": "2026-09-07T19:44:18.805240"
+        },
+        {
+            "event_id": "event_4",
+            "event_type": "duplicate_upload",
+            "platform": "InstaMock",
+            "user_id": 10,
+            "post_id": 5,
+            "parent_event_id": "event_3",
+            "source": {
+                "platform": "InstaMock",
+                "post_id": 4
+            },
+            "input": {
+                "file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\internet\\mediaModifier\\output\\093ef0f3-7e3f-47b3-bde2-388507e8da99_step3.webp",
+                "sha256": "f6568fb0a54d8f6f9c2a429a50f5dfaf39085b43ccb977255cd6403baac01d4a"
+            },
+            "output": {
+                "file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\internet\\mediaModifier\\output\\093ef0f3-7e3f-47b3-bde2-388507e8da99_step3.webp",
+                "sha256": "f6568fb0a54d8f6f9c2a429a50f5dfaf39085b43ccb977255cd6403baac01d4a"
+            },
+            "transformation_id": null,
+            "operations": [],
+            "delay_from_previous_event": 0.0,
+            "timestamp": "2026-09-07T19:44:18.846514"
+        }
+    ],
+    "created_at": "2026-09-07T19:44:06.671648"
+}

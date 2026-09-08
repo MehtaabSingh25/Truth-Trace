@@ -1,0 +1,79 @@
+[
+    {
+        "post_id": 10,
+        "media_url": "/media/7af6910b-91c9-4261-bef1-3f589f72dd9f.mp4",
+        "local_file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\provenance\\collector\\outputs\\investigation_20260905_233631_486e3fed\\FaceMock\\media\\post_10_7af6910b-91c9-4261-bef1-3f589f72dd9f.mp4",
+        "sha256": "55663d7ded8a3b3fe39f6a57438066c98816db2dbc996cece2721f23a25d675e",
+        "size_bytes": 36927
+    },
+    {
+        "post_id": 11,
+        "media_url": "/media/e6da17ec-eee1-4a03-ac0e-64ad50c280df.mp4",
+        "local_file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\provenance\\collector\\outputs\\investigation_20260905_233631_486e3fed\\FaceMock\\media\\post_11_e6da17ec-eee1-4a03-ac0e-64ad50c280df.mp4",
+        "sha256": "55663d7ded8a3b3fe39f6a57438066c98816db2dbc996cece2721f23a25d675e",
+        "size_bytes": 36927
+    },
+    {
+        "post_id": 9,
+        "media_url": "/media/d4aa2aca-2fb9-4dd0-b18f-3b21ccdaf918.mp4",
+        "local_file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\provenance\\collector\\outputs\\investigation_20260905_233631_486e3fed\\FaceMock\\media\\post_9_d4aa2aca-2fb9-4dd0-b18f-3b21ccdaf918.mp4",
+        "sha256": "f50c006f4770f5385262044fffef4ed7c7a91dde8ab12224b647499f115ccf34",
+        "size_bytes": 25586
+    },
+    {
+        "post_id": 8,
+        "media_url": "/media/8f1621fa-91b3-4994-90d0-e26984f1af67.mp4",
+        "local_file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\provenance\\collector\\outputs\\investigation_20260905_233631_486e3fed\\FaceMock\\media\\post_8_8f1621fa-91b3-4994-90d0-e26984f1af67.mp4",
+        "sha256": "b246c67429487dd1130687dcda1a0b6f11cf149ea19a9834385eaffa51281620",
+        "size_bytes": 43345
+    },
+    {
+        "post_id": 6,
+        "media_url": "/media/02136bde-9b85-43fb-b470-3b1a4cc8ef4a.jpg",
+        "local_file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\provenance\\collector\\outputs\\investigation_20260905_233631_486e3fed\\FaceMock\\media\\post_6_02136bde-9b85-43fb-b470-3b1a4cc8ef4a.jpg",
+        "sha256": "85d00d78f89ed9473350984ddd25803e0477cd69ebcc52311b96a9d1f6672fcd",
+        "size_bytes": 35369
+    },
+    {
+        "post_id": 7,
+        "media_url": "/media/0e9a33d4-4720-447b-a943-b410a3d2b8d4.jpg",
+        "local_file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\provenance\\collector\\outputs\\investigation_20260905_233631_486e3fed\\FaceMock\\media\\post_7_0e9a33d4-4720-447b-a943-b410a3d2b8d4.jpg",
+        "sha256": "85d00d78f89ed9473350984ddd25803e0477cd69ebcc52311b96a9d1f6672fcd",
+        "size_bytes": 35369
+    },
+    {
+        "post_id": 5,
+        "media_url": "/media/45b029ef-3717-48e1-91b0-2106e5b7a871.mp4",
+        "local_file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\provenance\\collector\\outputs\\investigation_20260905_233631_486e3fed\\FaceMock\\media\\post_5_45b029ef-3717-48e1-91b0-2106e5b7a871.mp4",
+        "sha256": "17fe5a465358a4cb270faefa71ca9971323f0e52300f24abd7dc25861cadcd92",
+        "size_bytes": 34537
+    },
+    {
+        "post_id": 4,
+        "media_url": "/media/8bcc397a-93b4-4b65-8c0f-2052ce43720d.jpg",
+        "local_file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\provenance\\collector\\outputs\\investigation_20260905_233631_486e3fed\\FaceMock\\media\\post_4_8bcc397a-93b4-4b65-8c0f-2052ce43720d.jpg",
+        "sha256": "51d0180a246d3db30e32ddff7b1f202147d6868c6fb23ca936b2b1426d8688ec",
+        "size_bytes": 205674
+    },
+    {
+        "post_id": 3,
+        "media_url": "/media/92ff7a40-e78a-47cf-afef-cd5f94c914b4.jpg",
+        "local_file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\provenance\\collector\\outputs\\investigation_20260905_233631_486e3fed\\FaceMock\\media\\post_3_92ff7a40-e78a-47cf-afef-cd5f94c914b4.jpg",
+        "sha256": "267b87bae1213a9524b9a7c0533caa80281802280147036a4d0381a9c05646ab",
+        "size_bytes": 51912
+    },
+    {
+        "post_id": 2,
+        "media_url": "/media/2e4fe8fa-3614-401f-894c-21450ecca6ed.jpg",
+        "local_file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\provenance\\collector\\outputs\\investigation_20260905_233631_486e3fed\\FaceMock\\media\\post_2_2e4fe8fa-3614-401f-894c-21450ecca6ed.jpg",
+        "sha256": "43c920de149787603c9144631c53a3375306df677215782e966a47c3bae00a9a",
+        "size_bytes": 44939
+    },
+    {
+        "post_id": 1,
+        "media_url": "/media/2afa8fb1-d278-4223-ba31-cc3c19fb6ae0.jpg",
+        "local_file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\provenance\\collector\\outputs\\investigation_20260905_233631_486e3fed\\FaceMock\\media\\post_1_2afa8fb1-d278-4223-ba31-cc3c19fb6ae0.jpg",
+        "sha256": "51d0180a246d3db30e32ddff7b1f202147d6868c6fb23ca936b2b1426d8688ec",
+        "size_bytes": 205674
+    }
+]

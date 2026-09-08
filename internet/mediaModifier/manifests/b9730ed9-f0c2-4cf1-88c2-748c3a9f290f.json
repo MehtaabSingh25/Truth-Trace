@@ -1,0 +1,47 @@
+{
+    "transformation_id": "b9730ed9-f0c2-4cf1-88c2-748c3a9f290f",
+    "input": {
+        "file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\internet\\mediaModifier\\output\\08e7a1e9-a4ef-4035-9684-9da8051fad99_step2.mp4",
+        "sha256": "b246c67429487dd1130687dcda1a0b6f11cf149ea19a9834385eaffa51281620"
+    },
+    "final": {
+        "file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\internet\\mediaModifier\\output\\b9730ed9-f0c2-4cf1-88c2-748c3a9f290f_step2.mp4",
+        "sha256": "96b67dc1446452cf19993dd43852779302dfa409e5784474a1074b70cc9fc9d9"
+    },
+    "operations": [
+        {
+            "step": 1,
+            "operation_id": "4f7558c5-26a1-4704-af92-3c3165b9952f",
+            "type": "resize",
+            "parameters": {
+                "type": "resize",
+                "width": 480
+            },
+            "input_file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\internet\\mediaModifier\\output\\08e7a1e9-a4ef-4035-9684-9da8051fad99_step2.mp4",
+            "output_file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\internet\\mediaModifier\\output\\b9730ed9-f0c2-4cf1-88c2-748c3a9f290f_step1.mp4",
+            "input_sha256": "b246c67429487dd1130687dcda1a0b6f11cf149ea19a9834385eaffa51281620",
+            "output_sha256": "5e73d9d873b21654f4a4426d8922ce169fd95097e68f1152ea26f7aa93ff6062",
+            "details": {
+                "operation": "resize",
+                "width": 480
+            }
+        },
+        {
+            "step": 2,
+            "operation_id": "3f25ed01-e8f2-46d8-911d-b75279d00f1b",
+            "type": "convert",
+            "parameters": {
+                "type": "convert",
+                "format": "mp4"
+            },
+            "input_file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\internet\\mediaModifier\\output\\b9730ed9-f0c2-4cf1-88c2-748c3a9f290f_step1.mp4",
+            "output_file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\internet\\mediaModifier\\output\\b9730ed9-f0c2-4cf1-88c2-748c3a9f290f_step2.mp4",
+            "input_sha256": "5e73d9d873b21654f4a4426d8922ce169fd95097e68f1152ea26f7aa93ff6062",
+            "output_sha256": "96b67dc1446452cf19993dd43852779302dfa409e5784474a1074b70cc9fc9d9",
+            "details": {
+                "operation": "format_conversion",
+                "format": "mp4"
+            }
+        }
+    ]
+}

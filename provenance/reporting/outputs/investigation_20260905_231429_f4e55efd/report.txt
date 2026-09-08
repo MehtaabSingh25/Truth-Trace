@@ -1,0 +1,965 @@
+======================================================================
+                 TRUTH TRACE
+             MEDIA PROVENANCE REPORT
+======================================================================
+
+Investigation ID: investigation_20260905_231429_f4e55efd
+Generated: 2026-09-05T23:22:12.987547
+
+------------------------------------------------------------
+EVIDENCE SUMMARY
+------------------------------------------------------------
+Artifacts analyzed: 37
+Similarity comparisons: 666
+Inferred lineage nodes: 37
+Inferred lineage edges: 173
+
+------------------------------------------------------------
+PLATFORM DISTRIBUTION
+------------------------------------------------------------
+XMock: 12 artifacts
+InstaMock: 14 artifacts
+FaceMock: 11 artifacts
+
+------------------------------------------------------------
+LIKELY ROOT ARTIFACTS
+------------------------------------------------------------
+artifact_3816ff55d623
+  Platform: InstaMock
+  Post ID: 5
+  User: dummy_instamock_46cd197e
+  Created: 2026-09-04 15:21:15
+
+artifact_4046fd7ce2cb
+  Platform: XMock
+  Post ID: 1
+  User: dummyuser_xmock
+  Created: 2026-09-04 14:10:53
+
+artifact_4230c64b90e0
+  Platform: FaceMock
+  Post ID: 1
+  User: dummyuser_facemock
+  Created: 2026-09-04 14:10:53
+
+artifact_4933417e1719
+  Platform: XMock
+  Post ID: 4
+  User: dummy_xmock_1590a163
+  Created: 2026-09-04 15:20:43
+
+artifact_597ef6b9fd49
+  Platform: XMock
+  Post ID: 5
+  User: dummy_xmock_0570fd85
+  Created: 2026-09-04 15:21:23
+
+artifact_f6d13f0cd3ee
+  Platform: InstaMock
+  Post ID: 1
+  User: dummyuser_instamock
+  Created: 2026-09-04 14:10:53
+
+artifact_fd016b6217cb
+  Platform: InstaMock
+  Post ID: 6
+  User: dummy_instamock_8b2777f6
+  Created: 2026-09-05 14:37:40
+
+------------------------------------------------------------
+PLATFORM TRANSITIONS
+------------------------------------------------------------
+XMock -> InstaMock: 26 inferred edge(s)
+InstaMock -> XMock: 20 inferred edge(s)
+XMock -> FaceMock: 19 inferred edge(s)
+FaceMock -> XMock: 14 inferred edge(s)
+FaceMock -> InstaMock: 16 inferred edge(s)
+InstaMock -> FaceMock: 30 inferred edge(s)
+
+------------------------------------------------------------
+LINEAGE CONFIDENCE
+------------------------------------------------------------
+VERY_HIGH: 98
+HIGH: 62
+MEDIUM: 13
+LOW: 0
+
+------------------------------------------------------------
+INFERRED LINEAGE EDGES
+------------------------------------------------------------
+artifact_6ea8767624ba --> artifact_7bd63e9fa1c6
+  Similarity: 0.981853
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:XMock->InstaMock, child_dimensions_not_larger
+
+artifact_6ea8767624ba --> artifact_c75c7f90868e
+  Similarity: 0.970869
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:XMock->InstaMock, child_dimensions_not_larger
+
+artifact_6ea8767624ba --> artifact_3d7d3d3b95c0
+  Similarity: 1.0
+  Confidence: VERY_HIGH (1.0)
+  Evidence: exact_sha256_match, cross_platform:XMock->FaceMock, child_dimensions_not_larger
+
+artifact_7bd63e9fa1c6 --> artifact_09bb4428ebc0
+  Similarity: 0.970845
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->XMock, child_dimensions_not_larger
+
+artifact_09bb4428ebc0 --> artifact_334ea43c4be5
+  Similarity: 0.962479
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:XMock->FaceMock, child_dimensions_not_larger
+
+artifact_09bb4428ebc0 --> artifact_d8b5a683c99f
+  Similarity: 0.962479
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:XMock->FaceMock, child_dimensions_not_larger
+
+artifact_032eb6a2d532 --> artifact_09bb4428ebc0
+  Similarity: 0.992359
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:FaceMock->XMock, child_dimensions_not_larger
+
+artifact_7bd63e9fa1c6 --> artifact_7b1756dae876
+  Similarity: 0.961003
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->XMock, child_dimensions_not_larger
+
+artifact_3d7d3d3b95c0 --> artifact_7b1756dae876
+  Similarity: 0.972253
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:FaceMock->XMock, child_dimensions_not_larger
+
+artifact_032eb6a2d532 --> artifact_7b1756dae876
+  Similarity: 0.96878
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:FaceMock->XMock, child_dimensions_not_larger
+
+artifact_4046fd7ce2cb --> artifact_20816f9307d7
+  Similarity: 1.0
+  Confidence: VERY_HIGH (1.0)
+  Evidence: exact_sha256_match, same_platform, child_dimensions_not_larger
+
+artifact_4046fd7ce2cb --> artifact_47ad3206360f
+  Similarity: 0.965793
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:XMock->InstaMock, child_dimensions_not_larger
+
+artifact_4046fd7ce2cb --> artifact_42c1fa220d83
+  Similarity: 0.965793
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:XMock->InstaMock, child_dimensions_not_larger
+
+artifact_4046fd7ce2cb --> artifact_7ae1211c363c
+  Similarity: 1.0
+  Confidence: VERY_HIGH (1.0)
+  Evidence: exact_sha256_match, cross_platform:XMock->InstaMock, child_dimensions_not_larger
+
+artifact_4046fd7ce2cb --> artifact_868394f0c589
+  Similarity: 1.0
+  Confidence: VERY_HIGH (1.0)
+  Evidence: exact_sha256_match, cross_platform:XMock->FaceMock, child_dimensions_not_larger
+
+artifact_f6d13f0cd3ee --> artifact_bdc5055bf670
+  Similarity: 0.966337
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->XMock, child_dimensions_not_larger
+
+artifact_bdc5055bf670 --> artifact_47ad3206360f
+  Similarity: 0.996553
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:XMock->InstaMock, child_dimensions_not_larger
+
+artifact_bdc5055bf670 --> artifact_42c1fa220d83
+  Similarity: 0.996553
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:XMock->InstaMock, child_dimensions_not_larger
+
+artifact_4230c64b90e0 --> artifact_bdc5055bf670
+  Similarity: 0.966337
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:FaceMock->XMock, child_dimensions_not_larger
+
+artifact_f6d13f0cd3ee --> artifact_2c5ab85d8b52
+  Similarity: 0.966337
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->XMock, child_dimensions_not_larger
+
+artifact_2c5ab85d8b52 --> artifact_47ad3206360f
+  Similarity: 0.996553
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:XMock->InstaMock, child_dimensions_not_larger
+
+artifact_2c5ab85d8b52 --> artifact_42c1fa220d83
+  Similarity: 0.996553
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:XMock->InstaMock, child_dimensions_not_larger
+
+artifact_4230c64b90e0 --> artifact_2c5ab85d8b52
+  Similarity: 0.966337
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:FaceMock->XMock, child_dimensions_not_larger
+
+artifact_4933417e1719 --> artifact_3f200d3943e8
+  Similarity: 1.0
+  Confidence: VERY_HIGH (1.0)
+  Evidence: exact_sha256_match, cross_platform:XMock->InstaMock, child_dimensions_not_larger
+
+artifact_4933417e1719 --> artifact_7d771adba7de
+  Similarity: 0.996018
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:XMock->FaceMock, child_dimensions_not_larger
+
+artifact_f6d13f0cd3ee --> artifact_20816f9307d7
+  Similarity: 1.0
+  Confidence: VERY_HIGH (1.0)
+  Evidence: exact_sha256_match, cross_platform:InstaMock->XMock, child_dimensions_not_larger
+
+artifact_4230c64b90e0 --> artifact_20816f9307d7
+  Similarity: 1.0
+  Confidence: VERY_HIGH (1.0)
+  Evidence: exact_sha256_match, cross_platform:FaceMock->XMock, child_dimensions_not_larger
+
+artifact_20816f9307d7 --> artifact_868394f0c589
+  Similarity: 1.0
+  Confidence: VERY_HIGH (1.0)
+  Evidence: exact_sha256_match, cross_platform:XMock->FaceMock, child_dimensions_not_larger
+
+artifact_fd016b6217cb --> artifact_68956a40360e
+  Similarity: 1.0
+  Confidence: VERY_HIGH (1.0)
+  Evidence: exact_sha256_match, cross_platform:InstaMock->XMock, child_dimensions_not_larger
+
+artifact_26348076643c --> artifact_68956a40360e
+  Similarity: 1.0
+  Confidence: VERY_HIGH (1.0)
+  Evidence: exact_sha256_match, cross_platform:InstaMock->XMock, child_dimensions_not_larger
+
+artifact_16c6e1ed7686 --> artifact_68956a40360e
+  Similarity: 1.0
+  Confidence: VERY_HIGH (1.0)
+  Evidence: exact_sha256_match, cross_platform:InstaMock->XMock, child_dimensions_not_larger
+
+artifact_1d613558fae9 --> artifact_a7b47e60bbac
+  Similarity: 1.0
+  Confidence: VERY_HIGH (1.0)
+  Evidence: exact_sha256_match, cross_platform:XMock->InstaMock, child_dimensions_not_larger
+
+artifact_759e61b4def8 --> artifact_1d613558fae9
+  Similarity: 0.987146
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:FaceMock->XMock, format_changed
+
+artifact_175cab3127ed --> artifact_1d613558fae9
+  Similarity: 0.987146
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:FaceMock->XMock, format_changed
+
+artifact_9d749cafa477 --> artifact_a7b47e60bbac
+  Similarity: 1.0
+  Confidence: VERY_HIGH (1.0)
+  Evidence: exact_sha256_match, cross_platform:XMock->InstaMock, child_dimensions_not_larger
+
+artifact_759e61b4def8 --> artifact_9d749cafa477
+  Similarity: 0.987146
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:FaceMock->XMock, format_changed
+
+artifact_175cab3127ed --> artifact_9d749cafa477
+  Similarity: 0.987146
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:FaceMock->XMock, format_changed
+
+artifact_759e61b4def8 --> artifact_a7b47e60bbac
+  Similarity: 0.987146
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:FaceMock->InstaMock, format_changed
+
+artifact_175cab3127ed --> artifact_a7b47e60bbac
+  Similarity: 0.987146
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:FaceMock->InstaMock, format_changed
+
+artifact_7bd63e9fa1c6 --> artifact_c75c7f90868e
+  Similarity: 0.982523
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, same_platform, child_dimensions_not_larger
+
+artifact_3d7d3d3b95c0 --> artifact_7bd63e9fa1c6
+  Similarity: 0.981853
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:FaceMock->InstaMock, child_dimensions_not_larger
+
+artifact_7bd63e9fa1c6 --> artifact_032eb6a2d532
+  Similarity: 0.971075
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->FaceMock, child_dimensions_not_larger
+
+artifact_3d7d3d3b95c0 --> artifact_c75c7f90868e
+  Similarity: 0.970869
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:FaceMock->InstaMock, child_dimensions_not_larger
+
+artifact_f6d13f0cd3ee --> artifact_7ae1211c363c
+  Similarity: 1.0
+  Confidence: VERY_HIGH (1.0)
+  Evidence: exact_sha256_match, same_platform, child_dimensions_not_larger
+
+artifact_f6d13f0cd3ee --> artifact_868394f0c589
+  Similarity: 1.0
+  Confidence: VERY_HIGH (1.0)
+  Evidence: exact_sha256_match, cross_platform:InstaMock->FaceMock, child_dimensions_not_larger
+
+artifact_4230c64b90e0 --> artifact_47ad3206360f
+  Similarity: 0.965793
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:FaceMock->InstaMock, child_dimensions_not_larger
+
+artifact_4230c64b90e0 --> artifact_42c1fa220d83
+  Similarity: 0.965793
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:FaceMock->InstaMock, child_dimensions_not_larger
+
+artifact_3f200d3943e8 --> artifact_7d771adba7de
+  Similarity: 0.996018
+  Confidence: VERY_HIGH (1.0)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->FaceMock, child_dimensions_not_larger
+
+artifact_fd016b6217cb --> artifact_26348076643c
+  Similarity: 1.0
+  Confidence: VERY_HIGH (1.0)
+  Evidence: exact_sha256_match, same_platform, child_dimensions_not_larger
+
+artifact_fd016b6217cb --> artifact_16c6e1ed7686
+  Similarity: 1.0
+  Confidence: VERY_HIGH (1.0)
+  Evidence: exact_sha256_match, same_platform, child_dimensions_not_larger
+
+artifact_fd016b6217cb --> artifact_4c678349522f
+  Similarity: 1.0
+  Confidence: VERY_HIGH (1.0)
+  Evidence: exact_sha256_match, cross_platform:InstaMock->FaceMock, child_dimensions_not_larger
+
+artifact_4230c64b90e0 --> artifact_7ae1211c363c
+  Similarity: 1.0
+  Confidence: VERY_HIGH (1.0)
+  Evidence: exact_sha256_match, cross_platform:FaceMock->InstaMock, child_dimensions_not_larger
+
+artifact_7ae1211c363c --> artifact_868394f0c589
+  Similarity: 1.0
+  Confidence: VERY_HIGH (1.0)
+  Evidence: exact_sha256_match, cross_platform:InstaMock->FaceMock, child_dimensions_not_larger
+
+artifact_26348076643c --> artifact_16c6e1ed7686
+  Similarity: 1.0
+  Confidence: VERY_HIGH (1.0)
+  Evidence: exact_sha256_match, same_platform, child_dimensions_not_larger
+
+artifact_26348076643c --> artifact_4c678349522f
+  Similarity: 1.0
+  Confidence: VERY_HIGH (1.0)
+  Evidence: exact_sha256_match, cross_platform:InstaMock->FaceMock, child_dimensions_not_larger
+
+artifact_16c6e1ed7686 --> artifact_4c678349522f
+  Similarity: 1.0
+  Confidence: VERY_HIGH (1.0)
+  Evidence: exact_sha256_match, cross_platform:InstaMock->FaceMock, child_dimensions_not_larger
+
+artifact_4230c64b90e0 --> artifact_868394f0c589
+  Similarity: 1.0
+  Confidence: VERY_HIGH (1.0)
+  Evidence: exact_sha256_match, same_platform, child_dimensions_not_larger
+
+artifact_6ea8767624ba --> artifact_032eb6a2d532
+  Similarity: 0.95991
+  Confidence: VERY_HIGH (0.99991)
+  Evidence: very_high_media_similarity, cross_platform:XMock->FaceMock, child_dimensions_not_larger
+
+artifact_3d7d3d3b95c0 --> artifact_09bb4428ebc0
+  Similarity: 0.95935
+  Confidence: VERY_HIGH (0.99935)
+  Evidence: very_high_media_similarity, cross_platform:FaceMock->XMock, child_dimensions_not_larger
+
+artifact_c75c7f90868e --> artifact_334ea43c4be5
+  Similarity: 0.957874
+  Confidence: VERY_HIGH (0.997874)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->FaceMock, child_dimensions_not_larger
+
+artifact_c75c7f90868e --> artifact_d8b5a683c99f
+  Similarity: 0.957874
+  Confidence: VERY_HIGH (0.997874)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->FaceMock, child_dimensions_not_larger
+
+artifact_c75c7f90868e --> artifact_7b1756dae876
+  Similarity: 0.956627
+  Confidence: VERY_HIGH (0.996627)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->XMock, child_dimensions_not_larger
+
+artifact_7bd63e9fa1c6 --> artifact_334ea43c4be5
+  Similarity: 0.954623
+  Confidence: VERY_HIGH (0.994623)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->FaceMock, child_dimensions_not_larger
+
+artifact_7bd63e9fa1c6 --> artifact_d8b5a683c99f
+  Similarity: 0.954623
+  Confidence: VERY_HIGH (0.994623)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->FaceMock, child_dimensions_not_larger
+
+artifact_324985dd348d --> artifact_334ea43c4be5
+  Similarity: 0.974215
+  Confidence: VERY_HIGH (0.994215)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->FaceMock
+
+artifact_324985dd348d --> artifact_d8b5a683c99f
+  Similarity: 0.974215
+  Confidence: VERY_HIGH (0.994215)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->FaceMock
+
+artifact_cc6d1808c7df --> artifact_334ea43c4be5
+  Similarity: 0.974215
+  Confidence: VERY_HIGH (0.994215)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->FaceMock
+
+artifact_cc6d1808c7df --> artifact_d8b5a683c99f
+  Similarity: 0.974215
+  Confidence: VERY_HIGH (0.994215)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->FaceMock
+
+artifact_7b1756dae876 --> artifact_334ea43c4be5
+  Similarity: 0.952616
+  Confidence: VERY_HIGH (0.992616)
+  Evidence: very_high_media_similarity, cross_platform:XMock->FaceMock, child_dimensions_not_larger
+
+artifact_7b1756dae876 --> artifact_d8b5a683c99f
+  Similarity: 0.952616
+  Confidence: VERY_HIGH (0.992616)
+  Evidence: very_high_media_similarity, cross_platform:XMock->FaceMock, child_dimensions_not_larger
+
+artifact_09bb4428ebc0 --> artifact_c75c7f90868e
+  Similarity: 0.972391
+  Confidence: VERY_HIGH (0.992391)
+  Evidence: very_high_media_similarity, cross_platform:XMock->InstaMock
+
+artifact_6ea8767624ba --> artifact_7b1756dae876
+  Similarity: 0.972253
+  Confidence: VERY_HIGH (0.992253)
+  Evidence: very_high_media_similarity, same_platform, child_dimensions_not_larger
+
+artifact_032eb6a2d532 --> artifact_c75c7f90868e
+  Similarity: 0.97194
+  Confidence: VERY_HIGH (0.99194)
+  Evidence: very_high_media_similarity, cross_platform:FaceMock->InstaMock
+
+artifact_09bb4428ebc0 --> artifact_7b1756dae876
+  Similarity: 0.968191
+  Confidence: VERY_HIGH (0.988191)
+  Evidence: very_high_media_similarity, same_platform, child_dimensions_not_larger
+
+artifact_4046fd7ce2cb --> artifact_bdc5055bf670
+  Similarity: 0.966337
+  Confidence: VERY_HIGH (0.986337)
+  Evidence: very_high_media_similarity, same_platform, child_dimensions_not_larger
+
+artifact_4046fd7ce2cb --> artifact_2c5ab85d8b52
+  Similarity: 0.966337
+  Confidence: VERY_HIGH (0.986337)
+  Evidence: very_high_media_similarity, same_platform, child_dimensions_not_larger
+
+artifact_bdc5055bf670 --> artifact_7ae1211c363c
+  Similarity: 0.966337
+  Confidence: VERY_HIGH (0.986337)
+  Evidence: very_high_media_similarity, cross_platform:XMock->InstaMock
+
+artifact_bdc5055bf670 --> artifact_868394f0c589
+  Similarity: 0.966337
+  Confidence: VERY_HIGH (0.986337)
+  Evidence: very_high_media_similarity, cross_platform:XMock->FaceMock
+
+artifact_2c5ab85d8b52 --> artifact_7ae1211c363c
+  Similarity: 0.966337
+  Confidence: VERY_HIGH (0.986337)
+  Evidence: very_high_media_similarity, cross_platform:XMock->InstaMock
+
+artifact_2c5ab85d8b52 --> artifact_868394f0c589
+  Similarity: 0.966337
+  Confidence: VERY_HIGH (0.986337)
+  Evidence: very_high_media_similarity, cross_platform:XMock->FaceMock
+
+artifact_09bb4428ebc0 --> artifact_324985dd348d
+  Similarity: 0.945936
+  Confidence: VERY_HIGH (0.985936)
+  Evidence: very_high_media_similarity, cross_platform:XMock->InstaMock, child_dimensions_not_larger
+
+artifact_09bb4428ebc0 --> artifact_cc6d1808c7df
+  Similarity: 0.945936
+  Confidence: VERY_HIGH (0.985936)
+  Evidence: very_high_media_similarity, cross_platform:XMock->InstaMock, child_dimensions_not_larger
+
+artifact_032eb6a2d532 --> artifact_324985dd348d
+  Similarity: 0.945849
+  Confidence: VERY_HIGH (0.985849)
+  Evidence: very_high_media_similarity, cross_platform:FaceMock->InstaMock, child_dimensions_not_larger
+
+artifact_032eb6a2d532 --> artifact_cc6d1808c7df
+  Similarity: 0.945849
+  Confidence: VERY_HIGH (0.985849)
+  Evidence: very_high_media_similarity, cross_platform:FaceMock->InstaMock, child_dimensions_not_larger
+
+artifact_47ad3206360f --> artifact_20816f9307d7
+  Similarity: 0.965793
+  Confidence: VERY_HIGH (0.985793)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->XMock
+
+artifact_42c1fa220d83 --> artifact_20816f9307d7
+  Similarity: 0.965793
+  Confidence: VERY_HIGH (0.985793)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->XMock
+
+artifact_f6d13f0cd3ee --> artifact_47ad3206360f
+  Similarity: 0.965793
+  Confidence: VERY_HIGH (0.985793)
+  Evidence: very_high_media_similarity, same_platform, child_dimensions_not_larger
+
+artifact_f6d13f0cd3ee --> artifact_42c1fa220d83
+  Similarity: 0.965793
+  Confidence: VERY_HIGH (0.985793)
+  Evidence: very_high_media_similarity, same_platform, child_dimensions_not_larger
+
+artifact_47ad3206360f --> artifact_868394f0c589
+  Similarity: 0.965793
+  Confidence: VERY_HIGH (0.985793)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->FaceMock
+
+artifact_42c1fa220d83 --> artifact_868394f0c589
+  Similarity: 0.965793
+  Confidence: VERY_HIGH (0.985793)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->FaceMock
+
+artifact_6ea8767624ba --> artifact_334ea43c4be5
+  Similarity: 0.94289
+  Confidence: VERY_HIGH (0.98289)
+  Evidence: very_high_media_similarity, cross_platform:XMock->FaceMock, child_dimensions_not_larger
+
+artifact_6ea8767624ba --> artifact_d8b5a683c99f
+  Similarity: 0.94289
+  Confidence: VERY_HIGH (0.98289)
+  Evidence: very_high_media_similarity, cross_platform:XMock->FaceMock, child_dimensions_not_larger
+
+artifact_032eb6a2d532 --> artifact_334ea43c4be5
+  Similarity: 0.962521
+  Confidence: VERY_HIGH (0.982521)
+  Evidence: very_high_media_similarity, same_platform, child_dimensions_not_larger
+
+artifact_032eb6a2d532 --> artifact_d8b5a683c99f
+  Similarity: 0.962521
+  Confidence: VERY_HIGH (0.982521)
+  Evidence: very_high_media_similarity, same_platform, child_dimensions_not_larger
+
+artifact_3d7d3d3b95c0 --> artifact_032eb6a2d532
+  Similarity: 0.95991
+  Confidence: VERY_HIGH (0.97991)
+  Evidence: very_high_media_similarity, same_platform, child_dimensions_not_larger
+
+artifact_6ea8767624ba --> artifact_09bb4428ebc0
+  Similarity: 0.95935
+  Confidence: VERY_HIGH (0.97935)
+  Evidence: very_high_media_similarity, same_platform, child_dimensions_not_larger
+
+artifact_7b1756dae876 --> artifact_324985dd348d
+  Similarity: 0.936399
+  Confidence: VERY_HIGH (0.976399)
+  Evidence: very_high_media_similarity, cross_platform:XMock->InstaMock, child_dimensions_not_larger
+
+artifact_7b1756dae876 --> artifact_cc6d1808c7df
+  Similarity: 0.936399
+  Confidence: VERY_HIGH (0.976399)
+  Evidence: very_high_media_similarity, cross_platform:XMock->InstaMock, child_dimensions_not_larger
+
+artifact_6ea8767624ba --> artifact_324985dd348d
+  Similarity: 0.929734
+  Confidence: HIGH (0.969734)
+  Evidence: very_high_media_similarity, cross_platform:XMock->InstaMock, child_dimensions_not_larger
+
+artifact_6ea8767624ba --> artifact_cc6d1808c7df
+  Similarity: 0.929734
+  Confidence: HIGH (0.969734)
+  Evidence: very_high_media_similarity, cross_platform:XMock->InstaMock, child_dimensions_not_larger
+
+artifact_3d7d3d3b95c0 --> artifact_324985dd348d
+  Similarity: 0.929734
+  Confidence: HIGH (0.969734)
+  Evidence: very_high_media_similarity, cross_platform:FaceMock->InstaMock, child_dimensions_not_larger
+
+artifact_3d7d3d3b95c0 --> artifact_cc6d1808c7df
+  Similarity: 0.929734
+  Confidence: HIGH (0.969734)
+  Evidence: very_high_media_similarity, cross_platform:FaceMock->InstaMock, child_dimensions_not_larger
+
+artifact_bdc5055bf670 --> artifact_20816f9307d7
+  Similarity: 0.966337
+  Confidence: HIGH (0.966337)
+  Evidence: very_high_media_similarity, same_platform
+
+artifact_2c5ab85d8b52 --> artifact_20816f9307d7
+  Similarity: 0.966337
+  Confidence: HIGH (0.966337)
+  Evidence: very_high_media_similarity, same_platform
+
+artifact_47ad3206360f --> artifact_7ae1211c363c
+  Similarity: 0.965793
+  Confidence: HIGH (0.965793)
+  Evidence: very_high_media_similarity, same_platform
+
+artifact_42c1fa220d83 --> artifact_7ae1211c363c
+  Similarity: 0.965793
+  Confidence: HIGH (0.965793)
+  Evidence: very_high_media_similarity, same_platform
+
+artifact_c75c7f90868e --> artifact_324985dd348d
+  Similarity: 0.94522
+  Confidence: HIGH (0.96522)
+  Evidence: very_high_media_similarity, same_platform, child_dimensions_not_larger
+
+artifact_c75c7f90868e --> artifact_cc6d1808c7df
+  Similarity: 0.94522
+  Confidence: HIGH (0.96522)
+  Evidence: very_high_media_similarity, same_platform, child_dimensions_not_larger
+
+artifact_3d7d3d3b95c0 --> artifact_334ea43c4be5
+  Similarity: 0.94289
+  Confidence: HIGH (0.96289)
+  Evidence: very_high_media_similarity, same_platform, child_dimensions_not_larger
+
+artifact_3d7d3d3b95c0 --> artifact_d8b5a683c99f
+  Similarity: 0.94289
+  Confidence: HIGH (0.96289)
+  Evidence: very_high_media_similarity, same_platform, child_dimensions_not_larger
+
+artifact_7bd63e9fa1c6 --> artifact_324985dd348d
+  Similarity: 0.9414
+  Confidence: HIGH (0.9614)
+  Evidence: very_high_media_similarity, same_platform, child_dimensions_not_larger
+
+artifact_7bd63e9fa1c6 --> artifact_cc6d1808c7df
+  Similarity: 0.9414
+  Confidence: HIGH (0.9614)
+  Evidence: very_high_media_similarity, same_platform, child_dimensions_not_larger
+
+artifact_68956a40360e --> artifact_7bd63e9fa1c6
+  Similarity: 0.918292
+  Confidence: HIGH (0.938292)
+  Evidence: very_high_media_similarity, cross_platform:XMock->InstaMock
+
+artifact_4c678349522f --> artifact_7bd63e9fa1c6
+  Similarity: 0.918292
+  Confidence: HIGH (0.938292)
+  Evidence: very_high_media_similarity, cross_platform:FaceMock->InstaMock
+
+artifact_3816ff55d623 --> artifact_bc3bff044a08
+  Similarity: 0.917378
+  Confidence: HIGH (0.937378)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->FaceMock, format_changed
+
+artifact_68956a40360e --> artifact_032eb6a2d532
+  Similarity: 0.911748
+  Confidence: HIGH (0.931748)
+  Evidence: very_high_media_similarity, cross_platform:XMock->FaceMock
+
+artifact_fd016b6217cb --> artifact_032eb6a2d532
+  Similarity: 0.911748
+  Confidence: HIGH (0.931748)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->FaceMock
+
+artifact_26348076643c --> artifact_032eb6a2d532
+  Similarity: 0.911748
+  Confidence: HIGH (0.931748)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->FaceMock
+
+artifact_16c6e1ed7686 --> artifact_032eb6a2d532
+  Similarity: 0.911748
+  Confidence: HIGH (0.931748)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->FaceMock
+
+artifact_68956a40360e --> artifact_c75c7f90868e
+  Similarity: 0.91152
+  Confidence: HIGH (0.93152)
+  Evidence: very_high_media_similarity, cross_platform:XMock->InstaMock
+
+artifact_4c678349522f --> artifact_c75c7f90868e
+  Similarity: 0.91152
+  Confidence: HIGH (0.93152)
+  Evidence: very_high_media_similarity, cross_platform:FaceMock->InstaMock
+
+artifact_fd016b6217cb --> artifact_09bb4428ebc0
+  Similarity: 0.911228
+  Confidence: HIGH (0.931228)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->XMock
+
+artifact_26348076643c --> artifact_09bb4428ebc0
+  Similarity: 0.911228
+  Confidence: HIGH (0.931228)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->XMock
+
+artifact_16c6e1ed7686 --> artifact_09bb4428ebc0
+  Similarity: 0.911228
+  Confidence: HIGH (0.931228)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->XMock
+
+artifact_4c678349522f --> artifact_09bb4428ebc0
+  Similarity: 0.911228
+  Confidence: HIGH (0.931228)
+  Evidence: very_high_media_similarity, cross_platform:FaceMock->XMock
+
+artifact_fd016b6217cb --> artifact_6ea8767624ba
+  Similarity: 0.90884
+  Confidence: HIGH (0.92884)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->XMock
+
+artifact_26348076643c --> artifact_6ea8767624ba
+  Similarity: 0.90884
+  Confidence: HIGH (0.92884)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->XMock
+
+artifact_16c6e1ed7686 --> artifact_6ea8767624ba
+  Similarity: 0.90884
+  Confidence: HIGH (0.92884)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->XMock
+
+artifact_4c678349522f --> artifact_6ea8767624ba
+  Similarity: 0.90884
+  Confidence: HIGH (0.92884)
+  Evidence: very_high_media_similarity, cross_platform:FaceMock->XMock
+
+artifact_68956a40360e --> artifact_3d7d3d3b95c0
+  Similarity: 0.90884
+  Confidence: HIGH (0.92884)
+  Evidence: very_high_media_similarity, cross_platform:XMock->FaceMock
+
+artifact_fd016b6217cb --> artifact_3d7d3d3b95c0
+  Similarity: 0.90884
+  Confidence: HIGH (0.92884)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->FaceMock
+
+artifact_26348076643c --> artifact_3d7d3d3b95c0
+  Similarity: 0.90884
+  Confidence: HIGH (0.92884)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->FaceMock
+
+artifact_16c6e1ed7686 --> artifact_3d7d3d3b95c0
+  Similarity: 0.90884
+  Confidence: HIGH (0.92884)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->FaceMock
+
+artifact_fd016b6217cb --> artifact_7b1756dae876
+  Similarity: 0.903583
+  Confidence: HIGH (0.923583)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->XMock
+
+artifact_26348076643c --> artifact_7b1756dae876
+  Similarity: 0.903583
+  Confidence: HIGH (0.923583)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->XMock
+
+artifact_16c6e1ed7686 --> artifact_7b1756dae876
+  Similarity: 0.903583
+  Confidence: HIGH (0.923583)
+  Evidence: very_high_media_similarity, cross_platform:InstaMock->XMock
+
+artifact_4c678349522f --> artifact_7b1756dae876
+  Similarity: 0.903583
+  Confidence: HIGH (0.923583)
+  Evidence: very_high_media_similarity, cross_platform:FaceMock->XMock
+
+artifact_fd016b6217cb --> artifact_7bd63e9fa1c6
+  Similarity: 0.918292
+  Confidence: HIGH (0.918292)
+  Evidence: very_high_media_similarity, same_platform
+
+artifact_26348076643c --> artifact_7bd63e9fa1c6
+  Similarity: 0.918292
+  Confidence: HIGH (0.918292)
+  Evidence: very_high_media_similarity, same_platform
+
+artifact_16c6e1ed7686 --> artifact_7bd63e9fa1c6
+  Similarity: 0.918292
+  Confidence: HIGH (0.918292)
+  Evidence: very_high_media_similarity, same_platform
+
+artifact_68956a40360e --> artifact_324985dd348d
+  Similarity: 0.897448
+  Confidence: HIGH (0.917448)
+  Evidence: moderate_media_similarity, cross_platform:XMock->InstaMock
+
+artifact_68956a40360e --> artifact_cc6d1808c7df
+  Similarity: 0.897448
+  Confidence: HIGH (0.917448)
+  Evidence: moderate_media_similarity, cross_platform:XMock->InstaMock
+
+artifact_4c678349522f --> artifact_324985dd348d
+  Similarity: 0.897448
+  Confidence: HIGH (0.917448)
+  Evidence: moderate_media_similarity, cross_platform:FaceMock->InstaMock
+
+artifact_4c678349522f --> artifact_cc6d1808c7df
+  Similarity: 0.897448
+  Confidence: HIGH (0.917448)
+  Evidence: moderate_media_similarity, cross_platform:FaceMock->InstaMock
+
+artifact_68956a40360e --> artifact_334ea43c4be5
+  Similarity: 0.895045
+  Confidence: HIGH (0.915045)
+  Evidence: moderate_media_similarity, cross_platform:XMock->FaceMock
+
+artifact_68956a40360e --> artifact_d8b5a683c99f
+  Similarity: 0.895045
+  Confidence: HIGH (0.915045)
+  Evidence: moderate_media_similarity, cross_platform:XMock->FaceMock
+
+artifact_fd016b6217cb --> artifact_334ea43c4be5
+  Similarity: 0.895045
+  Confidence: HIGH (0.915045)
+  Evidence: moderate_media_similarity, cross_platform:InstaMock->FaceMock
+
+artifact_fd016b6217cb --> artifact_d8b5a683c99f
+  Similarity: 0.895045
+  Confidence: HIGH (0.915045)
+  Evidence: moderate_media_similarity, cross_platform:InstaMock->FaceMock
+
+artifact_26348076643c --> artifact_334ea43c4be5
+  Similarity: 0.895045
+  Confidence: HIGH (0.915045)
+  Evidence: moderate_media_similarity, cross_platform:InstaMock->FaceMock
+
+artifact_26348076643c --> artifact_d8b5a683c99f
+  Similarity: 0.895045
+  Confidence: HIGH (0.915045)
+  Evidence: moderate_media_similarity, cross_platform:InstaMock->FaceMock
+
+artifact_16c6e1ed7686 --> artifact_334ea43c4be5
+  Similarity: 0.895045
+  Confidence: HIGH (0.915045)
+  Evidence: moderate_media_similarity, cross_platform:InstaMock->FaceMock
+
+artifact_16c6e1ed7686 --> artifact_d8b5a683c99f
+  Similarity: 0.895045
+  Confidence: HIGH (0.915045)
+  Evidence: moderate_media_similarity, cross_platform:InstaMock->FaceMock
+
+artifact_4c678349522f --> artifact_032eb6a2d532
+  Similarity: 0.911748
+  Confidence: HIGH (0.911748)
+  Evidence: very_high_media_similarity, same_platform
+
+artifact_fd016b6217cb --> artifact_c75c7f90868e
+  Similarity: 0.91152
+  Confidence: HIGH (0.91152)
+  Evidence: very_high_media_similarity, same_platform
+
+artifact_26348076643c --> artifact_c75c7f90868e
+  Similarity: 0.91152
+  Confidence: HIGH (0.91152)
+  Evidence: very_high_media_similarity, same_platform
+
+artifact_16c6e1ed7686 --> artifact_c75c7f90868e
+  Similarity: 0.91152
+  Confidence: HIGH (0.91152)
+  Evidence: very_high_media_similarity, same_platform
+
+artifact_68956a40360e --> artifact_09bb4428ebc0
+  Similarity: 0.911228
+  Confidence: HIGH (0.911228)
+  Evidence: very_high_media_similarity, same_platform
+
+artifact_68956a40360e --> artifact_6ea8767624ba
+  Similarity: 0.90884
+  Confidence: HIGH (0.90884)
+  Evidence: very_high_media_similarity, same_platform
+
+artifact_4c678349522f --> artifact_3d7d3d3b95c0
+  Similarity: 0.90884
+  Confidence: HIGH (0.90884)
+  Evidence: very_high_media_similarity, same_platform
+
+artifact_68956a40360e --> artifact_7b1756dae876
+  Similarity: 0.903583
+  Confidence: HIGH (0.903583)
+  Evidence: very_high_media_similarity, same_platform
+
+artifact_fd016b6217cb --> artifact_324985dd348d
+  Similarity: 0.897448
+  Confidence: MEDIUM (0.897448)
+  Evidence: moderate_media_similarity, same_platform
+
+artifact_26348076643c --> artifact_324985dd348d
+  Similarity: 0.897448
+  Confidence: MEDIUM (0.897448)
+  Evidence: moderate_media_similarity, same_platform
+
+artifact_16c6e1ed7686 --> artifact_324985dd348d
+  Similarity: 0.897448
+  Confidence: MEDIUM (0.897448)
+  Evidence: moderate_media_similarity, same_platform
+
+artifact_fd016b6217cb --> artifact_cc6d1808c7df
+  Similarity: 0.897448
+  Confidence: MEDIUM (0.897448)
+  Evidence: moderate_media_similarity, same_platform
+
+artifact_26348076643c --> artifact_cc6d1808c7df
+  Similarity: 0.897448
+  Confidence: MEDIUM (0.897448)
+  Evidence: moderate_media_similarity, same_platform
+
+artifact_16c6e1ed7686 --> artifact_cc6d1808c7df
+  Similarity: 0.897448
+  Confidence: MEDIUM (0.897448)
+  Evidence: moderate_media_similarity, same_platform
+
+artifact_4c678349522f --> artifact_334ea43c4be5
+  Similarity: 0.895045
+  Confidence: MEDIUM (0.895045)
+  Evidence: moderate_media_similarity, same_platform
+
+artifact_4c678349522f --> artifact_d8b5a683c99f
+  Similarity: 0.895045
+  Confidence: MEDIUM (0.895045)
+  Evidence: moderate_media_similarity, same_platform
+
+artifact_597ef6b9fd49 --> artifact_759e61b4def8
+  Similarity: 0.831148
+  Confidence: MEDIUM (0.871148)
+  Evidence: moderate_media_similarity, cross_platform:XMock->FaceMock, child_dimensions_not_larger
+
+artifact_597ef6b9fd49 --> artifact_175cab3127ed
+  Similarity: 0.831148
+  Confidence: MEDIUM (0.871148)
+  Evidence: moderate_media_similarity, cross_platform:XMock->FaceMock, child_dimensions_not_larger
+
+artifact_597ef6b9fd49 --> artifact_a7b47e60bbac
+  Similarity: 0.823964
+  Confidence: MEDIUM (0.843964)
+  Evidence: moderate_media_similarity, cross_platform:XMock->InstaMock, format_changed
+
+artifact_597ef6b9fd49 --> artifact_1d613558fae9
+  Similarity: 0.823964
+  Confidence: MEDIUM (0.823964)
+  Evidence: moderate_media_similarity, same_platform, format_changed
+
+artifact_597ef6b9fd49 --> artifact_9d749cafa477
+  Similarity: 0.823964
+  Confidence: MEDIUM (0.823964)
+  Evidence: moderate_media_similarity, same_platform, format_changed
+
+------------------------------------------------------------
+INVESTIGATOR INTERPRETATION
+------------------------------------------------------------
+The lineage graph above represents relationships independently inferred from collected media evidence.
+It is not generated from the propagation simulator's ground-truth manifest.
+
+IMPORTANT: A lineage edge represents evidence of a likely relationship, not absolute proof of causation.
+
+======================================================================
+                 END OF REPORT
+======================================================================

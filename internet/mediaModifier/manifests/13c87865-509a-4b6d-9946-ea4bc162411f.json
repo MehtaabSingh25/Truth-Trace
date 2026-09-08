@@ -1,0 +1,30 @@
+{
+    "transformation_id": "13c87865-509a-4b6d-9946-ea4bc162411f",
+    "input": {
+        "file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\internet\\mediaModifier\\output\\3b47945c-e9b4-4056-9fc1-54a594d0f53a_step3.webp",
+        "sha256": "967350ea7ab18c67ae7e27c7a7da99abc0a1fa146e6f56da37f6cd30a7486b92"
+    },
+    "final": {
+        "file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\internet\\mediaModifier\\output\\13c87865-509a-4b6d-9946-ea4bc162411f_step1.webp",
+        "sha256": "ad9468d140d1634d5fb626f7f2cf0d614449ff661c31d66c4f5a657f9c6f6db7"
+    },
+    "operations": [
+        {
+            "step": 1,
+            "operation_id": "852897f6-c25c-46b3-bd3d-ce406cf0e815",
+            "type": "convert",
+            "parameters": {
+                "type": "convert",
+                "format": "webp"
+            },
+            "input_file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\internet\\mediaModifier\\output\\3b47945c-e9b4-4056-9fc1-54a594d0f53a_step3.webp",
+            "output_file": "C:\\chd_police hackathon.worktrees\\internet-layer-video-support-update\\internet\\mediaModifier\\output\\13c87865-509a-4b6d-9946-ea4bc162411f_step1.webp",
+            "input_sha256": "967350ea7ab18c67ae7e27c7a7da99abc0a1fa146e6f56da37f6cd30a7486b92",
+            "output_sha256": "ad9468d140d1634d5fb626f7f2cf0d614449ff661c31d66c4f5a657f9c6f6db7",
+            "details": {
+                "operation": "format_conversion",
+                "format": "WEBP"
+            }
+        }
+    ]
+}

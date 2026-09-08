@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Propagation Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="shell">
+        <header>
+            <p class="eyebrow">INTERNET LAYER</p>
+            <h1>Propagation Simulator</h1>
+            <p class="subtitle">Create a dummy identity, upload media, and trace it across all three mock platforms.</p>
+        </header>
+
+        <section class="card">
+            <h2>1. Create dummy user</h2>
+            <div class="row">
+                <input id="username" placeholder="e.g. investigator_demo">
+                <button id="create-user">Create across platforms</button>
+            </div>
+            <p id="user-status" class="status"></p>
+        </section>
+
+        <section class="card">
+            <h2>2. Propagate media</h2>
+            <label class="file-picker">
+                <span>Select photo or video</span>
+                <input id="media" type="file" accept="image/*,video/*">
+            </label>
+            <input id="caption" placeholder="Propagation caption (optional)">
+            <button id="propagate" class="primary">Run propagation</button>
+            <p id="propagation-status" class="status"></p>
+        </section>
+
+        <section id="preview-card" class="card hidden">
+            <h2>Selected media</h2>
+            <div id="preview"></div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

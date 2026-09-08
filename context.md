@@ -568,3 +568,25 @@ Use repository videos or generated media under the internet/provenance directori
 9. Run the full pipeline when demonstrating lineage across multiple platform artifacts.
 10. Explain clearly that the system produces transparent forensic evidence and screening scores, not an unconditional authenticity verdict.
 
+---
+
+## 11. Two-to-three-minute project setup and demo speech
+
+Use this as a concise judge presentation after starting the services:
+
+> **Good morning. Our project is Truth Trace.**
+> The problem we address is not only “Is this image or video fake?” The more useful question is: **Where did it come from, what changes happened to it, and how did it spread?**
+>
+> Truth Trace has two connected layers. The first is a simulated internet layer with InstaMock, XMock, and FaceMock. MediaModifier applies realistic platform operations such as resizing, cropping, compression, format conversion, and video processing. The Propagation Simulator sends the media through these platforms and records every event in a ground-truth manifest.
+>
+> To run the project, we install the Python dependencies, make sure FFmpeg is available for video processing, and start the three platform APIs, the Propagation Simulator, and the Truth Trace API. Their browser frontends are available on ports 8000, 8001, 8002, 8010, and 8020. This makes the complete flow visible instead of hiding it behind a single result.
+>
+> Now I upload an original image or video into the Propagation Simulator. It is not simply copied. The simulator selects a propagation scenario, applies MediaModifier operations, chooses a platform order, creates simulated users, and publishes the transformed media. Each platform feed shows the resulting post, timestamp, media URL, and now provides download and delete controls for demonstration and data management.
+>
+> Next, I take a manipulated copy from one of the platform feeds and upload it to Truth Trace. Truth Trace first identifies the media type and calculates its SHA-256, perceptual hashes, metadata, embeddings, and forensic signals. For images it can screen faces, recompression and copy-move indicators. For videos it extracts metadata, samples frames, checks temporal fingerprints, and aggregates frame-level AI evidence.
+>
+> The provenance stage then checks all three simulated platforms. It downloads the observed media, hashes it, and compares it with the uploaded evidence. When there is an exact hash match, Truth Trace connects the matching post to the propagation manifest. This gives us the original source, platform order, timestamps, transformation operations, reposts, and a visual lineage graph.
+>
+> If I upload an unrelated file that was never propagated, the system does not invent a lineage. It shows zero exact matches and no propagation manifest. This is an important safeguard against false attribution. Reset also clears the current evidence, preview, timeline, report, and lineage state so a new investigation starts cleanly.
+>
+> The final output is therefore not an unexplained “real” or “fake” label. It is an auditable story: **origin, transformations, platform propagation, forensic evidence, and confidence signals in one workspace.** AI detection and forensic checks are probabilistic screening signals, so the system supports human investigators rather than claiming legal certainty. That combination of simulated spread, reproducible ground truth, and explainable provenance is the core value of Truth Trace.
