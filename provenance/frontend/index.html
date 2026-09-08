@@ -1,63 +1,101 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Truth Trace | Provenance Investigation</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <main>
-    <header class="topbar">
-      <div>
-        <p class="eyebrow">TRUTH TRACE</p>
-        <h1>Don't just detect the fake.<br><span>Trace its story.</span></h1>
-      </div>
-      <div class="pill">FORENSIC WORKSPACE</div>
-    </header>
-    <nav class="steps" aria-label="Investigation steps">
-      <button class="step active" data-view="upload">01 Upload</button>
-      <button class="step" data-view="investigation">02 Investigation</button>
-      <button class="step" data-view="report">03 Evidence</button>
-    </nav>
-    <section class="hero">
-      <div>
-        <h2>Start an investigation</h2>
-        <p>Upload an image or video to inspect its identity, edits, metadata and provenance signals.</p>
-      </div>
-      <label class="dropzone" id="dropzone">
-        <input id="media" type="file" accept="image/*,video/*">
-        <strong>Choose evidence</strong>
-        <span>JPG, PNG, WEBP, MP4, MOV and more</span>
-      </label>
-      <div class="actions">
-        <span id="filename">No evidence selected</span>
-        <button id="analyze">Analyze evidence</button>
-        <button id="reset" class="secondary">Reset</button>
-      </div>
-    </section>
-    <pre id="status"></pre>
-    <section id="summary" class="grid hidden"></section>
-    <section id="investigation" class="panel workspace-panel">
-      <div class="workspace-heading">
-        <div><p class="eyebrow">INVESTIGATION WORKSPACE</p><h2>Trace the media story</h2></div>
-        <span id="investigation-state" class="state">Waiting for evidence</span>
-      </div>
-      <div class="workspace-track">
-        <span class="track-node active">Upload</span><span class="track-line"></span>
-        <span class="track-node">Analyze</span><span class="track-line"></span>
-        <span class="track-node">Evidence</span>
-      </div>
-    </section>
-    <section id="story" class="story-layout hidden">
-      <div id="timeline" class="panel"></div>
-      <div id="matches" class="panel"></div>
-    </section>
-    <section class="evidence-layout">
-      <div id="preview" class="panel preview-panel"><h3>Evidence preview</h3><p>Select a file to preview it here.</p></div>
-      <div id="report" class="panel report-panel"><h3>Investigation evidence</h3><p>Analysis findings will appear here.</p></div>
-    </section>
-  </main>
-  <script src="app.js?v=9"></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Truth Trace | Provenance Investigation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">TRUTH TRACE</p>
+          <h1>
+            Don't just detect the fake.<br /><span>Trace its story.</span>
+          </h1>
+        </div>
+        <div class="pill">FORENSIC WORKSPACE</div>
+      </header>
+      <nav class="steps" aria-label="Investigation steps">
+        <button class="step active" data-view="upload">01 Upload</button>
+        <button class="step" data-view="investigation">02 Investigation</button>
+        <button class="step" data-view="report">03 Evidence</button>
+      </nav>
+      <section class="hero">
+        <div>
+          <h2>Start an investigation</h2>
+          <p>
+            Upload an image or video to inspect its identity, edits, metadata
+            and provenance signals.
+          </p>
+        </div>
+        <label class="dropzone" id="dropzone">
+          <input id="media" type="file" accept="image/*,video/*" />
+          <strong>Choose evidence</strong>
+          <span>JPG, PNG, WEBP, MP4, MOV and more</span>
+        </label>
+        <div class="url-source">
+          <label for="image-url"
+            ><strong>Or investigate an online image</strong></label
+          >
+          <div class="url-row">
+            <input
+              id="image-url"
+              type="url"
+              placeholder="Paste public image URL here..."
+              autocomplete="off"
+            />
+            <button id="use-url" class="secondary" type="button">
+              Use URL
+            </button>
+          </div>
+          <span
+            >Works with publicly accessible JPG, PNG and WEBP image links. No
+            login bypass.</span
+          >
+        </div>
+        <div class="actions">
+          <span id="filename">No evidence selected</span>
+          <button id="analyze">Analyze evidence</button>
+          <button id="reset" class="secondary">Reset</button>
+        </div>
+      </section>
+      <pre id="status"></pre>
+      <section id="summary" class="grid hidden"></section>
+      <section id="investigation" class="panel workspace-panel">
+        <div class="workspace-heading">
+          <div>
+            <p class="eyebrow">INVESTIGATION WORKSPACE</p>
+            <h2>Trace the media story</h2>
+          </div>
+          <span id="investigation-state" class="state"
+            >Waiting for evidence</span
+          >
+        </div>
+        <div class="workspace-track">
+          <span class="track-node active">Upload</span
+          ><span class="track-line"></span>
+          <span class="track-node">Analyze</span
+          ><span class="track-line"></span>
+          <span class="track-node">Evidence</span>
+        </div>
+      </section>
+      <section id="story" class="story-layout hidden">
+        <div id="timeline" class="panel"></div>
+        <div id="matches" class="panel"></div>
+      </section>
+      <section class="evidence-layout">
+        <div id="preview" class="panel preview-panel">
+          <h3>Evidence preview</h3>
+          <p>Select a file to preview it here.</p>
+        </div>
+        <div id="report" class="panel report-panel">
+          <h3>Investigation evidence</h3>
+          <p>Analysis findings will appear here.</p>
+        </div>
+      </section>
+    </main>
+    <script src="app.js?v=10"></script>
+  </body>
 </html>

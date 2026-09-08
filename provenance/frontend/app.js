@@ -6,6 +6,8 @@ const summary = document.querySelector("#summary");
 const preview = document.querySelector("#preview");
 const filename = document.querySelector("#filename");
 const dropzone = document.querySelector("#dropzone");
+const imageUrl = document.querySelector("#image-url");
+const useUrl = document.querySelector("#use-url");
 const reset = document.querySelector("#reset");
 const steps = document.querySelectorAll(".step");
 const investigationState = document.querySelector("#investigation-state");
@@ -45,6 +47,23 @@ steps.forEach((step) => {
   });
 });
 
+useUrl.addEventListener("click", () => {
+  const value = imageUrl.value.trim();
+  if (!value) {
+    status.textContent = "Paste a public image URL first.";
+    return;
+  }
+  invalidateAnalysis();
+  clearResults();
+  status.textContent = "Online image selected. Click Analyze evidence.";
+  investigationState.textContent = "Online image selected";
+  filename.textContent = value;
+  if (previewUrl) URL.revokeObjectURL(previewUrl);
+  previewUrl = undefined;
+  preview.innerHTML = `<h3>Evidence preview</h3><img class="preview-media" src="${escapeHtml(value)}" alt="Online evidence preview" onerror="this.replaceWith(Object.assign(document.createElement('p'),{textContent:'Preview unavailable. The public URL can still be investigated.'}))">`;
+  dropzone.classList.remove("selected");
+});
+
 input.addEventListener("change", () => {
   const file = input.files[0];
   if (!file) return;
@@ -67,12 +86,17 @@ input.addEventListener("change", () => {
 });
 
 button.addEventListener("click", async () => {
-  if (!input.files.length) {
-    status.textContent = "Select an image or video first.";
+  const urlValue = imageUrl.value.trim();
+  const hasFile = input.files.length > 0;
+  if (!hasFile && !urlValue) {
+    status.textContent =
+      "Select an image/video or paste a public image URL first.";
     return;
   }
   const form = new FormData();
-  form.append("media", input.files[0]);
+  const endpoint = hasFile ? "/api/analyze" : "/api/analyze-url";
+  if (hasFile) form.append("media", input.files[0]);
+  else form.append("image_url", urlValue);
   invalidateAnalysis();
   const requestGeneration = analysisGeneration;
   analysisController = new AbortController();
@@ -83,7 +107,7 @@ button.addEventListener("click", async () => {
   let response;
   let body;
   try {
-    response = await fetch("/api/analyze", {
+    response = await fetch(endpoint, {
       method: "POST",
       body: form,
       signal: analysisController.signal,
@@ -108,11 +132,13 @@ button.addEventListener("click", async () => {
   renderResults(body);
   analysisController = undefined;
   input.value = "";
+  imageUrl.value = "";
 });
 
 reset.addEventListener("click", () => {
   invalidateAnalysis();
   input.value = "";
+  imageUrl.value = "";
   if (previewUrl) URL.revokeObjectURL(previewUrl);
   previewUrl = undefined;
   filename.textContent = "No evidence selected";
@@ -187,14 +213,17 @@ function renderResults(data) {
             embedding: semantic,
           },
         };
-  report.innerHTML = `<h3>Investigation evidence</h3><div class="findings">${Object.entries(
-    sections,
-  )
-    .map(
-      ([title, value]) =>
-        `<details open><summary>${title}</summary>${renderValue(value)}</details>`,
+  const finalReport = data.final_report || {};
+  report.innerHTML =
+    renderFinalReport(finalReport) +
+    `<h3>Investigation evidence</h3><div class="findings">${Object.entries(
+      sections,
     )
-    .join("")}</div>${renderWebSources(data.web_trace)}`;
+      .map(
+        ([title, value]) =>
+          `<details open><summary>${title}</summary>${renderValue(value)}</details>`,
+      )
+      .join("")}</div>${renderWebSources(data.web_trace)}`;
   renderStory(data);
 }
 
@@ -213,19 +242,26 @@ function renderStory(data) {
     label: post.platform,
     detail: `${post.created_at || "timestamp unavailable"} · ${post.username || "unknown user"} · ${post.exact_hash_match ? "exact hash match" : "same media type"}`,
   }));
-  const timelineItems = platformEvents.length
-    ? platformEvents
-    : frames.length
-      ? frames.map((frame, index) => ({
-          label: `Frame ${index + 1}`,
-          detail: `${Number(frame.timestamp_seconds).toFixed(2)} seconds · ${frame.ai_assessment?.label || "screened"}`,
-        }))
-      : [
-          {
-            label: "Uploaded evidence",
-            detail: `${data.media_type?.toUpperCase() || "MEDIA"} · ${data.format || "format unavailable"}`,
-          },
-        ];
+  const history = data.final_report?.source_history || [];
+  const historyItems = history.map((event) => ({
+    label: event.source || event.source_type || "Source",
+    detail: `${event.date || "date unavailable"} · ${event.match_type || "observed match"}${event.accessible === false ? " · page inaccessible" : ""}`,
+  }));
+  const timelineItems = historyItems.length
+    ? historyItems
+    : platformEvents.length
+      ? platformEvents
+      : frames.length
+        ? frames.map((frame, index) => ({
+            label: `Frame ${index + 1}`,
+            detail: `${Number(frame.timestamp_seconds).toFixed(2)} seconds · ${frame.ai_assessment?.label || "screened"}`,
+          }))
+        : [
+            {
+              label: "Uploaded evidence",
+              detail: `${data.media_type?.toUpperCase() || "MEDIA"} · ${data.format || "format unavailable"}`,
+            },
+          ];
   timeline.innerHTML = `<p class="eyebrow">STORY TIMELINE</p><h2>Evidence sequence</h2><div class="timeline">${timelineItems.map((item) => `<div class="timeline-item"><span class="timeline-dot"></span><div><strong>${escapeHtml(item.label)}</strong><p>${escapeHtml(item.detail)}</p></div></div>`).join("")}</div>`;
 
   const observedPlatforms = (data.platform_trace?.platforms || []).filter(
@@ -330,6 +366,16 @@ function renderWebSources(trace) {
     .join("");
 
   return `<div class="web-sources"><p class="eyebrow">PUBLIC WEB PROVENANCE</p><h3>Reverse-search sources</h3>${frameNote}<div class="source-list">${cards}</div><p class="panel-note">Only publicly reachable evidence is reported. Login-only, private, or blocked pages are not bypassed.</p></div>`;
+}
+
+function renderFinalReport(reportData) {
+  if (!reportData || !reportData.verdict) return "";
+  const confidence = Math.round((reportData.confidence || 0) * 100);
+  const reasons = (reportData.evidence_reasons || [])
+    .map((x) => `<li>${escapeHtml(x)}</li>`)
+    .join("");
+  const earliest = reportData.earliest_observed_source;
+  return `<section class="final-report"><p class="eyebrow">FINAL REPORT / VERDICT</p><h2>${escapeHtml(reportData.verdict)}</h2><div class="verdict-score">Evidence confidence: <strong>${confidence}%</strong></div>${earliest ? `<p><strong>Earliest observed source:</strong> ${escapeHtml(earliest.source || "Unknown")} · ${escapeHtml(String(earliest.date || "Date unavailable"))}</p>` : ""}<h3>Why</h3><ul>${reasons || "<li>No supporting reasons recorded.</li>"}</ul><p class="panel-note">This is an evidence-based screening result, not proof of original authorship. AI classification is probabilistic and public-web coverage is limited to indexed/accessible evidence.</p></section>`;
 }
 
 function summarizeTrace(trace) {

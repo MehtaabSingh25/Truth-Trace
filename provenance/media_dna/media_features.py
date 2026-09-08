@@ -116,6 +116,20 @@ def analyze_media(file_path):
                 }
         from image_forensics import analyze_image_forensics
         result.update(analyze_image_forensics(path))
+        # Image AI assessment was previously only applied to video frames.
+        # Keep every existing forensic result and add the image-level detector.
+        try:
+            from image_ai_assessment import assess_image_ai_likelihood
+            result["ai_assessment"] = assess_image_ai_likelihood(path)
+        except (ImportError, OSError, RuntimeError) as error:
+            result["ai_assessment"] = {
+                "label": "authentic_unknown",
+                "confidence": 0.0,
+                "method": "model_unavailable",
+                "model_available": False,
+                "error": str(error),
+                "disclaimer": "AI classification could not be completed.",
+            }
         return result
 
     metadata = _ffprobe(path)

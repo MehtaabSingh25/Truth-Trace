@@ -6,7 +6,8 @@ import uuid
 from pathlib import Path
 
 import requests
-from fastapi import FastAPI, File, HTTPException, UploadFile
+from PIL import Image
+from fastapi import FastAPI, File, Form, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
@@ -14,6 +15,7 @@ BASE_DIR = Path(__file__).resolve().parent
 sys.path.insert(0, str(BASE_DIR / "media_dna"))
 from media_features import analyze_media
 from web_search.search_engine import search_public_web
+from final_report import build_final_report
 
 
 UPLOAD_DIR = BASE_DIR / "web_uploads"
@@ -140,6 +142,69 @@ def _trace_platforms(target):
     }
 
 
+def _is_public_http_url(value):
+    try:
+        parsed = requests.utils.urlparse(value)
+    except Exception:
+        return False
+    return parsed.scheme in {"http", "https"} and bool(parsed.netloc)
+
+
+def _download_public_image(url):
+    if not _is_public_http_url(url):
+        raise HTTPException(status_code=400, detail="Enter a valid public http(s) image URL.")
+    parsed = requests.utils.urlparse(url)
+    host = parsed.hostname or ""
+    if host.lower() in {"localhost", "127.0.0.1", "::1"} or host.startswith("10.") or host.startswith("192.168."):
+        raise HTTPException(status_code=400, detail="Private/local URLs are not allowed.")
+    try:
+        response = requests.get(url, timeout=20, headers={"User-Agent": "Mozilla/5.0 TruthTrace/1.0"}, stream=True)
+        response.raise_for_status()
+    except requests.RequestException as error:
+        raise HTTPException(status_code=502, detail=f"Could not fetch the public image URL: {error}") from error
+    content_type = (response.headers.get("content-type") or "").lower()
+    suffix = Path(parsed.path).suffix.lower()
+    if not suffix or suffix not in ALLOWED:
+        suffix = {"image/jpeg": ".jpg", "image/png": ".png", "image/webp": ".webp", "image/jpg": ".jpg"}.get(content_type, ".jpg")
+    if not content_type.startswith("image/") and suffix not in {".jpg", ".jpeg", ".jpe", ".png", ".webp"}:
+        raise HTTPException(status_code=415, detail="The URL does not appear to point to a supported image.")
+    target = UPLOAD_DIR / f"{uuid.uuid4()}{suffix}"
+    total = 0
+    try:
+        with target.open("wb") as destination:
+            for chunk in response.iter_content(chunk_size=1024 * 128):
+                if not chunk:
+                    continue
+                total += len(chunk)
+                if total > 25 * 1024 * 1024:
+                    raise HTTPException(status_code=413, detail="Remote image is larger than 25 MB.")
+                destination.write(chunk)
+        with Image.open(target) as image:
+            image.verify()
+    except HTTPException:
+        target.unlink(missing_ok=True)
+        raise
+    except Exception as error:
+        target.unlink(missing_ok=True)
+        raise HTTPException(status_code=415, detail=f"Could not decode the remote image: {error}") from error
+    return target
+
+
+def _complete_analysis(target, uploaded_filename):
+    result = analyze_media(target)
+    result["uploaded_filename"] = uploaded_filename
+    result["platform_trace"] = _trace_platforms(target)
+    try:
+        result["web_trace"] = search_public_web(target)
+    except Exception as error:
+        result["web_trace"] = {
+            "status": "error", "error": str(error), "results": [],
+            "summary": {"sources_found": 0, "unique_domains": 0, "domains": [], "exact_matches": 0, "accessible_pages": 0, "blocked_pages": 0},
+        }
+    result["final_report"] = build_final_report(result)
+    return result
+
+
 @app.post("/api/analyze")
 def analyze(media: UploadFile = File(...)):
     suffix = Path(media.filename or "").suffix.lower()
@@ -148,27 +213,13 @@ def analyze(media: UploadFile = File(...)):
     target = UPLOAD_DIR / f"{uuid.uuid4()}{suffix}"
     with target.open("wb") as destination:
         shutil.copyfileobj(media.file, destination)
-    result = analyze_media(target)
-    result["uploaded_filename"] = media.filename
-    result["platform_trace"] = _trace_platforms(target)
+    return _complete_analysis(target, media.filename or target.name)
 
-    # Public-web provenance search is deliberately best-effort. It never
-    # bypasses login, private content, robots/authentication, or blocked pages.
+
+@app.post("/api/analyze-url")
+def analyze_url(image_url: str = Form(...)):
+    target = _download_public_image(image_url.strip())
     try:
-        result["web_trace"] = search_public_web(target)
-    except Exception as error:
-        result["web_trace"] = {
-            "status": "error",
-            "error": str(error),
-            "results": [],
-            "summary": {
-                "sources_found": 0,
-                "unique_domains": 0,
-                "domains": [],
-                "exact_matches": 0,
-                "accessible_pages": 0,
-                "blocked_pages": 0,
-            },
-        }
-
-    return result
+        return _complete_analysis(target, image_url.strip())
+    finally:
+        target.unlink(missing_ok=True)

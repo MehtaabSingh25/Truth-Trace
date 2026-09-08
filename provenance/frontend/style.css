@@ -505,3 +505,56 @@ pre {
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
+
+.url-source {
+  display: grid;
+  gap: 8px;
+  padding: 18px;
+  border: 1px solid #1e4667;
+  border-radius: 14px;
+  background: #091a2b;
+}
+.url-source > span {
+  color: #8aa4bf;
+  font-size: 12px;
+}
+.url-row {
+  display: flex;
+  gap: 10px;
+}
+.url-row input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px 14px;
+  border-radius: 9px;
+  border: 1px solid #315271;
+  background: #071522;
+  color: #f8fafc;
+}
+.final-report {
+  margin-bottom: 22px;
+  padding: 20px;
+  border: 1px solid #38bdf8;
+  border-radius: 14px;
+  background: #091a2b;
+}
+.final-report h2 {
+  margin: 5px 0 10px;
+}
+.final-report ul {
+  color: #dbeafe;
+  padding-left: 20px;
+}
+.verdict-score {
+  margin: 10px 0 14px;
+  color: #8aa4bf;
+}
+.verdict-score strong {
+  color: #7dd3fc;
+  font-size: 20px;
+}
+@media (max-width: 600px) {
+  .url-row {
+    display: grid;
+  }
+}
